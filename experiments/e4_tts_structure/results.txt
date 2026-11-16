@@ -1,0 +1,204 @@
+segments 75 {'code': 24, 'spoken_en': 2, 'en_doc': 24, 'spoken_zh': 1, 'zh_doc': 24}
+Qwen3-1.7B-Base: collected in 5s; first-token norm by layer 0/4/14/26/27: 0/3020/3001/3379/3606; text norm: 1.5/37.7/168.5/2560.1/3210.7
+Random-0.6B: collected in 4s; first-token norm by layer 0/4/14/26/27: 1/41/76/101/104; text norm: 0.6/28.2/64.6/91.3/93.8
+Random-1.7B: collected in 4s; first-token norm by layer 0/4/14/26/27: 1/103/187/257/263; text norm: 0.9/76.7/149.2/207.6/211.6
+ASR load: _IncompatibleKeys(missing_keys=['lm_head.weight'], unexpected_keys=[])
+ASR-0.6B: collected in 4s; first-token norm by layer 0/4/14/26/27: 0/5862/5863/5867/5591; text norm: 0.8/11.9/35.7/377.0/433.8
+TTS-0.6B codec ids: {'codec_nothink_id': 2155, 'codec_think_bos_id': 2156, 'codec_think_eos_id': 2157, 'codec_pad_id': 2148, 'codec_bos_id': 2149} tts: 151672 151673 151671
+TTS-0.6B: collected in 4s; first-token norm by layer 0/4/14/26/27: 2/105/631/1481/1478; text norm: 1.7/6.1/9.0/82.4/102.7
+TTS-1.7B codec ids: {'codec_nothink_id': 2155, 'codec_think_bos_id': 2156, 'codec_think_eos_id': 2157, 'codec_pad_id': 2148, 'codec_bos_id': 2149} tts: 151672 151673 151671
+TTS-1.7B: collected in 5s; first-token norm by layer 0/4/14/26/27: 2/4042/4042/4030/4018; text norm: 2.5/8.3/40.8/422.0/2572.6
+==================== family 0.6B, reference Qwen3-0.6B-Base ====================
+[1] debiased linear CKA at the same depth, text tokens only (n=4800)
+                        L0     L2     L4     L6     L8     L10    L12    L14    L16    L18    L20    L22    L24    L26    L27    L28
+  Qwen3-0.6B             0.997  0.983  0.969  0.963  0.753  0.932  0.747  0.740  0.933  0.924  0.921  0.927  0.919  0.929  0.924  0.940
+  ASR-0.6B               0.973  0.977  0.970  0.967  0.919  0.958  0.918  0.913  0.961  0.956  0.961  0.958  0.951  0.952  0.947  0.963
+  TTS-0.6B               0.577  0.634  0.610  0.460  0.293  0.343  0.243  0.169  0.052  0.049  0.055  0.050  0.037  0.033  0.027  0.019
+  Random-0.6B            0.456  0.112  0.128  0.132  0.130  0.166  0.156  0.165  0.192  0.177  0.194  0.192  0.167  0.202  0.198  0.127
+  shuffled tokens (TTS)  0.000  0.000  0.001  0.001 -0.000 -0.000 -0.000  0.000 -0.000 -0.000 -0.000 -0.000 -0.000 -0.000 -0.000 -0.000
+[2] CKA across depths, reference (rows) vs each model (columns), selected depths
+  Qwen3-0.6B: L2     L6     L10    L14    L18    L22    L26    L27
+    L2   0.983  0.799  0.691  0.488  0.690  0.585  0.504  0.454
+    L6   0.800  0.963  0.829  0.589  0.799  0.668  0.557  0.503
+    L10  0.702  0.838  0.932  0.657  0.844  0.725  0.616  0.569
+    L14  0.631  0.760  0.832  0.740  0.822  0.715  0.597  0.555
+    L18  0.665  0.769  0.798  0.608  0.924  0.827  0.684  0.635
+    L22  0.501  0.571  0.615  0.473  0.719  0.927  0.819  0.794
+    L26  0.442  0.483  0.524  0.394  0.596  0.797  0.929  0.895
+    L27  0.405  0.440  0.489  0.371  0.551  0.757  0.870  0.924
+  ASR-0.6B: L2     L6     L10    L14    L18    L22    L26    L27
+    L2   0.977  0.817  0.729  0.663  0.697  0.537  0.471  0.439
+    L6   0.789  0.967  0.854  0.778  0.799  0.610  0.518  0.479
+    L10  0.703  0.856  0.958  0.857  0.848  0.679  0.587  0.553
+    L14  0.633  0.774  0.854  0.913  0.828  0.676  0.573  0.541
+    L18  0.668  0.793  0.844  0.827  0.956  0.799  0.663  0.625
+    L22  0.516  0.601  0.670  0.666  0.775  0.958  0.833  0.804
+    L26  0.461  0.511  0.579  0.563  0.643  0.833  0.952  0.912
+    L27  0.426  0.468  0.540  0.529  0.600  0.803  0.909  0.947
+  TTS-0.6B: L2     L6     L10    L14    L18    L22    L26    L27
+    L2   0.634  0.536  0.381  0.207  0.033  0.046  0.042  0.042
+    L6   0.485  0.460  0.330  0.180  0.042  0.054  0.048  0.048
+    L10  0.437  0.437  0.343  0.183  0.048  0.061  0.051  0.050
+    L14  0.418  0.394  0.317  0.169  0.048  0.062  0.051  0.050
+    L18  0.433  0.428  0.341  0.179  0.049  0.062  0.050  0.049
+    L22  0.323  0.350  0.320  0.151  0.041  0.050  0.037  0.036
+    L26  0.275  0.320  0.321  0.149  0.035  0.044  0.033  0.032
+    L27  0.249  0.302  0.312  0.139  0.032  0.039  0.028  0.027
+  Random-0.6B: L2     L6     L10    L14    L18    L22    L26    L27
+    L2   0.112  0.094  0.090  0.087  0.086  0.085  0.082  0.082
+    L6   0.149  0.132  0.127  0.124  0.124  0.122  0.120  0.119
+    L10  0.187  0.170  0.166  0.162  0.162  0.160  0.157  0.156
+    L14  0.187  0.172  0.168  0.165  0.166  0.164  0.161  0.160
+    L18  0.198  0.184  0.180  0.177  0.177  0.175  0.172  0.171
+    L22  0.216  0.204  0.199  0.194  0.194  0.192  0.187  0.185
+    L26  0.232  0.221  0.215  0.210  0.210  0.208  0.202  0.200
+    L27  0.228  0.219  0.213  0.208  0.208  0.206  0.200  0.198
+[3] CKA by language at the same depth (zh_doc / en_doc), TTS vs reference
+  zh_doc   n=1536 L2:0.661 L8:0.272 L14:0.215 L20:0.064 L26:0.024 L27:0.020
+  en_doc   n=1536 L2:0.693 L8:0.282 L14:0.110 L20:0.062 L26:0.062 L27:0.055
+  code     n=1536 L2:0.653 L8:0.288 L14:0.198 L20:0.066 L26:0.054 L27:0.051
+[4] held-out R2 predicting Qwen3-0.6B-Base -> TTS-0.6B; rows source depth, columns target depth
+      L4     L8     L12    L16    L20    L24    L27
+  L4   0.500  0.441  0.302  0.253  0.267  0.259  0.185
+  L8   0.419  0.410  0.282  0.264  0.271  0.270  0.195
+  L12  0.384  0.398  0.275  0.213  0.232  0.240  0.178
+  L16  0.379  0.399  0.280  0.215  0.234  0.242  0.196
+  L20  0.416  0.406  0.280  0.218  0.235  0.244  0.191
+  L24  0.374  0.370  0.251  0.203  0.216  0.209  0.143
+  L27  0.290  0.344  0.235  0.180  0.194  0.197  0.125
+[4] held-out R2 predicting TTS-0.6B -> Qwen3-0.6B-Base; rows source depth, columns target depth
+      L4     L8     L12    L16    L20    L24    L27
+  L4   0.404  0.337  0.343  0.315  0.309  0.264  0.256
+  L8   0.235  0.196  0.201  0.212  0.200  0.184  0.196
+  L12  0.158  0.129  0.135  0.153  0.143  0.136  0.158
+  L16  0.105  0.077  0.082  0.104  0.092  0.085  0.110
+  L20  0.084  0.101  0.109  0.129  0.121  0.119  0.092
+  L24  0.092  0.066  0.074  0.095  0.086  0.083  0.107
+  L27  0.104  0.081  0.088  0.108  0.099  0.095  0.119
+[4] held-out R2 predicting Random-0.6B -> TTS-0.6B (control); rows source depth, columns target depth
+      L4     L8     L12    L16    L20    L24    L27
+  L4   0.026 -0.051  0.091  0.191  0.217  0.233 -0.063
+  L8   0.021 -0.077 -0.062  0.183  0.210  0.215 -0.060
+  L12  0.019 -0.078 -0.059  0.181  0.208  0.053 -0.043
+  L16  0.017 -0.077 -0.064  0.181  0.052  0.047 -0.059
+  L20  0.018 -0.059 -0.058  0.181  0.034  0.038 -0.064
+  L24  0.019 -0.038 -0.039  0.182  0.016  0.015 -0.081
+  L27  0.016 -0.044 -0.048  0.176  0.013 -0.006 -0.120
+[5] attention on text tokens: JS (bits) to reference; mean over heads, and with heads matched one to one; sink = share going to position 0; within = share staying on text
+  Qwen3-0.6B
+    L 2 mean-head JS 0.007 | matched JS 0.025 (random pairing 0.427) | sink ref 0.018 model 0.014 | within ref 0.918 model 0.931
+    L 6 mean-head JS 0.021 | matched JS 0.056 (random pairing 0.501) | sink ref 0.531 model 0.509 | within ref 0.459 model 0.484
+    L10 mean-head JS 0.019 | matched JS 0.054 (random pairing 0.349) | sink ref 0.429 model 0.415 | within ref 0.559 model 0.570
+    L14 mean-head JS 0.029 | matched JS 0.090 (random pairing 0.383) | sink ref 0.474 model 0.468 | within ref 0.516 model 0.522
+    L18 mean-head JS 0.026 | matched JS 0.073 (random pairing 0.338) | sink ref 0.533 model 0.536 | within ref 0.454 model 0.456
+    L22 mean-head JS 0.025 | matched JS 0.064 (random pairing 0.321) | sink ref 0.702 model 0.701 | within ref 0.289 model 0.294
+    L26 mean-head JS 0.042 | matched JS 0.070 (random pairing 0.367) | sink ref 0.696 model 0.719 | within ref 0.291 model 0.277
+  ASR-0.6B
+    L 2 mean-head JS 0.010 | matched JS 0.036 (random pairing 0.419) | sink ref 0.018 model 0.022 | within ref 0.918 model 0.915
+    L 6 mean-head JS 0.016 | matched JS 0.052 (random pairing 0.484) | sink ref 0.531 model 0.525 | within ref 0.459 model 0.464
+    L10 mean-head JS 0.012 | matched JS 0.039 (random pairing 0.331) | sink ref 0.429 model 0.424 | within ref 0.559 model 0.558
+    L14 mean-head JS 0.019 | matched JS 0.058 (random pairing 0.366) | sink ref 0.474 model 0.466 | within ref 0.516 model 0.528
+    L18 mean-head JS 0.017 | matched JS 0.054 (random pairing 0.345) | sink ref 0.533 model 0.531 | within ref 0.454 model 0.463
+    L22 mean-head JS 0.016 | matched JS 0.048 (random pairing 0.321) | sink ref 0.702 model 0.704 | within ref 0.289 model 0.288
+    L26 mean-head JS 0.023 | matched JS 0.049 (random pairing 0.373) | sink ref 0.696 model 0.707 | within ref 0.291 model 0.279
+  TTS-0.6B
+    L 2 mean-head JS 0.228 | matched JS 0.416 (random pairing 0.536) | sink ref 0.018 model 0.010 | within ref 0.918 model 0.155
+    L 6 mean-head JS 0.185 | matched JS 0.415 (random pairing 0.523) | sink ref 0.531 model 0.014 | within ref 0.459 model 0.474
+    L10 mean-head JS 0.184 | matched JS 0.352 (random pairing 0.439) | sink ref 0.429 model 0.006 | within ref 0.559 model 0.133
+    L14 mean-head JS 0.158 | matched JS 0.371 (random pairing 0.469) | sink ref 0.474 model 0.003 | within ref 0.516 model 0.167
+    L18 mean-head JS 0.197 | matched JS 0.363 (random pairing 0.485) | sink ref 0.533 model 0.003 | within ref 0.454 model 0.427
+    L22 mean-head JS 0.227 | matched JS 0.470 (random pairing 0.564) | sink ref 0.702 model 0.001 | within ref 0.289 model 0.141
+    L26 mean-head JS 0.216 | matched JS 0.360 (random pairing 0.397) | sink ref 0.696 model 0.020 | within ref 0.291 model 0.631
+  Random-0.6B
+    L 2 mean-head JS 0.309 | matched JS 0.531 (random pairing 0.537) | sink ref 0.018 model 0.031 | within ref 0.918 model 0.907
+    L 6 mean-head JS 0.310 | matched JS 0.503 (random pairing 0.518) | sink ref 0.531 model 0.035 | within ref 0.459 model 0.908
+    L10 mean-head JS 0.339 | matched JS 0.481 (random pairing 0.485) | sink ref 0.429 model 0.040 | within ref 0.559 model 0.894
+    L14 mean-head JS 0.324 | matched JS 0.431 (random pairing 0.442) | sink ref 0.474 model 0.028 | within ref 0.516 model 0.918
+    L18 mean-head JS 0.306 | matched JS 0.439 (random pairing 0.450) | sink ref 0.533 model 0.036 | within ref 0.454 model 0.898
+    L22 mean-head JS 0.291 | matched JS 0.399 (random pairing 0.416) | sink ref 0.702 model 0.036 | within ref 0.289 model 0.906
+    L26 mean-head JS 0.273 | matched JS 0.384 (random pairing 0.401) | sink ref 0.696 model 0.033 | within ref 0.291 model 0.906
+[6] stream norm by layer: position 0 and text tokens
+  Qwen3-0.6B-Base    pos0       0      19    3751    3751    3751    3774    3544     129  text    0.9   10.9   13.1   16.7   51.6  536.1  614.8  118.9
+  Qwen3-0.6B         pos0       0      19    8221    8221    8221    8228    8012      58  text    0.9   10.3   12.2   15.3   51.6  511.4  585.1  102.9
+  ASR-0.6B           pos0       0      12    5862    5862    5863    5867    5591      84  text    0.8    7.9    9.3   11.9   35.7  377.0  433.8  179.1
+  TTS-0.6B           pos0       2      18      13     105     631    1481    1478     222  text    1.7    2.2    4.1    6.1    9.0   82.4  102.7  104.6
+  Random-0.6B        pos0       1      28      36      41      76     101     104      32  text    0.6   16.0   22.3   28.2   64.6   91.3   93.8   32.0
+==================== family 1.7B, reference Qwen3-1.7B-Base ====================
+[1] debiased linear CKA at the same depth, text tokens only (n=4800)
+                        L0     L2     L4     L6     L8     L10    L12    L14    L16    L18    L20    L22    L24    L26    L27    L28
+  TTS-1.7B               0.629  0.703  0.664  0.557  0.452  0.413  0.338  0.341  0.332  0.197  0.204  0.136  0.104  0.123  0.019  0.032
+  Random-1.7B            0.402  0.125  0.143  0.147  0.152  0.189  0.181  0.205  0.229  0.207  0.197  0.189  0.161  0.182  0.169  0.108
+  shuffled tokens (TTS)  0.000  0.001 -0.000  0.000 -0.000 -0.000  0.000 -0.000 -0.000 -0.000 -0.000  0.000 -0.000 -0.000  0.000 -0.000
+[2] CKA across depths, reference (rows) vs each model (columns), selected depths
+  TTS-1.7B: L2     L6     L10    L14    L18    L22    L26    L27
+    L2   0.703  0.600  0.539  0.508  0.276  0.292  0.228  0.042
+    L6   0.615  0.557  0.492  0.473  0.257  0.244  0.199  0.033
+    L10  0.516  0.478  0.413  0.393  0.214  0.192  0.163  0.029
+    L14  0.459  0.422  0.355  0.341  0.185  0.172  0.151  0.034
+    L18  0.493  0.449  0.383  0.366  0.197  0.184  0.158  0.040
+    L22  0.390  0.363  0.308  0.279  0.149  0.136  0.119  0.020
+    L26  0.352  0.334  0.277  0.250  0.137  0.142  0.123  0.021
+    L27  0.302  0.292  0.248  0.219  0.117  0.117  0.104  0.019
+  Random-1.7B: L2     L6     L10    L14    L18    L22    L26    L27
+    L2   0.125  0.104  0.096  0.092  0.090  0.087  0.086  0.086
+    L6   0.165  0.147  0.139  0.135  0.133  0.130  0.129  0.128
+    L10  0.210  0.197  0.189  0.186  0.184  0.180  0.178  0.178
+    L14  0.216  0.211  0.207  0.205  0.204  0.201  0.200  0.199
+    L18  0.224  0.216  0.210  0.208  0.207  0.203  0.202  0.201
+    L22  0.225  0.208  0.199  0.196  0.193  0.189  0.186  0.185
+    L26  0.224  0.205  0.196  0.192  0.189  0.184  0.182  0.181
+    L27  0.202  0.189  0.181  0.178  0.176  0.172  0.170  0.169
+[3] CKA by language at the same depth (zh_doc / en_doc), TTS vs reference
+  zh_doc   n=1536 L2:0.688 L8:0.472 L14:0.371 L20:0.259 L26:0.116 L27:0.018
+  en_doc   n=1536 L2:0.766 L8:0.503 L14:0.378 L20:0.239 L26:0.177 L27:0.034
+  code     n=1536 L2:0.770 L8:0.414 L14:0.325 L20:0.228 L26:0.170 L27:0.027
+[4] held-out R2 predicting Qwen3-1.7B-Base -> TTS-1.7B; rows source depth, columns target depth
+      L4     L8     L12    L16    L20    L24    L27
+  L4   0.514  0.507  0.503  0.433  0.478  0.506  0.399
+  L8   0.431  0.436  0.430  0.349  0.413  0.469  0.396
+  L12  0.397  0.408  0.402  0.323  0.392  0.460  0.400
+  L16  0.386  0.396  0.391  0.334  0.403  0.474  0.378
+  L20  0.419  0.425  0.420  0.324  0.394  0.445  0.349
+  L24  0.366  0.375  0.368  0.283  0.358  0.401  0.243
+  L27  0.294  0.319  0.310  0.252  0.335  0.388  0.206
+[4] held-out R2 predicting TTS-1.7B -> Qwen3-1.7B-Base; rows source depth, columns target depth
+      L4     L8     L12    L16    L20    L24    L27
+  L4   0.377  0.292  0.282  0.225  0.240  0.199  0.211
+  L8   0.326  0.251  0.239  0.199  0.210  0.174  0.186
+  L12  0.293  0.224  0.213  0.182  0.190  0.164  0.179
+  L16  0.265  0.202  0.190  0.170  0.172  0.147  0.162
+  L20  0.240  0.185  0.173  0.159  0.159  0.137  0.153
+  L24  0.199  0.156  0.147  0.142  0.141  0.128  0.143
+  L27  0.175  0.139  0.131  0.129  0.129  0.119  0.134
+[4] held-out R2 predicting Random-1.7B -> TTS-1.7B (control); rows source depth, columns target depth
+      L4     L8     L12    L16    L20    L24    L27
+  L4   0.032  0.031  0.023  0.037  0.056  0.130  0.199
+  L8   0.019  0.017  0.010  0.029  0.048  0.119  0.229
+  L12  0.012  0.008  0.002  0.026  0.043  0.120  0.247
+  L16  0.009  0.004 -0.000  0.026  0.043  0.116  0.259
+  L20  0.007  0.004 -0.002  0.024  0.038  0.106  0.267
+  L24  0.006  0.002 -0.002  0.023  0.037  0.105  0.277
+  L27  0.006  0.002 -0.002  0.024  0.037  0.104  0.284
+[5] attention on text tokens: JS (bits) to reference; mean over heads, and with heads matched one to one; sink = share going to position 0; within = share staying on text
+  TTS-1.7B
+    L 2 mean-head JS 0.123 | matched JS 0.347 (random pairing 0.525) | sink ref 0.032 model 0.015 | within ref 0.923 model 0.663
+    L 6 mean-head JS 0.286 | matched JS 0.451 (random pairing 0.568) | sink ref 0.486 model 0.484 | within ref 0.501 model 0.147
+    L10 mean-head JS 0.149 | matched JS 0.342 (random pairing 0.459) | sink ref 0.378 model 0.373 | within ref 0.604 model 0.099
+    L14 mean-head JS 0.361 | matched JS 0.444 (random pairing 0.585) | sink ref 0.430 model 0.496 | within ref 0.557 model 0.244
+    L18 mean-head JS 0.231 | matched JS 0.449 (random pairing 0.531) | sink ref 0.503 model 0.501 | within ref 0.481 model 0.070
+    L22 mean-head JS 0.265 | matched JS 0.377 (random pairing 0.435) | sink ref 0.643 model 0.512 | within ref 0.344 model 0.114
+    L26 mean-head JS 0.330 | matched JS 0.456 (random pairing 0.484) | sink ref 0.676 model 0.227 | within ref 0.290 model 0.192
+  Random-1.7B
+    L 2 mean-head JS 0.281 | matched JS 0.522 (random pairing 0.525) | sink ref 0.032 model 0.030 | within ref 0.923 model 0.915
+    L 6 mean-head JS 0.309 | matched JS 0.542 (random pairing 0.547) | sink ref 0.486 model 0.027 | within ref 0.501 model 0.917
+    L10 mean-head JS 0.301 | matched JS 0.479 (random pairing 0.484) | sink ref 0.378 model 0.032 | within ref 0.604 model 0.914
+    L14 mean-head JS 0.282 | matched JS 0.444 (random pairing 0.449) | sink ref 0.430 model 0.028 | within ref 0.557 model 0.916
+    L18 mean-head JS 0.282 | matched JS 0.453 (random pairing 0.457) | sink ref 0.503 model 0.028 | within ref 0.481 model 0.916
+    L22 mean-head JS 0.268 | matched JS 0.424 (random pairing 0.429) | sink ref 0.643 model 0.029 | within ref 0.344 model 0.913
+    L26 mean-head JS 0.272 | matched JS 0.432 (random pairing 0.437) | sink ref 0.676 model 0.030 | within ref 0.290 model 0.912
+[6] stream norm by layer: position 0 and text tokens
+  Qwen3-1.7B-Base    pos0       0      71    3020    3020    3001    3379    3606      62  text    1.5   24.2   29.4   37.7  168.5 2560.1 3210.7  175.4
+  TTS-1.7B           pos0       2      62    4042    4042    4042    4030    4018      49  text    2.5    8.8   11.1    8.3   40.8  422.0 2572.6   54.8
+  Random-1.7B        pos0       1      71      89     103     187     257     263      45  text    0.9   52.5   65.5   76.7  149.2  207.6  211.6   45.3
+STRUCTUREDONE
+[runner] exit code 0 at 2026-11-06T04:43:19

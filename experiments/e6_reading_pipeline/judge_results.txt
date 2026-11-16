@@ -1,0 +1,11 @@
+==== E6 panel check (segmental contrasts only; strict majority of 3 judges) ====
+  (CPP minority: 140 of 163 rows voted by all three judges, the rest by two)
+  CPP minority  n 163  TTS 0.509  pipeline 0.853  diff +0.344 [+0.192, +0.497]  top reading outside pair: TTS 0.48, pipeline 0.42
+  (CPP majority: 55 of 62 rows voted by all three judges, the rest by two)
+  CPP majority  n  62  TTS 0.823  pipeline 0.984  diff +0.161 [+0.066, +0.270]  top reading outside pair: TTS 0.37, pipeline 0.39
+  (natural: 31 of 31 rows voted by all three judges, the rest by two)
+  natural       n  31  TTS 1.000  pipeline 1.000  diff +0.000 [+0.000, +0.000]  top reading outside pair: TTS 0.78, pipeline 0.76
+  (natural2: 63 of 68 rows voted by all three judges, the rest by two)
+  natural2      n  68  TTS 0.838  pipeline 0.897  diff +0.059 [-0.060, +0.206]  top reading outside pair: TTS 0.61, pipeline 0.56
+  (dict: 18 of 19 rows voted by all three judges, the rest by two)
+  dict          n  19  TTS 0.263  g2pW only 0.526  dictionary 0.947  top reading outside pair: TTS 0.33, dictionary 0.21

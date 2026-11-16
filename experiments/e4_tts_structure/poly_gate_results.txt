@@ -1,0 +1,60 @@
+==== TTS-0.6B ====
+ LLM-0.6B@L8: margin threshold 0.3580
+   CPP minority               n 230 chars  77 TTS 0.522 | gated 0.757 +0.235 [+0.122, +0.349] coverage 0.75 | ungated 0.774 +0.252 [+0.110, +0.394]
+   CPP majority               n  90 chars  61 TTS 0.722 | gated 0.944 +0.222 [+0.131, +0.322] coverage 0.92 | ungated 0.978 +0.256 [+0.148, +0.366]
+   natural speech sentences   n  21 chars   9 TTS 0.952 | gated 0.857 -0.095 [-0.231, +0.000] coverage 0.90 | ungated 0.857 -0.095 [-0.316, +0.188]
+   natural2                   n 131 chars  46 TTS 0.794 | gated 0.939 +0.145 [+0.074, +0.232] coverage 0.88 | ungated 0.916 +0.122 [+0.032, +0.226]
+   natural2, segmental only   n  65 chars  22 TTS 0.785 | gated 0.908 +0.123 [+0.029, +0.256] coverage 0.86 | ungated 0.846 +0.062 [-0.065, +0.224]
+   natural2, tone only        n  66 chars  24 TTS 0.803 | gated 0.970 +0.167 [+0.067, +0.273] coverage 0.89 | ungated 0.985 +0.182 [+0.069, +0.304]
+   gated: safe True, useful True -> deployable candidate
+   ungated: safe True, useful True
+ TTS-0.6B@L6: margin threshold 0.6614
+   CPP minority               n 230 chars  77 TTS 0.522 | gated 0.648 +0.126 [+0.047, +0.206] coverage 0.43 | ungated 0.748 +0.226 [+0.091, +0.358]
+   CPP majority               n  90 chars  61 TTS 0.722 | gated 0.856 +0.133 [+0.047, +0.228] coverage 0.72 | ungated 0.922 +0.200 [+0.085, +0.319]
+   natural speech sentences   n  21 chars   9 TTS 0.952 | gated 0.952 +0.000 [+0.000, +0.000] coverage 0.76 | ungated 0.857 -0.095 [-0.316, +0.188]
+   natural2                   n 131 chars  46 TTS 0.794 | gated 0.901 +0.107 [+0.047, +0.182] coverage 0.65 | ungated 0.855 +0.061 [-0.029, +0.158]
+   natural2, segmental only   n  65 chars  22 TTS 0.785 | gated 0.892 +0.108 [+0.015, +0.234] coverage 0.60 | ungated 0.846 +0.062 [-0.057, +0.213]
+   natural2, tone only        n  66 chars  24 TTS 0.803 | gated 0.909 +0.106 [+0.031, +0.191] coverage 0.70 | ungated 0.864 +0.061 [-0.077, +0.183]
+   gated: safe True, useful True -> deployable candidate
+   ungated: safe True, useful True
+ exploratory: gated LLM L8 minus gated TTS L6
+   CPP minority               n 230 +0.109 [+0.047, +0.171]
+   CPP majority               n  90 +0.089 [+0.034, +0.150]
+   natural speech sentences   n  21 -0.095 [-0.231, +0.000]
+   natural2                   n 131 +0.038 [+0.009, +0.072]
+   natural2, segmental only   n  65 +0.015 [+0.000, +0.057]
+   natural2, tone only        n  66 +0.061 [+0.015, +0.111]
+   LLM-0.6B@L8 CPP minority: precision at gated positions 0.849 on 172, TTS at those positions 0.535
+   LLM-0.6B@L8 natural2: precision at gated positions 0.965 on 115, TTS at those positions 0.800
+   TTS-0.6B@L6 CPP minority: precision at gated positions 0.830 on 100, TTS at those positions 0.540
+   TTS-0.6B@L6 natural2: precision at gated positions 0.953 on 85, TTS at those positions 0.788
+==== TTS-1.7B ====
+ LLM-0.6B@L8: margin threshold 0.3580
+   CPP minority               n 230 chars  77 TTS 0.478 | gated 0.743 +0.265 [+0.146, +0.386] coverage 0.75 | ungated 0.774 +0.296 [+0.150, +0.439]
+   CPP majority               n  90 chars  61 TTS 0.767 | gated 0.956 +0.189 [+0.099, +0.298] coverage 0.92 | ungated 0.978 +0.211 [+0.111, +0.323]
+   natural speech sentences   n  21 chars   9 TTS 0.905 | gated 0.857 -0.048 [-0.115, +0.000] coverage 0.90 | ungated 0.857 -0.048 [-0.208, +0.188]
+   natural2                   n 131 chars  46 TTS 0.809 | gated 0.931 +0.122 [+0.044, +0.214] coverage 0.88 | ungated 0.916 +0.107 [+0.008, +0.218]
+   natural2, segmental only   n  65 chars  22 TTS 0.831 | gated 0.908 +0.077 [-0.024, +0.216] coverage 0.86 | ungated 0.846 +0.015 [-0.121, +0.185]
+   natural2, tone only        n  66 chars  24 TTS 0.788 | gated 0.955 +0.167 [+0.066, +0.284] coverage 0.89 | ungated 0.985 +0.197 [+0.077, +0.343]
+   gated: safe True, useful True -> deployable candidate
+   ungated: safe True, useful True
+ TTS-0.6B@L6: margin threshold 0.6614
+   CPP minority               n 230 chars  77 TTS 0.478 | gated 0.635 +0.157 [+0.071, +0.248] coverage 0.43 | ungated 0.748 +0.270 [+0.124, +0.407]
+   CPP majority               n  90 chars  61 TTS 0.767 | gated 0.878 +0.111 [+0.023, +0.211] coverage 0.72 | ungated 0.922 +0.156 [+0.041, +0.279]
+   natural speech sentences   n  21 chars   9 TTS 0.905 | gated 0.905 +0.000 [+0.000, +0.000] coverage 0.76 | ungated 0.857 -0.048 [-0.208, +0.188]
+   natural2                   n 131 chars  46 TTS 0.809 | gated 0.893 +0.084 [+0.028, +0.154] coverage 0.65 | ungated 0.855 +0.046 [-0.043, +0.142]
+   natural2, segmental only   n  65 chars  22 TTS 0.831 | gated 0.908 +0.077 [+0.000, +0.196] coverage 0.60 | ungated 0.846 +0.015 [-0.113, +0.176]
+   natural2, tone only        n  66 chars  24 TTS 0.788 | gated 0.879 +0.091 [+0.016, +0.179] coverage 0.70 | ungated 0.864 +0.076 [-0.042, +0.190]
+   gated: safe True, useful True -> deployable candidate
+   ungated: safe True, useful True
+ exploratory: gated LLM L8 minus gated TTS L6
+   CPP minority               n 230 +0.109 [+0.049, +0.169]
+   CPP majority               n  90 +0.078 [+0.011, +0.157]
+   natural speech sentences   n  21 -0.048 [-0.115, +0.000]
+   natural2                   n 131 +0.038 [-0.006, +0.097]
+   natural2, segmental only   n  65 +0.000 [-0.038, +0.050]
+   natural2, tone only        n  66 +0.076 [+0.000, +0.177]
+   LLM-0.6B@L8 CPP minority: precision at gated positions 0.849 on 172, TTS at those positions 0.494
+   LLM-0.6B@L8 natural2: precision at gated positions 0.965 on 115, TTS at those positions 0.826
+   TTS-0.6B@L6 CPP minority: precision at gated positions 0.830 on 100, TTS at those positions 0.470
+   TTS-0.6B@L6 natural2: precision at gated positions 0.953 on 85, TTS at those positions 0.824

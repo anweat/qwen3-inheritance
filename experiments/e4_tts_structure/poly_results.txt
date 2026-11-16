@@ -1,0 +1,30 @@
+
+==== TTS-0.6B_nonstream.jsonl: 342 items, dropped 0 with runaway audio; median 3.45 frames per character ====
+  calibration dtw_total    n  213  says-g 0.545  says-a 0.577  balanced 0.561
+  calibration dtw_window   n  213  says-g 0.577  says-a 0.615  balanced 0.596
+  calibration ce_ratio     n  213  says-g 0.831  says-a 0.840  balanced 0.836
+  calibration ce_peak      n  213  says-g 0.845  says-a 0.840  balanced 0.843
+  calibration asr_raw      n  206  says-g 0.869  says-a 0.869  balanced 0.869
+  calibration asr_centred  n  206  says-g 0.990  says-a 0.976  balanced 0.983
+  primary detector asr_centred: passes validity
+  minority: n 230, groups 77, observed gold rate 0.522, corrected 0.515 [0.396, 0.629]
+  majority: n 90, groups 61, observed gold rate 0.722, corrected 0.723 [0.607, 0.830]
+  probe recall on covered groups, LLM-0.6B|t+2: 0.795
+  probe recall on covered groups, TTS-0.6B|t+2: 0.734
+  probe recall on covered groups, TTS-1.7B|t+2: 0.704
+  decision threshold T 0.745: room
+
+==== TTS-1.7B_nonstream.jsonl: 342 items, dropped 0 with runaway audio; median 3.32 frames per character ====
+  calibration dtw_total    n  213  says-g 0.577  says-a 0.634  balanced 0.606
+  calibration dtw_window   n  213  says-g 0.634  says-a 0.662  balanced 0.648
+  calibration ce_ratio     n  213  says-g 0.817  says-a 0.822  balanced 0.819
+  calibration ce_peak      n  213  says-g 0.854  says-a 0.812  balanced 0.833
+  calibration asr_raw      n  206  says-g 0.874  says-a 0.888  balanced 0.881
+  calibration asr_centred  n  206  says-g 0.990  says-a 0.976  balanced 0.983
+  primary detector asr_centred: passes validity
+  minority: n 230, groups 77, observed gold rate 0.478, corrected 0.470 [0.354, 0.589]
+  majority: n 90, groups 61, observed gold rate 0.767, corrected 0.769 [0.653, 0.871]
+  probe recall on covered groups, LLM-0.6B|t+2: 0.795
+  probe recall on covered groups, TTS-0.6B|t+2: 0.734
+  probe recall on covered groups, TTS-1.7B|t+2: 0.704
+  decision threshold T 0.745: room

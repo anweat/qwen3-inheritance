@@ -1,0 +1,30 @@
+layers by single-restore damage (low to high): [9, 7, 11, 12, 8, 10, 23, 4, 6, 5, 13, 22, 24, 21, 1, 20, 3, 14, 16, 15, 26, 19, 2, 17, 18, 25]
+### graft3: residual coding on a Q4 Base. avg bits = residual bits per decoder matrix weight, on top of the shared base; scale side info not counted
+  intact ASR                                                 CE   0.022 agree 1.000  libris 0.077 say_en 0.000 say_zh 0.029  [60s]
+  standalone Q4 (fair baseline, no shared base)              CE   0.089 agree 0.976  libris 0.078 say_en 0.008 say_zh 0.032  avg 4.00 bits  [59s]
+  all residuals Q3                                           CE   0.038 agree 0.987  libris 0.080 say_en 0.000 say_zh 0.029  avg 3.00 bits  [100s]
+  all residuals 2-bit midrise                                CE   0.072 agree 0.983  libris 0.075 say_en 0.000 say_zh 0.044  avg 2.00 bits  [72s]
+  -- spend bits by importance
+  most-plastic 25% neurons 0 bits, rest Q3                   CE   0.247 agree 0.956  libris 0.075 say_en 0.000 say_zh 0.112  avg 2.55 bits  [65s]
+  same, attention at 2-bit                                   CE   0.455 agree 0.874  libris 1.000 say_en 1.000 say_zh 1.000  avg 2.15 bits  [26s]
+  most-plastic 50% neurons 0 bits, rest Q3                   CE   0.994 agree 0.848  libris 1.000 say_en 1.000 say_zh 1.000  avg 2.10 bits  [25s]
+  same, attention at 2-bit                                   CE   1.553 agree 0.823  libris 1.000 say_en 1.000 say_zh 1.000  avg 1.70 bits  [25s]
+  most-plastic 75% neurons 0 bits, rest Q3                   CE   2.253 agree 0.744  libris 1.000 say_en 1.000 say_zh 1.000  avg 1.65 bits  [25s]
+  same, attention at 2-bit                                   CE   2.418 agree 0.729  libris 1.000 say_en 1.000 say_zh 1.000  avg 1.25 bits  [26s]
+  control: random 50% neurons 0 bits, rest Q3                CE   1.624 agree 0.759  libris 1.000 say_en 1.000 say_zh 1.000  avg 2.10 bits  [25s]
+  -- spend bits by layer: k least-damaging layers restored together (0 bits), others Q3
+  2 layers 0 bits                                            CE   0.049 agree 0.985  avg 2.79 bits  [18s]
+  4 layers 0 bits                                            CE   0.140 agree 0.949  libris 0.361 say_en 0.341 say_zh 0.047  avg 2.57 bits  [66s]
+  6 layers 0 bits                                            CE   0.799 agree 0.849  avg 2.36 bits  [16s]
+  8 layers 0 bits                                            CE   1.319 agree 0.805  libris 1.000 say_en 1.000 say_zh 1.000  avg 2.14 bits  [29s]
+  10 layers 0 bits                                           CE   2.029 agree 0.768  avg 1.93 bits  [14s]
+  12 layers 0 bits                                           CE   2.127 agree 0.770  libris 1.000 say_en 1.000 say_zh 1.000  avg 1.71 bits  [25s]
+  14 layers 0 bits                                           CE   2.278 agree 0.765  avg 1.50 bits  [13s]
+  18 layers 0 bits                                           CE   2.774 agree 0.695  avg 1.07 bits  [13s]
+  22 layers 0 bits                                           CE   3.137 agree 0.672  avg 0.64 bits  [13s]
+  26 layers 0 bits                                           CE   3.451 agree 0.622  avg 0.21 bits  [13s]
+  every other layer (odd 1-25) 0 bits                        CE   2.396 agree 0.744  libris 1.000 say_en 1.000 say_zh 1.000  avg 1.61 bits  [24s]
+  -- text- and audio-specific ablation, excluding the spike layer L2 and output layer L27
+  zero 1% per layer, no L2/L27: audio-specific               CE   1.084 agree 0.812  libris 1.000 say_en 1.000 say_zh 1.000
+  zero 1% per layer, no L2/L27: text-specific                CE   0.025 agree 0.994  libris 0.082 say_en 0.000 say_zh 0.035
+  zero 1% per layer, no L2/L27: random                       CE   0.029 agree 0.991  libris 0.077 say_en 0.000 say_zh 0.029

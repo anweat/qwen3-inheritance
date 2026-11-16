@@ -1,0 +1,12 @@
+==== E6 neighbour-edit check: unedited targets in sentences with other edits; fresh samples O1, O2, P1, P2 ====
+-- panel (segmental, strict majority of 3)
+  pooled    n  52 chars  22  O 0.846  P 0.721  d -0.125 [-0.266, +0.011]  disagree O1/O2 0.12 P1/P2 0.06 O/P 0.17  stage 8 single samples O 0.827 P 0.731 (n 52)
+  hard      n  19 chars   8  O 0.737  P 0.579  d -0.158 [-0.438, +0.071]  disagree O1/O2 0.11 P1/P2 0.00 O/P 0.21  stage 8 single samples O 0.632 P 0.579 (n 19)
+  natural   n  12 chars   9  O 0.958  P 0.958  d +0.000 [+0.000, +0.000]  disagree O1/O2 0.08 P1/P2 0.08 O/P 0.04  stage 8 single samples O 1.000 P 1.000 (n 12)
+  natural2  n  21 chars   9  O 0.881  P 0.714  d -0.167 [-0.315, +0.033]  disagree O1/O2 0.14 P1/P2 0.10 O/P 0.21  stage 8 single samples O 0.905 P 0.714 (n 21)
+-- detector (all items)
+  pooled    n  61 chars  31  O 0.795  P 0.762  d -0.033 [-0.119, +0.032]  disagree O1/O2 0.05 P1/P2 0.05 O/P 0.07  stage 8 single samples O 0.793 P 0.810 (n 58)
+  hard      n  16 chars  10  O 0.562  P 0.594  d +0.031 [+0.000, +0.100]  disagree O1/O2 0.00 P1/P2 0.06 O/P 0.03  stage 8 single samples O 0.615 P 0.615 (n 13)
+  natural   n  26 chars  15  O 0.923  P 0.923  d +0.000 [+0.000, +0.000]  disagree O1/O2 0.00 P1/P2 0.00 O/P 0.00  stage 8 single samples O 0.923 P 0.923 (n 26)
+  natural2  n  19 chars  10  O 0.816  P 0.684  d -0.132 [-0.320, +0.067]  disagree O1/O2 0.16 P1/P2 0.11 O/P 0.21  stage 8 single samples O 0.737 P 0.789 (n 19)
+VERDICT: neighbour edits harm unedited targets: False;  harm larger than 5 points excluded: False

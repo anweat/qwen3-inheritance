@@ -1,0 +1,29 @@
+
+intact
+  prefix CE  0.002 agree 1.000 (n=180) | transcript CE  0.026 agree 1.000 (n=1208) | end CE  0.000 agree 1.000 (n=60)
+  text CE: code 2.306 en_doc 2.725 zh_doc 4.617 spoken_en 2.762 spoken_zh 4.308 chat 2.894
+   gen: 'language English<asr_text>Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his gos'
+   gen: 'language English<asr_text>The weather has been pretty strange this week. It rained on Monday and then it got r'
+   gen: 'language Chinese<asr_text>谢谢你的电话过来，我查一下这个问题，尽快给你回复。<|im_end|>'
+
+audio-specific 1% (no L2/L27)
+  prefix CE  4.922 agree 0.128 (n=180) | transcript CE  0.566 agree 0.905 (n=1208) | end CE  0.000 agree 1.000 (n=60)
+  text CE: code 2.338 en_doc 2.759 zh_doc 4.657 spoken_en 3.017 spoken_zh 4.419 chat 2.860
+   gen: '<|im_end|>'
+   gen: '<|im_end|>'
+   gen: '<|im_end|>'
+  share of the layer's audio |DLA| held by these neurons, top layers: [('L22', 0.113), ('L25', 0.099), ('L23', 0.075), ('L24', 0.07), ('L21', 0.069), ('L20', 0.062)]
+
+text-specific 1% (no L2/L27)
+  prefix CE  0.005 agree 1.000 (n=180) | transcript CE  0.030 agree 0.993 (n=1208) | end CE  0.000 agree 1.000 (n=60)
+  text CE: code 2.915 en_doc 3.194 zh_doc 5.072 spoken_en 2.750 spoken_zh 4.303 chat 3.256
+   gen: 'language English<asr_text>Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his gos'
+   gen: 'language English<asr_text>The weather has been pretty strange this week. It rained on Monday and then it got r'
+   gen: 'language Chinese<asr_text>谢谢你的电话过来，我查一下这个问题，尽快给你回复。<|im_end|>'
+
+random 1% (no L2/L27)
+  prefix CE  0.003 agree 1.000 (n=180) | transcript CE  0.034 agree 0.989 (n=1208) | end CE  0.000 agree 1.000 (n=60)
+  text CE: code 2.343 en_doc 2.763 zh_doc 4.656 spoken_en 2.819 spoken_zh 4.331 chat 3.040
+   gen: 'language English<asr_text>Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his gos'
+   gen: 'language English<asr_text>The weather has been pretty strange this week. It rained on Monday and then it got r'
+   gen: 'language Chinese<asr_text>谢谢你的电话过来，我查一下这个问题，尽快给你回复。<|im_end|>'

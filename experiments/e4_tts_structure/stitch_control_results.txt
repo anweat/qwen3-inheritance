@@ -1,0 +1,62 @@
+============ family 0.6B: 100 test clips, 473 training sequences ============
+k cond: CE, recovered [95% CI of CE gain over mean], R2
+-- k=1 native_k 1.470 mean 2.558
+  llm_same_depth         CE 2.452 rec  0.10 gain [+0.015, +0.162] R2 0.631
+  llm_embedding          CE 2.410 rec  0.14 gain [+0.059, +0.201] R2 0.651
+  own_embedding          CE 1.483 rec  0.99 gain [+1.041, +1.170] R2 0.890
+  own_prev_layer         CE 1.483 rec  0.99 gain [+1.041, +1.170] R2 0.890
+  other_tts_same_depth   CE 1.497 rec  0.97 gain [+1.024, +1.151] R2 0.859
+  native_pca_matched     CE 1.668 rec  0.82 gain [+0.838, +0.970] R2 0.631 (61 components)
+  native_noise_matched   CE 1.476 rec  0.99 gain [+1.054, +1.178] R2 0.631
+-- k=3 native_k 1.455 mean 2.476
+  llm_same_depth         CE 2.504 rec -0.03 gain [-0.113, +0.010] R2 0.487
+  llm_embedding          CE 2.393 rec  0.08 gain [-0.014, +0.109] R2 0.487
+  own_embedding          CE 1.505 rec  0.95 gain [+0.924, +1.039] R2 0.568
+  own_prev_layer         CE 1.465 rec  0.99 gain [+0.979, +1.088] R2 0.742
+  other_tts_same_depth   CE 1.529 rec  0.93 gain [+0.895, +1.012] R2 0.588
+  native_pca_matched     CE 1.744 rec  0.72 gain [+0.664, +0.782] R2 0.487 (63 components)
+  native_noise_matched   CE 1.483 rec  0.97 gain [+0.955, +1.067] R2 0.487
+-- k=6 native_k 1.480 mean 2.442
+  llm_same_depth         CE 2.425 rec  0.02 gain [+0.014, +0.058] R2 0.430
+  llm_embedding          CE 2.433 rec  0.01 gain [-0.002, +0.011] R2 0.377
+  own_embedding          CE 2.427 rec  0.02 gain [+0.003, +0.020] R2 0.381
+  own_prev_layer         CE 1.986 rec  0.47 gain [+0.450, +0.576] R2 0.778
+  other_tts_same_depth   CE 2.022 rec  0.44 gain [+0.419, +0.545] R2 0.645
+  native_pca_matched     CE 2.403 rec  0.04 gain [+0.039, +0.076] R2 0.430 (23 components)
+  native_noise_matched   CE 1.555 rec  0.92 gain [+0.875, +0.994] R2 0.430
+Linear decoding of token position (index from start and from end), test R2:
+  k=1: talker 0.626   LLM 0.718
+  k=3: talker 0.698   LLM 0.817
+  k=6: talker 0.813   LLM 0.854
+============ family 1.7B: 100 test clips, 473 training sequences ============
+k cond: CE, recovered [95% CI of CE gain over mean], R2
+-- k=1 native_k 1.416 mean 2.303
+  llm_same_depth         CE 2.040 rec  0.30 gain [+0.168, +0.294] R2 0.590
+  llm_embedding          CE 1.985 rec  0.36 gain [+0.213, +0.352] R2 0.614
+  own_embedding          CE 1.592 rec  0.80 gain [+0.657, +0.779] R2 0.628
+  own_prev_layer         CE 1.592 rec  0.80 gain [+0.657, +0.779] R2 0.628
+  other_tts_same_depth   CE 1.549 rec  0.85 gain [+0.693, +0.815] R2 0.648
+  native_pca_matched     CE 1.549 rec  0.85 gain [+0.705, +0.814] R2 0.590 (146 components)
+  native_noise_matched   CE 1.421 rec  0.99 gain [+0.850, +0.963] R2 0.590
+-- k=2 native_k 1.430 mean 2.336
+  llm_same_depth         CE 2.196 rec  0.15 gain [+0.068, +0.163] R2 0.531
+  llm_embedding          CE 2.096 rec  0.27 gain [+0.170, +0.271] R2 0.481
+  own_embedding          CE 1.934 rec  0.44 gain [+0.337, +0.452] R2 0.482
+  own_prev_layer         CE 1.561 rec  0.86 gain [+0.733, +0.860] R2 0.737
+  other_tts_same_depth   CE 1.820 rec  0.57 gain [+0.451, +0.583] R2 0.535
+  native_pca_matched     CE 1.561 rec  0.86 gain [+0.732, +0.864] R2 0.531 (127 components)
+  native_noise_matched   CE 1.444 rec  0.98 gain [+0.860, +0.977] R2 0.531
+-- k=3 native_k 1.408 mean 2.303
+  llm_same_depth         CE 2.293 rec  0.01 gain [-0.028, +0.034] R2 0.524
+  llm_embedding          CE 2.255 rec  0.05 gain [+0.028, +0.085] R2 0.447
+  own_embedding          CE 2.241 rec  0.07 gain [+0.046, +0.102] R2 0.447
+  own_prev_layer         CE 1.707 rec  0.67 gain [+0.562, +0.686] R2 0.795
+  other_tts_same_depth   CE 2.238 rec  0.07 gain [+0.049, +0.123] R2 0.516
+  native_pca_matched     CE 1.880 rec  0.47 gain [+0.410, +0.526] R2 0.524 (64 components)
+  native_noise_matched   CE 1.417 rec  0.99 gain [+0.850, +0.960] R2 0.524
+Linear decoding of token position (index from start and from end), test R2:
+  k=1: talker 0.750   LLM 0.756
+  k=2: talker 0.800   LLM 0.802
+  k=3: talker 0.824   LLM 0.826
+CONTROLDONE
+[runner] exit code 0 at 2026-11-06T08:32:17

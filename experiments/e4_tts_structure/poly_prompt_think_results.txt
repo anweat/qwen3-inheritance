@@ -1,0 +1,12 @@
+==== TTS-0.6B: Qwen3-4B thinking mode, exploratory ====
+ generations 320, finished thinking 0.909, no candidate found 0.097
+ CPP minority: n 230, groups 77, think 0.517
+   minus no-think     (0.461) +0.057 [-0.087, +0.198]
+   minus TTS          (0.522) -0.004 [-0.147, +0.144]
+   minus TTS-L6 head  (0.748) -0.230 [-0.348, -0.117]
+   minus LLM-L8 head  (0.774) -0.257 [-0.376, -0.148]
+ CPP majority: n 90, groups 61, think 0.611
+   minus no-think     (0.633) -0.022 [-0.187, +0.151]
+   minus TTS          (0.722) -0.111 [-0.258, +0.043]
+   minus TTS-L6 head  (0.922) -0.311 [-0.432, -0.194]
+   minus LLM-L8 head  (0.978) -0.367 [-0.483, -0.250]

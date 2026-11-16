@@ -1,0 +1,40 @@
+error rate by set (%), WER or CER; clips
+set                    n                 intact          standalone_q4      base_q4_plus_2bit  instruct_q4_plus_2bit instruct_q4_plus_2bit_
+aishell              100                   3.17                   4.00                   3.51                   3.38                 105.93
+fleurs_cmn_hans_cn    50                   8.61                  38.82                   9.82                   9.07                  53.38
+fleurs_yue_hant_hk    50                   7.32                   8.01                   7.72                   7.89                  82.78
+cantonese_md          50                   9.32                  10.32                   3.96                  10.67                  62.32
+sichuan               50                   4.51                  16.30                   5.83                   5.70                  55.53
+northeast             50                   6.44                  21.62                   7.72                   5.55                  54.27
+henan                 50                   5.55                   6.42                   5.74                   5.92                  52.75
+wu                    50                  34.60                  41.21                  38.51                  38.05                 108.84
+fleurs_en_us          50                   4.09                   4.65                   8.36                   5.95                  56.32
+fleurs_ko_kr          50                  14.62                  20.49                  27.87                  19.54                  39.21
+fleurs_ja_jp          50                   9.32                  14.82                  26.77                  19.12                  78.25
+fleurs_vi_vn          50                   9.46                  11.72                  14.55                  35.38                  90.40
+fleurs_th_th          50                  10.88                  14.23                  14.89                  36.35                  47.10
+fleurs_ar_eg          50                  22.42                  32.64                  31.32                  30.55                  51.76
+fleurs_ru_ru          50                   8.61                  15.61                  33.21                  54.97                  76.35
+POOLED               800                   9.88                  16.13                  14.58                  20.85                  64.61
+
+paired difference vs standalone_q4, percentage points (positive = worse than standalone_q4); 95% CI by clip
+  intact                                 pooled  -6.24 [-7.67, -4.89]  worst set fleurs_en_us -0.56  -> PASS
+    aishell:-0.8 cmn_hans_:-30.2 yue_hant_:-0.7 cantonese:-1.0 sichuan:-11.8 northeast:-15.2 henan:-0.9 wu:-6.6 en_us:-0.6 ko_kr:-5.9 ja_jp:-5.5 vi_vn:-2.3 th_th:-3.4 ar_eg:-10.2 ru_ru:-7.0
+  base_q4_plus_2bit                      pooled  -1.55 [-3.58, +0.62]  worst set fleurs_ru_ru +17.60  -> FAIL
+    aishell:-0.5 cmn_hans_:-29.0 yue_hant_:-0.3 cantonese:-6.4 sichuan:-10.5 northeast:-13.9 henan:-0.7 wu:-2.7 en_us:+3.7 ko_kr:+7.4 ja_jp:+11.9 vi_vn:+2.8 th_th:+0.7 ar_eg:-1.3 ru_ru:+17.6
+  instruct_q4_plus_2bit                  pooled  +4.72 [+1.89, +8.02]  worst set fleurs_ru_ru +39.36  -> FAIL
+    aishell:-0.6 cmn_hans_:-29.8 yue_hant_:-0.1 cantonese:+0.4 sichuan:-10.6 northeast:-16.1 henan:-0.5 wu:-3.2 en_us:+1.3 ko_kr:-1.0 ja_jp:+4.3 vi_vn:+23.7 th_th:+22.1 ar_eg:-2.1 ru_ru:+39.4
+  instruct_q4_plus_2bit_with_embedding   pooled +48.48 [+45.33, +51.94]  worst set aishell +101.93  -> FAIL
+    aishell:+101.9 cmn_hans_:+14.6 yue_hant_:+74.8 cantonese:+52.0 sichuan:+39.2 northeast:+32.7 henan:+46.3 wu:+67.6 en_us:+51.7 ko_kr:+18.7 ja_jp:+63.4 vi_vn:+78.7 th_th:+32.9 ar_eg:+19.1 ru_ru:+60.7
+
+difference vs intact, for scale:
+  standalone_q4                           +6.24 [+4.90, +7.69]
+  base_q4_plus_2bit                       +4.69 [+3.18, +6.46]
+  instruct_q4_plus_2bit                  +10.97 [+8.52, +13.83]
+  instruct_q4_plus_2bit_with_embedding   +54.72 [+51.66, +57.76]
+
+hypotheses that exactly match the intact output:
+  standalone_q4                          0.310
+  base_q4_plus_2bit                      0.296
+  instruct_q4_plus_2bit                  0.285
+  instruct_q4_plus_2bit_with_embedding   0.000

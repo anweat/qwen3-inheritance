@@ -1,0 +1,34 @@
+==== TTS-0.6B: g2pW baseline, same items and candidates as the stage 4 heads ====
+ g2pW-cpp: 2461 items, reading outside the candidate classes 0.000, accuracy on all eval items 0.967
+   CPP minority             n 230 chars  77 g2pW 0.900 | minus TTS (0.522) +0.378 [+0.259, +0.500] | minus TTS-L6 head (0.748) +0.152 [+0.100, +0.214] | minus LLM-L8 head (0.774) +0.126 [+0.073, +0.186]
+   CPP majority             n  90 chars  61 g2pW 0.967 | minus TTS (0.722) +0.244 [+0.145, +0.352] | minus TTS-L6 head (0.922) +0.044 [-0.011, +0.109] | minus LLM-L8 head (0.978) -0.011 [-0.049, +0.024]
+   natural speech sentences n  21 chars   9 g2pW 1.000 | minus TTS (0.952) +0.048 [+0.000, +0.214] | minus TTS-L6 head (0.857) +0.143 [+0.000, +0.346] | minus LLM-L8 head (0.857) +0.143 [+0.000, +0.346]
+   natural2                 n 131 chars  46 g2pW 0.947 | minus TTS (0.794) +0.153 [+0.069, +0.248] | minus TTS-L6 head (0.855) +0.092 [+0.016, +0.179] | minus LLM-L8 head (0.916) +0.031 [-0.045, +0.110]
+   end to end CPP minority  n  78 TTS alone 0.410 | g2pW+port 0.872 minus TTS +0.462 [+0.264, +0.654] | LLM-L8+port 0.795 minus g2pW+port [-0.152, +0.000]
+   end to end CPP majority  n  33 TTS alone 0.697 | g2pW+port 0.909 minus TTS +0.212 [+0.062, +0.387] | LLM-L8+port 0.939 minus g2pW+port [+0.000, +0.097]
+   verdict: g2pW beats TTS-L6 head True, beats LLM-L8 head True, LLM-L8 head beats g2pW False, end to end useful True, safe on natural2 True   (counts)
+ g2pW-release: 2461 items, reading outside the candidate classes 0.038, accuracy on all eval items 0.771
+   CPP minority             n 230 chars  77 g2pW 0.561 | minus TTS (0.522) +0.039 [-0.107, +0.185] | minus TTS-L6 head (0.748) -0.187 [-0.310, -0.064] | minus LLM-L8 head (0.774) -0.213 [-0.343, -0.085]
+   CPP majority             n  90 chars  61 g2pW 0.778 | minus TTS (0.722) +0.056 [-0.080, +0.180] | minus TTS-L6 head (0.922) -0.144 [-0.268, -0.029] | minus LLM-L8 head (0.978) -0.200 [-0.318, -0.092]
+   natural speech sentences n  21 chars   9 g2pW 1.000 | minus TTS (0.952) +0.048 [+0.000, +0.214] | minus TTS-L6 head (0.857) +0.143 [+0.000, +0.346] | minus LLM-L8 head (0.857) +0.143 [+0.000, +0.346]
+   natural2                 n 131 chars  46 g2pW 0.893 | minus TTS (0.794) +0.099 [-0.020, +0.206] | minus TTS-L6 head (0.855) +0.038 [-0.073, +0.143] | minus LLM-L8 head (0.916) -0.023 [-0.135, +0.076]
+   end to end CPP minority  n  78 TTS alone 0.410 | g2pW+port 0.487 minus TTS +0.077 [-0.133, +0.282] | LLM-L8+port 0.795 minus g2pW+port [+0.129, +0.467]
+   end to end CPP majority  n  33 TTS alone 0.697 | g2pW+port 0.788 minus TTS +0.091 [-0.067, +0.241] | LLM-L8+port 0.939 minus g2pW+port [+0.043, +0.290]
+   verdict: g2pW beats TTS-L6 head False, beats LLM-L8 head False, LLM-L8 head beats g2pW True, end to end useful False, safe on natural2 True   (reference only)
+==== TTS-1.7B: g2pW baseline, same items and candidates as the stage 4 heads ====
+ g2pW-cpp: 2461 items, reading outside the candidate classes 0.000, accuracy on all eval items 0.967
+   CPP minority             n 230 chars  77 g2pW 0.900 | minus TTS (0.478) +0.422 [+0.299, +0.543] | minus TTS-L6 head (0.748) +0.152 [+0.100, +0.214] | minus LLM-L8 head (0.774) +0.126 [+0.073, +0.186]
+   CPP majority             n  90 chars  61 g2pW 0.967 | minus TTS (0.767) +0.200 [+0.111, +0.305] | minus TTS-L6 head (0.922) +0.044 [-0.011, +0.109] | minus LLM-L8 head (0.978) -0.011 [-0.049, +0.024]
+   natural speech sentences n  21 chars   9 g2pW 1.000 | minus TTS (0.905) +0.095 [+0.000, +0.242] | minus TTS-L6 head (0.857) +0.143 [+0.000, +0.346] | minus LLM-L8 head (0.857) +0.143 [+0.000, +0.346]
+   natural2                 n 131 chars  46 g2pW 0.947 | minus TTS (0.809) +0.137 [+0.067, +0.227] | minus TTS-L6 head (0.855) +0.092 [+0.016, +0.179] | minus LLM-L8 head (0.916) +0.031 [-0.045, +0.110]
+   end to end CPP minority  n  78 TTS alone 0.346 | g2pW+port 0.872 minus TTS +0.526 [+0.341, +0.703] | LLM-L8+port 0.782 minus g2pW+port [-0.169, -0.013]
+   end to end CPP majority  n  33 TTS alone 0.788 | g2pW+port 0.909 minus TTS +0.121 [+0.000, +0.286] | LLM-L8+port 0.939 minus g2pW+port [+0.000, +0.097]
+   verdict: g2pW beats TTS-L6 head True, beats LLM-L8 head True, LLM-L8 head beats g2pW False, end to end useful True, safe on natural2 True   (counts)
+ g2pW-release: 2461 items, reading outside the candidate classes 0.038, accuracy on all eval items 0.771
+   CPP minority             n 230 chars  77 g2pW 0.561 | minus TTS (0.478) +0.083 [-0.076, +0.246] | minus TTS-L6 head (0.748) -0.187 [-0.310, -0.064] | minus LLM-L8 head (0.774) -0.213 [-0.343, -0.085]
+   CPP majority             n  90 chars  61 g2pW 0.778 | minus TTS (0.767) +0.011 [-0.115, +0.137] | minus TTS-L6 head (0.922) -0.144 [-0.268, -0.029] | minus LLM-L8 head (0.978) -0.200 [-0.318, -0.092]
+   natural speech sentences n  21 chars   9 g2pW 1.000 | minus TTS (0.905) +0.095 [+0.000, +0.242] | minus TTS-L6 head (0.857) +0.143 [+0.000, +0.346] | minus LLM-L8 head (0.857) +0.143 [+0.000, +0.346]
+   natural2                 n 131 chars  46 g2pW 0.893 | minus TTS (0.809) +0.084 [-0.016, +0.182] | minus TTS-L6 head (0.855) +0.038 [-0.073, +0.143] | minus LLM-L8 head (0.916) -0.023 [-0.135, +0.076]
+   end to end CPP minority  n  78 TTS alone 0.346 | g2pW+port 0.474 minus TTS +0.128 [-0.127, +0.368] | LLM-L8+port 0.782 minus g2pW+port [+0.113, +0.481]
+   end to end CPP majority  n  33 TTS alone 0.788 | g2pW+port 0.788 minus TTS +0.000 [-0.148, +0.156] | LLM-L8+port 0.939 minus g2pW+port [+0.043, +0.290]
+   verdict: g2pW beats TTS-L6 head False, beats LLM-L8 head False, LLM-L8 head beats g2pW True, end to end useful False, safe on natural2 True   (reference only)

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>读音盲听</title>
+<style>
+:root { --bg:#faf9f6; --card:#fff; --text:#1f1e1b; --mute:#6c6a64; --line:#e3e0d8; --accent:#1f6f5c; --accent-text:#fff; --mark:#fbe6a8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#191917; --card:#242320; --text:#ece9e1; --mute:#a5a29a; --line:#3a3833; --accent:#5cc2a6; --accent-text:#0f1f1a; --mark:#6b5417; } }
+:root[data-theme="dark"] { --bg:#191917; --card:#242320; --text:#ece9e1; --mute:#a5a29a; --line:#3a3833; --accent:#5cc2a6; --accent-text:#0f1f1a; --mark:#6b5417; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif; }
+main { max-width:680px; margin:0 auto; padding:24px 16px 64px; }
+h1 { font-size:22px; margin:0 0 8px; }
+p { color:var(--mute); margin:0 0 16px; }
+.bar { position:sticky; top:0; background:var(--bg); padding:8px 0; color:var(--mute); font-size:14px; border-bottom:1px solid var(--line); margin-bottom:16px; }
+.item { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; margin-bottom:12px; }
+.no { color:var(--mute); font-size:13px; }
+.s { font-size:18px; margin:4px 0 12px; }
+mark { background:var(--mark); color:inherit; padding:0 3px; border-radius:3px; font-weight:600; }
+audio { width:100%; height:36px; margin-bottom:12px; }
+.opts { display:flex; flex-wrap:wrap; gap:8px; }
+button { font:inherit; min-height:40px; padding:6px 14px; border:1px solid var(--line); border-radius:8px; background:transparent; color:var(--text); cursor:pointer; }
+button:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+button.on { background:var(--accent); color:var(--accent-text); border-color:var(--accent); }
+textarea { width:100%; height:90px; margin-top:8px; background:var(--card); color:var(--text); border:1px solid var(--line); border-radius:8px; padding:8px; font:13px monospace; }
+</style>
+</head>
+<body>
+<main>
+<h1>读音盲听</h1>
+<p>听每句中高亮字念成了哪个读音。数字 1–4 是声调，u: 就是 ü。听不出或两个都不像就选“都不像 / 听不清”，不要猜。句子是模型合成的，语义偶尔不通不影响判断。做完把最下面的结果发给我。</p>
+<div class="bar" id="bar"></div>
+<div id="list"></div>
+<button id="copy">复制结果</button>
+<textarea id="out" readonly aria-label="结果"></textarea>
+</main>
+<script>
+const ITEMS = /*ITEMS*/[];
+let ans = {};
+try { ans = JSON.parse(localStorage.getItem('listen') || '{}'); } catch (e) {}
+const list = document.getElementById('list'), bar = document.getElementById('bar'), out = document.getElementById('out');
+function refresh() {
+  bar.textContent = '已完成 ' + Object.keys(ans).length + ' / ' + ITEMS.length;
+  out.value = JSON.stringify(ans);
+  try { localStorage.setItem('listen', JSON.stringify(ans)); } catch (e) {}
+}
+ITEMS.forEach(it => {
+  const d = document.createElement('div'); d.className = 'item';
+  const no = document.createElement('div'); no.className = 'no'; no.textContent = '第 ' + (it.n + 1) + ' 句';
+  const s = document.createElement('div'); s.className = 's';
+  const m = document.createElement('mark'); m.textContent = it.c;
+  s.append(it.a, m, it.b);
+  const au = document.createElement('audio'); au.controls = true; au.preload = 'none'; au.src = it.audio;
+  const o = document.createElement('div'); o.className = 'opts';
+  [...it.opts, '都不像 / 听不清'].forEach(label => {
+    const b = document.createElement('button'); b.textContent = label;
+    if (ans[it.n] === label) b.classList.add('on');
+    b.onclick = () => { ans[it.n] = label; o.querySelectorAll('button').forEach(x => x.classList.remove('on')); b.classList.add('on'); refresh(); };
+    o.append(b);
+  });
+  d.append(no, s, au, o); list.append(d);
+});
+document.getElementById('copy').onclick = () => { out.select(); try { navigator.clipboard.writeText(out.value); } catch (e) { document.execCommand('copy'); } };
+refresh();
+</script>
+</body>
+</html>

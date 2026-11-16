@@ -1,0 +1,54 @@
+==== TTS-0.6B: zero-shot prompted Qwen3, same candidates and items as the stage 4 heads ====
+ Qwen3-0.6B: dev accuracy 0.558 (n 2214), margin threshold 9.120
+   CPP minority               n 230 chars  77 prompt 0.461 | minus TTS (0.522) -0.061 [-0.225, +0.109] | minus TTS-L6 head (0.748) -0.287 [-0.413, -0.161] | minus LLM-L8 head (0.774) -0.313 [-0.441, -0.191] | gated 0.522 +0.000 [+0.000, +0.000] cov 0.00
+   CPP majority               n  90 chars  61 prompt 0.589 | minus TTS (0.722) -0.133 [-0.300, +0.023] | minus TTS-L6 head (0.922) -0.333 [-0.489, -0.186] | minus LLM-L8 head (0.978) -0.389 [-0.524, -0.267] | gated 0.722 +0.000 [+0.000, +0.000] cov 0.00
+   natural speech sentences   n  21 chars   9 prompt 0.667 | minus TTS (0.952) -0.286 [-0.600, +0.000] | minus TTS-L6 head (0.857) -0.190 [-0.600, +0.000] | minus LLM-L8 head (0.857) -0.190 [-0.600, +0.000] | gated 0.952 +0.000 [+0.000, +0.000] cov 0.00
+   natural2                   n 131 chars  46 prompt 0.534 | minus TTS (0.794) -0.260 [-0.385, -0.137] | minus TTS-L6 head (0.855) -0.321 [-0.458, -0.183] | minus LLM-L8 head (0.916) -0.382 [-0.526, -0.243] | gated 0.794 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, segmental only   n  65 chars  22 prompt 0.538 | minus TTS (0.785) -0.246 [-0.426, -0.043] | minus TTS-L6 head (0.846) -0.308 [-0.511, -0.113] | minus LLM-L8 head (0.846) -0.308 [-0.516, -0.115] | gated 0.785 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, tone only        n  66 chars  24 prompt 0.530 | minus TTS (0.803) -0.273 [-0.458, -0.125] | minus TTS-L6 head (0.864) -0.333 [-0.524, -0.148] | minus LLM-L8 head (0.985) -0.455 [-0.656, -0.273] | gated 0.803 +0.000 [+0.000, +0.000] cov 0.00
+   verdict: useful False, knowledge beyond TTS False, beyond the probe False, gated safe on natural2 True   (scaling curve, not tested)
+ Qwen3-1.7B: dev accuracy 0.564 (n 2214), margin threshold 24.003
+   CPP minority               n 230 chars  77 prompt 0.478 | minus TTS (0.522) -0.043 [-0.208, +0.119] | minus TTS-L6 head (0.748) -0.270 [-0.391, -0.152] | minus LLM-L8 head (0.774) -0.296 [-0.420, -0.178] | gated 0.522 +0.000 [+0.000, +0.000] cov 0.00
+   CPP majority               n  90 chars  61 prompt 0.644 | minus TTS (0.722) -0.078 [-0.244, +0.089] | minus TTS-L6 head (0.922) -0.278 [-0.427, -0.126] | minus LLM-L8 head (0.978) -0.333 [-0.468, -0.205] | gated 0.722 +0.000 [+0.000, +0.000] cov 0.00
+   natural speech sentences   n  21 chars   9 prompt 0.571 | minus TTS (0.952) -0.381 [-0.714, -0.096] | minus TTS-L6 head (0.857) -0.286 [-0.778, -0.042] | minus LLM-L8 head (0.857) -0.286 [-0.778, -0.042] | gated 0.952 +0.000 [+0.000, +0.000] cov 0.00
+   natural2                   n 131 chars  46 prompt 0.496 | minus TTS (0.794) -0.298 [-0.418, -0.169] | minus TTS-L6 head (0.855) -0.359 [-0.486, -0.233] | minus LLM-L8 head (0.916) -0.420 [-0.540, -0.307] | gated 0.794 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, segmental only   n  65 chars  22 prompt 0.415 | minus TTS (0.785) -0.369 [-0.515, -0.180] | minus TTS-L6 head (0.846) -0.431 [-0.598, -0.261] | minus LLM-L8 head (0.846) -0.431 [-0.600, -0.250] | gated 0.785 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, tone only        n  66 chars  24 prompt 0.576 | minus TTS (0.803) -0.227 [-0.411, -0.071] | minus TTS-L6 head (0.864) -0.288 [-0.483, -0.117] | minus LLM-L8 head (0.985) -0.409 [-0.583, -0.267] | gated 0.803 +0.000 [+0.000, +0.000] cov 0.00
+   verdict: useful False, knowledge beyond TTS False, beyond the probe False, gated safe on natural2 True   (scaling curve, not tested)
+ Qwen3-4B: dev accuracy 0.587 (n 2214), margin threshold 22.750
+   CPP minority               n 230 chars  77 prompt 0.461 | minus TTS (0.522) -0.061 [-0.213, +0.088] | minus TTS-L6 head (0.748) -0.287 [-0.417, -0.159] | minus LLM-L8 head (0.774) -0.313 [-0.444, -0.185] | gated 0.522 +0.000 [+0.000, +0.000] cov 0.00
+   CPP majority               n  90 chars  61 prompt 0.633 | minus TTS (0.722) -0.089 [-0.247, +0.071] | minus TTS-L6 head (0.922) -0.289 [-0.418, -0.165] | minus LLM-L8 head (0.978) -0.344 [-0.462, -0.237] | gated 0.722 +0.000 [+0.000, +0.000] cov 0.00
+   natural speech sentences   n  21 chars   9 prompt 0.429 | minus TTS (0.952) -0.524 [-0.806, -0.133] | minus TTS-L6 head (0.857) -0.429 [-0.842, -0.062] | minus LLM-L8 head (0.857) -0.429 [-0.842, -0.062] | gated 0.952 +0.000 [+0.000, +0.000] cov 0.00
+   natural2                   n 131 chars  46 prompt 0.496 | minus TTS (0.794) -0.298 [-0.444, -0.142] | minus TTS-L6 head (0.855) -0.359 [-0.513, -0.207] | minus LLM-L8 head (0.916) -0.420 [-0.570, -0.282] | gated 0.794 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, segmental only   n  65 chars  22 prompt 0.554 | minus TTS (0.785) -0.231 [-0.393, -0.074] | minus TTS-L6 head (0.846) -0.292 [-0.469, -0.141] | minus LLM-L8 head (0.846) -0.292 [-0.467, -0.147] | gated 0.785 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, tone only        n  66 chars  24 prompt 0.439 | minus TTS (0.803) -0.364 [-0.604, -0.100] | minus TTS-L6 head (0.864) -0.424 [-0.649, -0.167] | minus LLM-L8 head (0.985) -0.545 [-0.750, -0.329] | gated 0.803 +0.000 [+0.000, +0.000] cov 0.00
+   verdict: useful False, knowledge beyond TTS False, beyond the probe False, gated safe on natural2 True   (primary)
+
+ exploratory: natural positions whose character has no head (excluded above), prompt accuracy there
+==== TTS-1.7B: zero-shot prompted Qwen3, same candidates and items as the stage 4 heads ====
+ Qwen3-0.6B: dev accuracy 0.558 (n 2214), margin threshold 9.120
+   CPP minority               n 230 chars  77 prompt 0.461 | minus TTS (0.478) -0.017 [-0.167, +0.142] | minus TTS-L6 head (0.748) -0.287 [-0.413, -0.161] | minus LLM-L8 head (0.774) -0.313 [-0.441, -0.191] | gated 0.478 +0.000 [+0.000, +0.000] cov 0.00
+   CPP majority               n  90 chars  61 prompt 0.589 | minus TTS (0.767) -0.178 [-0.325, -0.035] | minus TTS-L6 head (0.922) -0.333 [-0.489, -0.186] | minus LLM-L8 head (0.978) -0.389 [-0.524, -0.267] | gated 0.767 +0.000 [+0.000, +0.000] cov 0.00
+   natural speech sentences   n  21 chars   9 prompt 0.667 | minus TTS (0.905) -0.238 [-0.550, +0.000] | minus TTS-L6 head (0.857) -0.190 [-0.600, +0.000] | minus LLM-L8 head (0.857) -0.190 [-0.600, +0.000] | gated 0.905 +0.000 [+0.000, +0.000] cov 0.00
+   natural2                   n 131 chars  46 prompt 0.534 | minus TTS (0.809) -0.275 [-0.406, -0.137] | minus TTS-L6 head (0.855) -0.321 [-0.458, -0.183] | minus LLM-L8 head (0.916) -0.382 [-0.526, -0.243] | gated 0.809 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, segmental only   n  65 chars  22 prompt 0.538 | minus TTS (0.831) -0.292 [-0.485, -0.069] | minus TTS-L6 head (0.846) -0.308 [-0.511, -0.113] | minus LLM-L8 head (0.846) -0.308 [-0.516, -0.115] | gated 0.831 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, tone only        n  66 chars  24 prompt 0.530 | minus TTS (0.788) -0.258 [-0.450, -0.080] | minus TTS-L6 head (0.864) -0.333 [-0.524, -0.148] | minus LLM-L8 head (0.985) -0.455 [-0.656, -0.273] | gated 0.788 +0.000 [+0.000, +0.000] cov 0.00
+   verdict: useful False, knowledge beyond TTS False, beyond the probe False, gated safe on natural2 True   (scaling curve, not tested)
+ Qwen3-1.7B: dev accuracy 0.564 (n 2214), margin threshold 24.003
+   CPP minority               n 230 chars  77 prompt 0.478 | minus TTS (0.478) +0.000 [-0.179, +0.169] | minus TTS-L6 head (0.748) -0.270 [-0.391, -0.152] | minus LLM-L8 head (0.774) -0.296 [-0.420, -0.178] | gated 0.478 +0.000 [+0.000, +0.000] cov 0.00
+   CPP majority               n  90 chars  61 prompt 0.644 | minus TTS (0.767) -0.122 [-0.280, +0.038] | minus TTS-L6 head (0.922) -0.278 [-0.427, -0.126] | minus LLM-L8 head (0.978) -0.333 [-0.468, -0.205] | gated 0.767 +0.000 [+0.000, +0.000] cov 0.00
+   natural speech sentences   n  21 chars   9 prompt 0.571 | minus TTS (0.905) -0.333 [-0.692, -0.083] | minus TTS-L6 head (0.857) -0.286 [-0.778, -0.042] | minus LLM-L8 head (0.857) -0.286 [-0.778, -0.042] | gated 0.905 +0.000 [+0.000, +0.000] cov 0.00
+   natural2                   n 131 chars  46 prompt 0.496 | minus TTS (0.809) -0.313 [-0.439, -0.176] | minus TTS-L6 head (0.855) -0.359 [-0.486, -0.233] | minus LLM-L8 head (0.916) -0.420 [-0.540, -0.307] | gated 0.809 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, segmental only   n  65 chars  22 prompt 0.415 | minus TTS (0.831) -0.415 [-0.566, -0.224] | minus TTS-L6 head (0.846) -0.431 [-0.598, -0.261] | minus LLM-L8 head (0.846) -0.431 [-0.600, -0.250] | gated 0.831 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, tone only        n  66 chars  24 prompt 0.576 | minus TTS (0.788) -0.212 [-0.400, -0.049] | minus TTS-L6 head (0.864) -0.288 [-0.483, -0.117] | minus LLM-L8 head (0.985) -0.409 [-0.583, -0.267] | gated 0.788 +0.000 [+0.000, +0.000] cov 0.00
+   verdict: useful False, knowledge beyond TTS False, beyond the probe False, gated safe on natural2 True   (scaling curve, not tested)
+ Qwen3-4B: dev accuracy 0.587 (n 2214), margin threshold 22.750
+   CPP minority               n 230 chars  77 prompt 0.461 | minus TTS (0.478) -0.017 [-0.167, +0.126] | minus TTS-L6 head (0.748) -0.287 [-0.417, -0.159] | minus LLM-L8 head (0.774) -0.313 [-0.444, -0.185] | gated 0.478 +0.000 [+0.000, +0.000] cov 0.00
+   CPP majority               n  90 chars  61 prompt 0.633 | minus TTS (0.767) -0.133 [-0.295, +0.033] | minus TTS-L6 head (0.922) -0.289 [-0.418, -0.165] | minus LLM-L8 head (0.978) -0.344 [-0.462, -0.237] | gated 0.767 +0.000 [+0.000, +0.000] cov 0.00
+   natural speech sentences   n  21 chars   9 prompt 0.429 | minus TTS (0.905) -0.476 [-0.792, -0.111] | minus TTS-L6 head (0.857) -0.429 [-0.842, -0.062] | minus LLM-L8 head (0.857) -0.429 [-0.842, -0.062] | gated 0.905 +0.000 [+0.000, +0.000] cov 0.00
+   natural2                   n 131 chars  46 prompt 0.496 | minus TTS (0.809) -0.313 [-0.455, -0.154] | minus TTS-L6 head (0.855) -0.359 [-0.513, -0.207] | minus LLM-L8 head (0.916) -0.420 [-0.570, -0.282] | gated 0.809 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, segmental only   n  65 chars  22 prompt 0.554 | minus TTS (0.831) -0.277 [-0.452, -0.102] | minus TTS-L6 head (0.846) -0.292 [-0.469, -0.141] | minus LLM-L8 head (0.846) -0.292 [-0.467, -0.147] | gated 0.831 +0.000 [+0.000, +0.000] cov 0.00
+   natural2, tone only        n  66 chars  24 prompt 0.439 | minus TTS (0.788) -0.348 [-0.578, -0.071] | minus TTS-L6 head (0.864) -0.424 [-0.649, -0.167] | minus LLM-L8 head (0.985) -0.545 [-0.750, -0.329] | gated 0.788 +0.000 [+0.000, +0.000] cov 0.00
+   verdict: useful False, knowledge beyond TTS False, beyond the probe False, gated safe on natural2 True   (primary)
+
+ exploratory: natural positions whose character has no head (excluded above), prompt accuracy there

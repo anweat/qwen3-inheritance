@@ -1,0 +1,37 @@
+==== E6 reading pipeline (g2pW int8 -> codebook -> TTS-0.6B), ASR detector centred on R_g/R_a ====
+  CPP minority   n 230 chars  77  TTS alone 0.522  pipeline 0.848  diff +0.326 [+0.209, +0.447]  target edited 0.94  edits/sentence 2.91
+      edited targets only n 216: TTS 0.523 pipeline 0.870; unedited targets n 14: TTS 0.500 pipeline 0.500
+      right->wrong 14, wrong->right 89
+  CPP majority   n  90 chars  61  TTS alone 0.722  pipeline 0.944  diff +0.222 [+0.120, +0.333]  target edited 0.97  edits/sentence 2.37
+      edited targets only n 87: TTS 0.713 pipeline 0.943; unedited targets n 3: TTS 1.000 pipeline 1.000
+      right->wrong 3, wrong->right 23
+  natural        n  76 chars  21  TTS alone 0.921  pipeline 0.934  diff +0.013 [-0.024, +0.070]  target edited 0.28  edits/sentence 1.13
+      edited targets only n 21: TTS 0.952 pipeline 0.952; unedited targets n 55: TTS 0.909 pipeline 0.927
+      right->wrong 1, wrong->right 2
+  natural2       n 131 chars  46  TTS alone 0.794  pipeline 0.916  diff +0.122 [+0.034, +0.221]  target edited 0.84  edits/sentence 3.20
+      edited targets only n 110: TTS 0.800 pipeline 0.936; unedited targets n 21: TTS 0.762 pipeline 0.810
+      right->wrong 6, wrong->right 22
+VERDICT: useful True  safe on natural2 True
+
+Dictionary set (exploratory), n 21:  TTS alone 0.286  g2pW only 0.524  with dictionary 1.000
+   单雄信   shan4  vs dan1   TTS -- g2pW -- dict ok  g2pW edited target: True
+   仇英    qiu2   vs chou2  TTS -- g2pW ok dict ok  g2pW edited target: True
+   查良镛   zha1   vs cha2   TTS -- g2pW -- dict ok  g2pW edited target: True
+   曾巩    zeng1  vs ceng2  TTS ok g2pW ok dict ok  g2pW edited target: True
+   尉迟    yu4    vs wei4   TTS ok g2pW ok dict ok  g2pW edited target: False
+   纪晓岚   ji3    vs ji4    TTS -- g2pW ok dict ok  g2pW edited target: True
+   召公    shao4  vs zhao4  TTS -- g2pW -- dict ok  g2pW edited target: True
+   任先生   ren2   vs ren4   TTS -- g2pW -- dict ok  g2pW edited target: True
+   蚌埠    beng4  vs bang4  TTS ok g2pW ok dict ok  g2pW edited target: False
+   铅山    yan2   vs qian1  TTS -- g2pW -- dict ok  g2pW edited target: False
+   洪洞    tong2  vs dong4  TTS -- g2pW -- dict ok  g2pW edited target: False
+   浚县    xun4   vs jun4   TTS -- g2pW -- dict ok  g2pW edited target: False
+   莘县    shen1  vs xin1   TTS ok g2pW ok dict ok  g2pW edited target: True
+   黄陂    pi2    vs bei1   TTS ok g2pW -- dict ok  g2pW edited target: True
+   涡阳    guo1   vs wo1    TTS -- g2pW ok dict ok  g2pW edited target: True
+   高句丽   gou1   vs ju4    TTS -- g2pW ok dict ok  g2pW edited target: True
+   龟兹    qiu1   vs gui1   TTS -- g2pW -- dict ok  g2pW edited target: False
+   牟平    mu4    vs mou2   TTS -- g2pW ok dict ok  g2pW edited target: True
+   秘鲁    bi4    vs mi4    TTS ok g2pW ok dict ok  g2pW edited target: True
+   华山    hua4   vs hua2   TTS -- g2pW -- dict ok  g2pW edited target: True
+   万俟    qi2    vs si4    TTS -- g2pW ok dict ok  g2pW edited target: True

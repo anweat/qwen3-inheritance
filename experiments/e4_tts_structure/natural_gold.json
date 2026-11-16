@@ -1,0 +1,1557 @@
+[
+{
+"path": "aishell/5c7289173e312e1b.wav",
+"i": 9,
+"char": "露",
+"gold": "lu4",
+"alt": "lou4",
+"maj": "lu4",
+"hg": [
+"录",
+"禄"
+],
+"ha": [
+"陋",
+"镂"
+],
+"ctx": "能发布中期财报披[露]",
+"hand_fixed": false
+},
+{
+"path": "aishell/9c8d98724e5347ff.wav",
+"i": 1,
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"maj": "jiang1",
+"hg": [
+"江",
+"姜"
+],
+"ha": [
+"酱",
+"绛"
+],
+"ctx": "那[将]会是中国海空军的",
+"hand_fixed": false
+},
+{
+"path": "aishell/3a8265072ddfe682.wav",
+"i": 16,
+"char": "相",
+"gold": "xiang1",
+"alt": "xiang4",
+"maj": "xiang1",
+"hg": [
+"乡",
+"香"
+],
+"ha": [
+"向",
+"像"
+],
+"ctx": "指基于信托登记的[相]关法规局限",
+"hand_fixed": false
+},
+{
+"path": "aishell/caf850231271b598.wav",
+"i": 4,
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"maj": "jiang1",
+"hg": [
+"江",
+"姜"
+],
+"ha": [
+"酱",
+"绛"
+],
+"ctx": "开发边界[将]作为城市发展的刚",
+"hand_fixed": false
+},
+{
+"path": "aishell/caf850231271b598.wav",
+"i": 6,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "开发边界将作[为]城市发展的刚性约",
+"hand_fixed": false
+},
+{
+"path": "aishell/43bd62ad606bc93f.wav",
+"i": 8,
+"char": "露",
+"gold": "lu4",
+"alt": "lou4",
+"maj": "lu4",
+"hg": [
+"录",
+"禄"
+],
+"ha": [
+"陋",
+"镂"
+],
+"ctx": "但其并未向记者透[露]项目盈利水平预测",
+"hand_fixed": false
+},
+{
+"path": "aishell/66d08ee2e10b2439.wav",
+"i": 14,
+"char": "称",
+"gold": "cheng1",
+"alt": "chen4",
+"maj": "cheng1",
+"hg": [
+"撑",
+"蛏"
+],
+"ha": [
+"衬"
+],
+"ctx": "大众科学杂志刊文[称]",
+"hand_fixed": false
+},
+{
+"path": "aishell/de47e5ae090adf1c.wav",
+"i": 10,
+"char": "倒",
+"gold": "dao3",
+"alt": "dao4",
+"maj": "dao3",
+"hg": [
+"导",
+"岛"
+],
+"ha": [
+"到",
+"盗"
+],
+"ctx": "城市库存积压又逼[倒]房地产商在一线城",
+"hand_fixed": true
+},
+{
+"path": "aishell/93e748eaa92a48f2.wav",
+"i": 3,
+"char": "乐",
+"gold": "le4",
+"alt": "yue4",
+"maj": "le4",
+"hg": [
+"簕"
+],
+"ha": [
+"岳",
+"阅"
+],
+"ctx": "搜狐娱[乐]讯七月十日消息",
+"hand_fixed": false
+},
+{
+"path": "aishell/f7d3db1cbe25ed0b.wav",
+"i": 2,
+"char": "率",
+"gold": "lu:4",
+"alt": "shuai4",
+"maj": "lu:4",
+"hg": [
+"律",
+"氯"
+],
+"ha": [
+"帅"
+],
+"ctx": "毛利[率]为十八点百分之三",
+"hand_fixed": false
+},
+{
+"path": "aishell/f7d3db1cbe25ed0b.wav",
+"i": 3,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "毛利率[为]十八点百分之三",
+"hand_fixed": true
+},
+{
+"path": "aishell/cb310a4ca123a7fd.wav",
+"i": 18,
+"char": "假",
+"gold": "jia3",
+"alt": "jia4",
+"maj": "jia3",
+"hg": [
+"甲",
+"钾"
+],
+"ha": [
+"架",
+"嫁"
+],
+"ctx": "零元工资含一四张[假]钞",
+"hand_fixed": false
+},
+{
+"path": "aishell/112c4c4f586d978d.wav",
+"i": 5,
+"char": "还",
+"gold": "hai2",
+"alt": "huan2",
+"maj": "hai2",
+"hg": [
+"孩"
+],
+"ha": [
+"环",
+"桓"
+],
+"ctx": "国家审计署[还]专门组织力量",
+"hand_fixed": false
+},
+{
+"path": "aishell/c6c7a0f10e831226.wav",
+"i": 12,
+"char": "长",
+"gold": "chang2",
+"alt": "zhang3",
+"maj": "zhang3",
+"hg": [
+"常",
+"肠"
+],
+"ha": [
+"掌"
+],
+"ctx": "司在美国市场估值[长]期受低估",
+"hand_fixed": false
+},
+{
+"path": "aishell/355c4096a3308489.wav",
+"i": 5,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "城投债劵作[为]准市政债劵仍将是",
+"hand_fixed": false
+},
+{
+"path": "aishell/355c4096a3308489.wav",
+"i": 12,
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"maj": "jiang1",
+"hg": [
+"江",
+"姜"
+],
+"ha": [
+"酱",
+"绛"
+],
+"ctx": "作为准市政债劵仍[将]是有效的融资工具",
+"hand_fixed": false
+},
+{
+"path": "aishell/4c896bdf90f88cb9.wav",
+"i": 4,
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"maj": "jiang1",
+"hg": [
+"江",
+"姜"
+],
+"ha": [
+"酱",
+"绛"
+],
+"ctx": "预期政府[将]继续放松政策",
+"hand_fixed": false
+},
+{
+"path": "aishell/acc9d923755c5bd8.wav",
+"i": 7,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "增持后持股比例[为]六十二点百分之二",
+"hand_fixed": true
+},
+{
+"path": "aishell/6017f7563a11f53c.wav",
+"i": 9,
+"char": "为",
+"gold": "wei4",
+"alt": "wei2",
+"maj": "wei2",
+"hg": [
+"未",
+"卫"
+],
+"ha": [
+"维",
+"围"
+],
+"ctx": "尔街的半兽人已经[为]他的离开紧锣密鼓",
+"hand_fixed": false
+},
+{
+"path": "aishell/b0cb25290754f1a7.wav",
+"i": 9,
+"char": "重",
+"gold": "zhong4",
+"alt": "chong2",
+"maj": "zhong4",
+"hg": [
+"仲"
+],
+"ha": [
+"崇"
+],
+"ctx": "市化快速发展期的[重]要特征就是基础设",
+"hand_fixed": false
+},
+{
+"path": "aishell/a6f614b10f17c2d0.wav",
+"i": 5,
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"maj": "jiang1",
+"hg": [
+"江",
+"姜"
+],
+"ha": [
+"酱",
+"绛"
+],
+"ctx": "我们或许就[将]看到他们征战各类",
+"hand_fixed": false
+},
+{
+"path": "aishell/56d366c38b70f85c.wav",
+"i": 2,
+"char": "重",
+"gold": "zhong4",
+"alt": "chong2",
+"maj": "zhong4",
+"hg": [
+"仲"
+],
+"ha": [
+"崇"
+],
+"ctx": "可以[重]点关注如何做强",
+"hand_fixed": false
+},
+{
+"path": "aishell/b0530c260ecbe8ba.wav",
+"i": 0,
+"char": "为",
+"gold": "wei4",
+"alt": "wei2",
+"maj": "wei2",
+"hg": [
+"未",
+"卫"
+],
+"ha": [
+"维",
+"围"
+],
+"ctx": "[为]中国战队打响第一",
+"hand_fixed": false
+},
+{
+"path": "aishell/d62ef3af2fb30447.wav",
+"i": 10,
+"char": "监",
+"gold": "jian1",
+"alt": "jian4",
+"maj": "jian1",
+"hg": [
+"兼",
+"尖"
+],
+"ha": [
+"建",
+"舰"
+],
+"ctx": "地方政府债务进行[监]控和风险防范等",
+"hand_fixed": false
+},
+{
+"path": "aishell/4732f7fb6dc35132.wav",
+"i": 6,
+"char": "处",
+"gold": "chu3",
+"alt": "chu4",
+"maj": "chu4",
+"hg": [
+"楚",
+"础"
+],
+"ha": [
+"触",
+"黜"
+],
+"ctx": "考虑到我国正[处]在经济快速增长期",
+"hand_fixed": true
+},
+{
+"path": "aishell/4732f7fb6dc35132.wav",
+"i": 13,
+"char": "长",
+"gold": "zhang3",
+"alt": "chang2",
+"maj": "zhang3",
+"hg": [
+"掌"
+],
+"ha": [
+"常",
+"肠"
+],
+"ctx": "正处在经济快速增[长]期",
+"hand_fixed": false
+},
+{
+"path": "aishell/ae61964b2dd54616.wav",
+"i": 1,
+"char": "处",
+"gold": "chu3",
+"alt": "chu4",
+"maj": "chu4",
+"hg": [
+"楚",
+"础"
+],
+"ha": [
+"触",
+"黜"
+],
+"ctx": "判[处]有期徒刑三年六个",
+"hand_fixed": false
+},
+{
+"path": "aishell/258efbdd09258d25.wav",
+"i": 13,
+"char": "长",
+"gold": "zhang3",
+"alt": "chang2",
+"maj": "zhang3",
+"hg": [
+"掌"
+],
+"ha": [
+"常",
+"肠"
+],
+"ctx": "四年所获专利也增[长]了百分之二十三",
+"hand_fixed": false
+},
+{
+"path": "aishell/b740976079a83bed.wav",
+"i": 7,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "它已经失去了作[为]独立公司的存在意",
+"hand_fixed": false
+},
+{
+"path": "aishell/832b788303d9ff6a.wav",
+"i": 3,
+"char": "还",
+"gold": "hai2",
+"alt": "huan2",
+"maj": "hai2",
+"hg": [
+"孩"
+],
+"ha": [
+"环",
+"桓"
+],
+"ctx": "手腕上[还]戴着一块与之呼应",
+"hand_fixed": false
+},
+{
+"path": "aishell/bf1bd976c72a17ca.wav",
+"i": 5,
+"char": "还",
+"gold": "hai2",
+"alt": "huan2",
+"maj": "hai2",
+"hg": [
+"孩"
+],
+"ha": [
+"环",
+"桓"
+],
+"ctx": "国家审计署[还]专门组织力量",
+"hand_fixed": false
+},
+{
+"path": "aishell/2e9009ae0ff10380.wav",
+"i": 13,
+"char": "率",
+"gold": "lu:4",
+"alt": "shuai4",
+"maj": "lu:4",
+"hg": [
+"律",
+"氯"
+],
+"ha": [
+"帅"
+],
+"ctx": "城投债劵的发行利[率]相对偏高",
+"hand_fixed": false
+},
+{
+"path": "aishell/2e9009ae0ff10380.wav",
+"i": 14,
+"char": "相",
+"gold": "xiang1",
+"alt": "xiang4",
+"maj": "xiang1",
+"hg": [
+"乡",
+"香"
+],
+"ha": [
+"向",
+"像"
+],
+"ctx": "投债劵的发行利率[相]对偏高",
+"hand_fixed": false
+},
+{
+"path": "aishell/6ac2bb50fdcc8980.wav",
+"i": 0,
+"char": "还",
+"gold": "hai2",
+"alt": "huan2",
+"maj": "hai2",
+"hg": [
+"孩"
+],
+"ha": [
+"环",
+"桓"
+],
+"ctx": "[还]要求具备大型赛会",
+"hand_fixed": false
+},
+{
+"path": "aishell/ae1e0650e6cd5143.wav",
+"i": 5,
+"char": "只",
+"gold": "zhi3",
+"alt": "zhi1",
+"maj": "zhi3",
+"hg": [
+"止",
+"址"
+],
+"ha": [
+"织",
+"芝"
+],
+"ctx": "背后意义竟[只]是不要忘记自己从",
+"hand_fixed": false
+},
+{
+"path": "aishell/3dd942e0283c7feb.wav",
+"i": 3,
+"char": "称",
+"gold": "cheng1",
+"alt": "chen4",
+"maj": "cheng1",
+"hg": [
+"撑",
+"蛏"
+],
+"ha": [
+"衬"
+],
+"ctx": "这让自[称]游戏达人的他颇有",
+"hand_fixed": false
+},
+{
+"path": "aishell/77704c67d0638f56.wav",
+"i": 0,
+"char": "相",
+"gold": "xiang1",
+"alt": "xiang4",
+"maj": "xiang1",
+"hg": [
+"乡",
+"香"
+],
+"ha": [
+"向",
+"像"
+],
+"ctx": "[相]较于其精湛凶猛的",
+"hand_fixed": false
+},
+{
+"path": "aishell/23a12cad3aff6fe6.wav",
+"i": 7,
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"maj": "jiang1",
+"hg": [
+"江",
+"姜"
+],
+"ha": [
+"酱",
+"绛"
+],
+"ctx": "李银河的文学梦[将]出版虐恋小说三卷",
+"hand_fixed": false
+},
+{
+"path": "aishell/9d5ad8fa3e22ea13.wav",
+"i": 4,
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"maj": "jiang1",
+"hg": [
+"江",
+"姜"
+],
+"ha": [
+"酱",
+"绛"
+],
+"ctx": "这一项目[将]为神农架林区的孩",
+"hand_fixed": false
+},
+{
+"path": "aishell/9d5ad8fa3e22ea13.wav",
+"i": 5,
+"char": "为",
+"gold": "wei4",
+"alt": "wei2",
+"maj": "wei2",
+"hg": [
+"未",
+"卫"
+],
+"ha": [
+"维",
+"围"
+],
+"ctx": "这一项目将[为]神农架林区的孩子",
+"hand_fixed": false
+},
+{
+"path": "aishell/e7b12d9611288f0c.wav",
+"i": 2,
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"maj": "jiang1",
+"hg": [
+"江",
+"姜"
+],
+"ha": [
+"酱",
+"绛"
+],
+"ctx": "公司[将]更多地依靠经销商",
+"hand_fixed": false
+},
+{
+"path": "aishell/2614626ce125d741.wav",
+"i": 2,
+"char": "调",
+"gold": "tiao2",
+"alt": "diao4",
+"maj": "diao4",
+"hg": [
+"条"
+],
+"ha": [
+"吊",
+"钓"
+],
+"ctx": "楼市[调]控将去向何方",
+"hand_fixed": false
+},
+{
+"path": "aishell/2614626ce125d741.wav",
+"i": 4,
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"maj": "jiang1",
+"hg": [
+"江",
+"姜"
+],
+"ha": [
+"酱",
+"绛"
+],
+"ctx": "楼市调控[将]去向何方",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/5118bf218fc5ec09.wav",
+"i": 30,
+"char": "相",
+"gold": "xiang1",
+"alt": "xiang4",
+"maj": "xiang1",
+"hg": [
+"乡",
+"香"
+],
+"ha": [
+"向",
+"像"
+],
+"ctx": "响方式与普通物质[相]同。",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/99c2742cefc51da0.wav",
+"i": 10,
+"char": "都",
+"gold": "dou1",
+"alt": "du1",
+"maj": "dou1",
+"hg": [
+"兜"
+],
+"ha": [
+"督",
+"嘟"
+],
+"ctx": "数现代科研望远镜[都]是巨型设施，位于",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/c17918ea9fcfa3bd.wav",
+"i": 2,
+"char": "长",
+"gold": "chang2",
+"alt": "zhang3",
+"maj": "zhang3",
+"hg": [
+"常",
+"肠"
+],
+"ha": [
+"掌"
+],
+"ctx": "它的[长]下颚上布满了 7",
+"hand_fixed": true
+},
+{
+"path": "fleurs_cmn_hans_cn/c17918ea9fcfa3bd.wav",
+"i": 27,
+"char": "还",
+"gold": "hai2",
+"alt": "huan2",
+"maj": "hai2",
+"hg": [
+"孩"
+],
+"ha": [
+"环",
+"桓"
+],
+"ctx": "利的牙齿，上颚上[还]有一排。这意味着",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/c17918ea9fcfa3bd.wav",
+"i": 40,
+"char": "相",
+"gold": "xiang1",
+"alt": "xiang4",
+"maj": "xiang1",
+"hg": [
+"乡",
+"香"
+],
+"ha": [
+"向",
+"像"
+],
+"ctx": "这意味着任何与它[相]遇的东西都无路可",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/c17918ea9fcfa3bd.wav",
+"i": 45,
+"char": "都",
+"gold": "dou1",
+"alt": "du1",
+"maj": "dou1",
+"hg": [
+"兜"
+],
+"ha": [
+"督",
+"嘟"
+],
+"ctx": "何与它相遇的东西[都]无路可逃。",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/858ae425acb0bd3d.wav",
+"i": 40,
+"char": "角",
+"gold": "jiao3",
+"alt": "jue2",
+"maj": "jiao3",
+"hg": [
+"绞",
+"搅"
+],
+"ha": [
+"决",
+"绝"
+],
+"ctx": "tra)，在罗卡[角]停靠。",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/b5df56fa9978e1d4.wav",
+"i": 4,
+"char": "都",
+"gold": "dou1",
+"alt": "du1",
+"maj": "dou1",
+"hg": [
+"兜"
+],
+"ha": [
+"督",
+"嘟"
+],
+"ctx": "这里几乎[都]是沙滩，游泳很安",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/b5df56fa9978e1d4.wav",
+"i": 20,
+"char": "都",
+"gold": "dou1",
+"alt": "du1",
+"maj": "dou1",
+"hg": [
+"兜"
+],
+"ha": [
+"督",
+"嘟"
+],
+"ctx": "安全，大部分地方[都]有新西兰圣诞树的",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/89b15cf1316c41bc.wav",
+"i": 4,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "有些人认[为]他是对的，但也有",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/89b15cf1316c41bc.wav",
+"i": 17,
+"char": "相",
+"gold": "xiang1",
+"alt": "xiang4",
+"maj": "xiang1",
+"hg": [
+"乡",
+"香"
+],
+"ha": [
+"向",
+"像"
+],
+"ctx": "，但也有很多人持[相]反意见；他们认为",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/89b15cf1316c41bc.wav",
+"i": 25,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "相反意见；他们认[为]太阳系是围绕着地",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/e14a00c9b18a83b1.wav",
+"i": 6,
+"char": "重",
+"gold": "chong2",
+"alt": "zhong4",
+"maj": "zhong4",
+"hg": [
+"崇"
+],
+"ha": [
+"仲"
+],
+"ctx": "自由派人士对[重]建工作的批判主要",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/e14a00c9b18a83b1.wav",
+"i": 19,
+"char": "重",
+"gold": "chong2",
+"alt": "zhong4",
+"maj": "zhong4",
+"hg": [
+"崇"
+],
+"ha": [
+"仲"
+],
+"ctx": "批判主要集中在把[重]建合同授予了视为",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/e14a00c9b18a83b1.wav",
+"i": 27,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "重建合同授予了视[为]华盛顿内部人士的",
+"hand_fixed": true
+},
+{
+"path": "fleurs_cmn_hans_cn/afc36f5848c535b5.wav",
+"i": 6,
+"char": "都",
+"gold": "du1",
+"alt": "dou1",
+"maj": "dou1",
+"hg": [
+"督",
+"嘟"
+],
+"ha": [
+"兜"
+],
+"ctx": "摩尔多瓦的首[都]是基希讷乌。当地",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/e987b1860426f397.wav",
+"i": 10,
+"char": "只",
+"gold": "zhi3",
+"alt": "zhi1",
+"maj": "zhi3",
+"hg": [
+"止",
+"址"
+],
+"ha": [
+"织",
+"芝"
+],
+"ctx": "，很可能这个符号[只]是作为一个标签添",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/e987b1860426f397.wav",
+"i": 13,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "能这个符号只是作[为]一个标签添加的。",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/76da4a58eef84646.wav",
+"i": 2,
+"char": "称",
+"gold": "cheng1",
+"alt": "chen4",
+"maj": "cheng1",
+"hg": [
+"撑",
+"蛏"
+],
+"ha": [
+"衬"
+],
+"ctx": "这被[称]为化学物质的 p",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/76da4a58eef84646.wav",
+"i": 3,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "这被称[为]化学物质的 pH",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/e98238b3af8e3ac3.wav",
+"i": 20,
+"char": "为",
+"gold": "wei4",
+"alt": "wei2",
+"maj": "wei2",
+"hg": [
+"未",
+"卫"
+],
+"ha": [
+"维",
+"围"
+],
+"ctx": "成了鲜明对比，因[为]它更多的是阿拉伯",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/f4bfd45f510c8647.wav",
+"i": 16,
+"char": "重",
+"gold": "zhong4",
+"alt": "chong2",
+"maj": "zhong4",
+"hg": [
+"仲"
+],
+"ha": [
+"崇"
+],
+"ctx": "中，房子并不是多[重]要。",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/7601347a56c6a6a2.wav",
+"i": 6,
+"char": "都",
+"gold": "dou1",
+"alt": "du1",
+"maj": "dou1",
+"hg": [
+"兜"
+],
+"ha": [
+"督",
+"嘟"
+],
+"ctx": "宇宙中的一切[都]由物质构成，而所",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/7601347a56c6a6a2.wav",
+"i": 19,
+"char": "都",
+"gold": "dou1",
+"alt": "du1",
+"maj": "dou1",
+"hg": [
+"兜"
+],
+"ha": [
+"督",
+"嘟"
+],
+"ctx": "成，而所有的物质[都]由被称为原子的微",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/7601347a56c6a6a2.wav",
+"i": 22,
+"char": "称",
+"gold": "cheng1",
+"alt": "chen4",
+"maj": "cheng1",
+"hg": [
+"撑",
+"蛏"
+],
+"ha": [
+"衬"
+],
+"ctx": "所有的物质都由被[称]为原子的微小粒子",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/7601347a56c6a6a2.wav",
+"i": 23,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "有的物质都由被称[为]原子的微小粒子组",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/bf4d777b09592184.wav",
+"i": 1,
+"char": "还",
+"gold": "hai2",
+"alt": "huan2",
+"maj": "hai2",
+"hg": [
+"孩"
+],
+"ha": [
+"环",
+"桓"
+],
+"ctx": "他[还]参与了许多国家的",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/bf4d777b09592184.wav",
+"i": 46,
+"char": "肖",
+"gold": "xiao4",
+"alt": "xiao1",
+"maj": "xiao1",
+"hg": [
+"效",
+"笑"
+],
+"ha": [
+"消",
+"销"
+],
+"ctx": "元纸币正面的总理[肖]像。",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/a49080da4589dde6.wav",
+"i": 5,
+"char": "削",
+"gold": "xue1",
+"alt": "xiao1",
+"maj": "xue1",
+"hg": [
+"薛",
+"靴"
+],
+"ha": [
+"消",
+"销"
+],
+"ctx": "他没有设定[削]减数额，只是表示",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/a49080da4589dde6.wav",
+"i": 10,
+"char": "只",
+"gold": "zhi3",
+"alt": "zhi1",
+"maj": "zhi3",
+"hg": [
+"止",
+"址"
+],
+"ha": [
+"织",
+"芝"
+],
+"ctx": "有设定削减数额，[只]是表示将根据中国",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/a49080da4589dde6.wav",
+"i": 14,
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"maj": "jiang1",
+"hg": [
+"江",
+"姜"
+],
+"ha": [
+"酱",
+"绛"
+],
+"ctx": "减数额，只是表示[将]根据中国的经济产",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/711d2806df14172f.wav",
+"i": 15,
+"char": "为",
+"gold": "wei4",
+"alt": "wei2",
+"maj": "wei2",
+"hg": [
+"未",
+"卫"
+],
+"ha": [
+"维",
+"围"
+],
+"ctx": "物来缓解疼痛，因[为]比赛禁止参赛者服",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/0a703aeaa99382d4.wav",
+"i": 6,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "大脑病理和行[为]之间的相关性可以",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/0a703aeaa99382d4.wav",
+"i": 10,
+"char": "相",
+"gold": "xiang1",
+"alt": "xiang4",
+"maj": "xiang1",
+"hg": [
+"乡",
+"香"
+],
+"ha": [
+"向",
+"像"
+],
+"ctx": "病理和行为之间的[相]关性可以为科学家",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/0a703aeaa99382d4.wav",
+"i": 15,
+"char": "为",
+"gold": "wei4",
+"alt": "wei2",
+"maj": "wei2",
+"hg": [
+"未",
+"卫"
+],
+"ha": [
+"维",
+"围"
+],
+"ctx": "之间的相关性可以[为]科学家们的研究提",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/0a703aeaa99382d4.wav",
+"i": 24,
+"char": "供",
+"gold": "gong1",
+"alt": "gong4",
+"maj": "gong1",
+"hg": [
+"公",
+"工"
+],
+"ha": [
+"贡"
+],
+"ctx": "科学家们的研究提[供]支持。",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/9f52b69f96442272.wav",
+"i": 8,
+"char": "降",
+"gold": "jiang4",
+"alt": "xiang2",
+"maj": "jiang4",
+"hg": [
+"酱",
+"绛"
+],
+"ha": [
+"祥",
+"详"
+],
+"ctx": "狂风、冰雹、过量[降]水、山火，还有雷",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/9f52b69f96442272.wav",
+"i": 14,
+"char": "还",
+"gold": "hai2",
+"alt": "huan2",
+"maj": "hai2",
+"hg": [
+"孩"
+],
+"ha": [
+"环",
+"桓"
+],
+"ctx": "过量降水、山火，[还]有雷雨、龙卷风、",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/9f52b69f96442272.wav",
+"i": 30,
+"char": "都",
+"gold": "dou1",
+"alt": "du1",
+"maj": "dou1",
+"hg": [
+"兜"
+],
+"ha": [
+"督",
+"嘟"
+],
+"ctx": "、水龙卷、气旋，[都]是极端天气的表现",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/578d18edb317039b.wav",
+"i": 8,
+"char": "曾",
+"gold": "ceng2",
+"alt": "zeng1",
+"maj": "ceng2",
+"hg": [
+"层"
+],
+"ha": [
+"憎"
+],
+"ctx": "战争结束两年后，[曾]经的盟友如今成了",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/0b6e2e9faaecd6cb.wav",
+"i": 51,
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"maj": "wei2",
+"hg": [
+"维",
+"围"
+],
+"ha": [
+"未",
+"卫"
+],
+"ctx": "一切，并把成果据[为]己有。",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/ec6c849693e30388.wav",
+"i": 8,
+"char": "传",
+"gold": "chuan2",
+"alt": "zhuan4",
+"maj": "chuan2",
+"hg": [
+"船"
+],
+"ha": [
+"篆"
+],
+"ctx": "互联网结合了大众[传]播和人际传播的要",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/ec6c849693e30388.wav",
+"i": 13,
+"char": "传",
+"gold": "chuan2",
+"alt": "zhuan4",
+"maj": "chuan2",
+"hg": [
+"船"
+],
+"ha": [
+"篆"
+],
+"ctx": "了大众传播和人际[传]播的要素。",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/c53174a8ad45acf0.wav",
+"i": 21,
+"char": "都",
+"gold": "dou1",
+"alt": "du1",
+"maj": "dou1",
+"hg": [
+"兜"
+],
+"ha": [
+"督",
+"嘟"
+],
+"ctx": "，除了同类它什么[都]不怕。",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/33c7531ebcbfa72f.wav",
+"i": 3,
+"char": "曾",
+"gold": "ceng2",
+"alt": "zeng1",
+"maj": "ceng2",
+"hg": [
+"层"
+],
+"ha": [
+"憎"
+],
+"ctx": "该海湾[曾]在 1889 年",
+"hand_fixed": false
+},
+{
+"path": "fleurs_cmn_hans_cn/62d7e351a1779149.wav",
+"i": 5,
+"char": "角",
+"gold": "jiao3",
+"alt": "jue2",
+"maj": "jiao3",
+"hg": [
+"绞",
+"搅"
+],
+"ha": [
+"决",
+"绝"
+],
+"ctx": "若想从最佳[角]度欣赏香港的美景",
+"hand_fixed": false
+}
+]

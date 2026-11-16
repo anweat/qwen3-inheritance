@@ -1,0 +1,41 @@
+items 36, answered 30, neither 6
+agreement on answered 30/30, 95% CP 0.884-1.000
+distinct characters answered 27
+  wrong_seg   n 14 answered 11 agree 11 neither 3
+  wrong_tone  n  6 answered  6 agree  6 neither 0
+  right_seg   n 10 answered  7 agree  7 neither 3
+  right_tone  n  6 answered  6 agree  6 neither 0
+
+the listener could lean on the familiar reading or on the sentence. Harder cases for that explanation:
+  detector says the rarer reading was spoken: 7/7
+    # 6 秘 gold bi4 alt mi4 kind min heard gold score +5.64
+    # 9 扒 gold ba1 alt pa2 kind min heard gold score +0.85
+    #11 牟 gold mou2 alt mu4 kind min heard gold score +8.73
+    #18 迤 gold yi3 alt yi2 kind maj heard alt score -2.74
+    #26 靡 gold mi2 alt mi3 kind min heard gold score +2.58
+    #28 夹 gold jia2 alt jia1 kind min heard gold score +3.97
+    #30 咯 gold ge1 alt luo4 kind min heard gold score +11.95
+  detector says the commoner reading was spoken: 23/23
+  listener picked the reading that does not fit the sentence: 17/17
+
+neither:
+  # 1 id 52 峒 gold dong4 alt tong2 right_seg kind min score +4.36 | 中篇小说《大道如青天》，长篇小说《高中时光》，剧本《梅山为证》和《蚩尤梅山峒》。
+  #20 id 182 轧 gold ya4 alt zha2 wrong_seg kind min score -2.66 | 三生之类坱轧泯棼，互相衰旺，抑将有贵贱之等乎”。
+  #24 id 60 芾 gold fei4 alt fu2 wrong_seg kind min score -6.80 | 王颂蔚（），初名叔炳，字芾卿，号蒿隐。
+  #25 id 232 句 gold gou1 alt ju4 right_seg kind min score +6.75 | 高句丽、百济都派有多名画匠到日本作画。
+  #32 id 39 桔 gold jie2 alt ju2 right_seg kind min score +2.62 | 长萼狭叶山梗菜（学名：）为桔梗科半边莲属下的一个变种。
+  #35 id 334 镐 gold hao4 alt gao3 wrong_seg kind maj score -0.05 | 2016年第3届百灵杯预选赛中连胜郑斗镐、牛雨田、陈潇楠进入本赛。
+
+raw rate of the gold reading, detector vs reweighted by the listener
+  min: n 230 detector 0.522 | listener, neither counted as not gold 0.411 | neither dropped 0.522
+  maj: n 90 detector 0.722 | listener, neither counted as not gold 0.566 | neither dropped 0.722
+
+ASR over all reading classes on the same O clips (listening_third.py, exploratory, after seeing the answers)
+  neither: n 6 median gold+alt share 0.000 | top reading outside the pair 6/6 | top reading differs in initial or final from both 3/6
+  answered: n 30 median gold+alt share 0.255 | top reading outside the pair 14/30 | top reading differs in initial or final from both 7/30
+  #1 峒 dong4/tong2 top dong1 1.00
+  #20 轧 ya4/zha2 top ran2 0.92
+  #24 芾 fei4/fu2 top fu3 0.99
+  #25 句 gou1/ju4 top gu1 0.44
+  #32 桔 jie2/ju2 top jue2 0.99
+  #35 镐 hao4/gao3 top gao4 0.85

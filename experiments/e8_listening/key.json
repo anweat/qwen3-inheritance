@@ -1,0 +1,3155 @@
+{
+"fixed": "2026-11-11",
+"items": [
+{
+"n": 0,
+"set": "hard",
+"part": "min",
+"id": 80,
+"version": "O",
+"char": "肖",
+"gold": "xiao4",
+"alt": "xiao1",
+"kind": "min",
+"group": 146,
+"opts": [
+"xiao1",
+"xiao4"
+],
+"opt_labels": [
+"xiāo",
+"xiào"
+],
+"detector_gold": false
+},
+{
+"n": 1,
+"set": "hard",
+"part": "min",
+"id": 80,
+"version": "P",
+"char": "肖",
+"gold": "xiao4",
+"alt": "xiao1",
+"kind": "min",
+"group": 146,
+"opts": [
+"xiao1",
+"xiao4"
+],
+"opt_labels": [
+"xiāo",
+"xiào"
+],
+"detector_gold": true
+},
+{
+"n": 2,
+"set": "hard",
+"part": "min",
+"id": 168,
+"version": "O",
+"char": "坊",
+"gold": "fang2",
+"alt": "fang1",
+"kind": "min",
+"group": 24,
+"opts": [
+"fang2",
+"fang1"
+],
+"opt_labels": [
+"fáng",
+"fāng"
+],
+"detector_gold": true
+},
+{
+"n": 3,
+"set": "hard",
+"part": "min",
+"id": 168,
+"version": "P",
+"char": "坊",
+"gold": "fang2",
+"alt": "fang1",
+"kind": "min",
+"group": 24,
+"opts": [
+"fang2",
+"fang1"
+],
+"opt_labels": [
+"fáng",
+"fāng"
+],
+"detector_gold": true
+},
+{
+"n": 4,
+"set": "hard",
+"part": "min",
+"id": 139,
+"version": "O",
+"char": "肚",
+"gold": "du3",
+"alt": "du4",
+"kind": "min",
+"group": 36,
+"opts": [
+"du4",
+"du3"
+],
+"opt_labels": [
+"dù",
+"dǔ"
+],
+"detector_gold": false
+},
+{
+"n": 5,
+"set": "hard",
+"part": "min",
+"id": 139,
+"version": "P",
+"char": "肚",
+"gold": "du3",
+"alt": "du4",
+"kind": "min",
+"group": 36,
+"opts": [
+"du3",
+"du4"
+],
+"opt_labels": [
+"dǔ",
+"dù"
+],
+"detector_gold": true
+},
+{
+"n": 6,
+"set": "hard",
+"part": "min",
+"id": 198,
+"version": "O",
+"char": "削",
+"gold": "xiao1",
+"alt": "xue1",
+"kind": "min",
+"group": 131,
+"opts": [
+"xiao1",
+"xue1"
+],
+"opt_labels": [
+"xiāo",
+"xuē"
+],
+"detector_gold": null
+},
+{
+"n": 7,
+"set": "hard",
+"part": "min",
+"id": 198,
+"version": "P",
+"char": "削",
+"gold": "xiao1",
+"alt": "xue1",
+"kind": "min",
+"group": 131,
+"opts": [
+"xue1",
+"xiao1"
+],
+"opt_labels": [
+"xuē",
+"xiāo"
+],
+"detector_gold": true
+},
+{
+"n": 8,
+"set": "hard",
+"part": "min",
+"id": 39,
+"version": "O",
+"char": "桔",
+"gold": "jie2",
+"alt": "ju2",
+"kind": "min",
+"group": 17,
+"opts": [
+"jie2",
+"ju2"
+],
+"opt_labels": [
+"jié",
+"jú"
+],
+"detector_gold": true
+},
+{
+"n": 9,
+"set": "hard",
+"part": "min",
+"id": 39,
+"version": "P",
+"char": "桔",
+"gold": "jie2",
+"alt": "ju2",
+"kind": "min",
+"group": 17,
+"opts": [
+"ju2",
+"jie2"
+],
+"opt_labels": [
+"jú",
+"jié"
+],
+"detector_gold": true
+},
+{
+"n": 10,
+"set": "hard",
+"part": "min",
+"id": 69,
+"version": "O",
+"char": "夹",
+"gold": "jia2",
+"alt": "jia1",
+"kind": "min",
+"group": 133,
+"opts": [
+"jia1",
+"jia2"
+],
+"opt_labels": [
+"jiā",
+"jiá"
+],
+"detector_gold": true
+},
+{
+"n": 11,
+"set": "hard",
+"part": "min",
+"id": 69,
+"version": "P",
+"char": "夹",
+"gold": "jia2",
+"alt": "jia1",
+"kind": "min",
+"group": 133,
+"opts": [
+"jia2",
+"jia1"
+],
+"opt_labels": [
+"jiá",
+"jiā"
+],
+"detector_gold": true
+},
+{
+"n": 12,
+"set": "hard",
+"part": "min",
+"id": 47,
+"version": "O",
+"char": "覃",
+"gold": "qin2",
+"alt": "tan2",
+"kind": "min",
+"group": 2,
+"opts": [
+"qin2",
+"tan2"
+],
+"opt_labels": [
+"qín",
+"tán"
+],
+"detector_gold": false
+},
+{
+"n": 13,
+"set": "hard",
+"part": "min",
+"id": 47,
+"version": "P",
+"char": "覃",
+"gold": "qin2",
+"alt": "tan2",
+"kind": "min",
+"group": 2,
+"opts": [
+"qin2",
+"tan2"
+],
+"opt_labels": [
+"qín",
+"tán"
+],
+"detector_gold": true
+},
+{
+"n": 14,
+"set": "hard",
+"part": "min",
+"id": 34,
+"version": "O",
+"char": "靡",
+"gold": "mi2",
+"alt": "mi3",
+"kind": "min",
+"group": 86,
+"opts": [
+"mi3",
+"mi2"
+],
+"opt_labels": [
+"mǐ",
+"mí"
+],
+"detector_gold": true
+},
+{
+"n": 15,
+"set": "hard",
+"part": "min",
+"id": 34,
+"version": "P",
+"char": "靡",
+"gold": "mi2",
+"alt": "mi3",
+"kind": "min",
+"group": 86,
+"opts": [
+"mi3",
+"mi2"
+],
+"opt_labels": [
+"mǐ",
+"mí"
+],
+"detector_gold": true
+},
+{
+"n": 16,
+"set": "hard",
+"part": "min",
+"id": 10,
+"version": "O",
+"char": "吓",
+"gold": "he4",
+"alt": "xia4",
+"kind": "min",
+"group": 23,
+"opts": [
+"xia4",
+"he4"
+],
+"opt_labels": [
+"xià",
+"hè"
+],
+"detector_gold": true
+},
+{
+"n": 17,
+"set": "hard",
+"part": "min",
+"id": 10,
+"version": "P",
+"char": "吓",
+"gold": "he4",
+"alt": "xia4",
+"kind": "min",
+"group": 23,
+"opts": [
+"he4",
+"xia4"
+],
+"opt_labels": [
+"hè",
+"xià"
+],
+"detector_gold": true
+},
+{
+"n": 18,
+"set": "hard",
+"part": "min",
+"id": 22,
+"version": "O",
+"char": "茜",
+"gold": "xi1",
+"alt": "qian4",
+"kind": "min",
+"group": 144,
+"opts": [
+"qian4",
+"xi1"
+],
+"opt_labels": [
+"qiàn",
+"xī"
+],
+"detector_gold": false
+},
+{
+"n": 19,
+"set": "hard",
+"part": "min",
+"id": 22,
+"version": "P",
+"char": "茜",
+"gold": "xi1",
+"alt": "qian4",
+"kind": "min",
+"group": 144,
+"opts": [
+"qian4",
+"xi1"
+],
+"opt_labels": [
+"qiàn",
+"xī"
+],
+"detector_gold": true
+},
+{
+"n": 20,
+"set": "hard",
+"part": "min",
+"id": 59,
+"version": "O",
+"char": "贾",
+"gold": "gu3",
+"alt": "jia3",
+"kind": "min",
+"group": 9,
+"opts": [
+"jia3",
+"gu3"
+],
+"opt_labels": [
+"jiǎ",
+"gǔ"
+],
+"detector_gold": true
+},
+{
+"n": 21,
+"set": "hard",
+"part": "min",
+"id": 59,
+"version": "P",
+"char": "贾",
+"gold": "gu3",
+"alt": "jia3",
+"kind": "min",
+"group": 9,
+"opts": [
+"jia3",
+"gu3"
+],
+"opt_labels": [
+"jiǎ",
+"gǔ"
+],
+"detector_gold": true
+},
+{
+"n": 22,
+"set": "hard",
+"part": "min",
+"id": 19,
+"version": "O",
+"char": "蔚",
+"gold": "yu4",
+"alt": "wei4",
+"kind": "min",
+"group": 93,
+"opts": [
+"yu4",
+"wei4"
+],
+"opt_labels": [
+"yù",
+"wèi"
+],
+"detector_gold": false
+},
+{
+"n": 23,
+"set": "hard",
+"part": "min",
+"id": 19,
+"version": "P",
+"char": "蔚",
+"gold": "yu4",
+"alt": "wei4",
+"kind": "min",
+"group": 93,
+"opts": [
+"yu4",
+"wei4"
+],
+"opt_labels": [
+"yù",
+"wèi"
+],
+"detector_gold": true
+},
+{
+"n": 24,
+"set": "hard",
+"part": "min",
+"id": 119,
+"version": "O",
+"char": "磨",
+"gold": "mo4",
+"alt": "mo2",
+"kind": "min",
+"group": 155,
+"opts": [
+"mo2",
+"mo4"
+],
+"opt_labels": [
+"mó",
+"mò"
+],
+"detector_gold": false
+},
+{
+"n": 25,
+"set": "hard",
+"part": "min",
+"id": 119,
+"version": "P",
+"char": "磨",
+"gold": "mo4",
+"alt": "mo2",
+"kind": "min",
+"group": 155,
+"opts": [
+"mo2",
+"mo4"
+],
+"opt_labels": [
+"mó",
+"mò"
+],
+"detector_gold": true
+},
+{
+"n": 26,
+"set": "hard",
+"part": "min",
+"id": 71,
+"version": "O",
+"char": "率",
+"gold": "shuai4",
+"alt": "lu:4",
+"kind": "min",
+"group": 110,
+"opts": [
+"lu:4",
+"shuai4"
+],
+"opt_labels": [
+"lǜ",
+"shuài"
+],
+"detector_gold": true
+},
+{
+"n": 27,
+"set": "hard",
+"part": "min",
+"id": 71,
+"version": "P",
+"char": "率",
+"gold": "shuai4",
+"alt": "lu:4",
+"kind": "min",
+"group": 110,
+"opts": [
+"shuai4",
+"lu:4"
+],
+"opt_labels": [
+"shuài",
+"lǜ"
+],
+"detector_gold": true
+},
+{
+"n": 28,
+"set": "hard",
+"part": "min",
+"id": 213,
+"version": "O",
+"char": "长",
+"gold": "chang2",
+"alt": "zhang3",
+"kind": "min",
+"group": 168,
+"opts": [
+"zhang3",
+"chang2"
+],
+"opt_labels": [
+"zhǎng",
+"cháng"
+],
+"detector_gold": true
+},
+{
+"n": 29,
+"set": "hard",
+"part": "min",
+"id": 213,
+"version": "P",
+"char": "长",
+"gold": "chang2",
+"alt": "zhang3",
+"kind": "min",
+"group": 168,
+"opts": [
+"zhang3",
+"chang2"
+],
+"opt_labels": [
+"zhǎng",
+"cháng"
+],
+"detector_gold": true
+},
+{
+"n": 30,
+"set": "hard",
+"part": "min",
+"id": 218,
+"version": "O",
+"char": "幢",
+"gold": "chuang2",
+"alt": "zhuang4",
+"kind": "min",
+"group": 14,
+"opts": [
+"chuang2",
+"zhuang4"
+],
+"opt_labels": [
+"chuáng",
+"zhuàng"
+],
+"detector_gold": false
+},
+{
+"n": 31,
+"set": "hard",
+"part": "min",
+"id": 218,
+"version": "P",
+"char": "幢",
+"gold": "chuang2",
+"alt": "zhuang4",
+"kind": "min",
+"group": 14,
+"opts": [
+"chuang2",
+"zhuang4"
+],
+"opt_labels": [
+"chuáng",
+"zhuàng"
+],
+"detector_gold": false
+},
+{
+"n": 32,
+"set": "hard",
+"part": "min",
+"id": 74,
+"version": "O",
+"char": "扒",
+"gold": "ba1",
+"alt": "pa2",
+"kind": "min",
+"group": 105,
+"opts": [
+"pa2",
+"ba1"
+],
+"opt_labels": [
+"pá",
+"bā"
+],
+"detector_gold": true
+},
+{
+"n": 33,
+"set": "hard",
+"part": "min",
+"id": 74,
+"version": "P",
+"char": "扒",
+"gold": "ba1",
+"alt": "pa2",
+"kind": "min",
+"group": 105,
+"opts": [
+"ba1",
+"pa2"
+],
+"opt_labels": [
+"bā",
+"pá"
+],
+"detector_gold": false
+},
+{
+"n": 34,
+"set": "hard",
+"part": "min",
+"id": 237,
+"version": "O",
+"char": "劲",
+"gold": "jin4",
+"alt": "jing4",
+"kind": "min",
+"group": 38,
+"opts": [
+"jin4",
+"jing4"
+],
+"opt_labels": [
+"jìn",
+"jìng"
+],
+"detector_gold": true
+},
+{
+"n": 35,
+"set": "hard",
+"part": "min",
+"id": 237,
+"version": "P",
+"char": "劲",
+"gold": "jin4",
+"alt": "jing4",
+"kind": "min",
+"group": 38,
+"opts": [
+"jin4",
+"jing4"
+],
+"opt_labels": [
+"jìn",
+"jìng"
+],
+"detector_gold": true
+},
+{
+"n": 36,
+"set": "hard",
+"part": "min",
+"id": 37,
+"version": "O",
+"char": "蠡",
+"gold": "li2",
+"alt": "li3",
+"kind": "min",
+"group": 69,
+"opts": [
+"li2",
+"li3"
+],
+"opt_labels": [
+"lí",
+"lǐ"
+],
+"detector_gold": false
+},
+{
+"n": 37,
+"set": "hard",
+"part": "min",
+"id": 37,
+"version": "P",
+"char": "蠡",
+"gold": "li2",
+"alt": "li3",
+"kind": "min",
+"group": 69,
+"opts": [
+"li2",
+"li3"
+],
+"opt_labels": [
+"lí",
+"lǐ"
+],
+"detector_gold": true
+},
+{
+"n": 38,
+"set": "hard",
+"part": "min",
+"id": 221,
+"version": "O",
+"char": "膀",
+"gold": "bang3",
+"alt": "pang2",
+"kind": "min",
+"group": 175,
+"opts": [
+"pang2",
+"bang3"
+],
+"opt_labels": [
+"páng",
+"bǎng"
+],
+"detector_gold": null
+},
+{
+"n": 39,
+"set": "hard",
+"part": "min",
+"id": 221,
+"version": "P",
+"char": "膀",
+"gold": "bang3",
+"alt": "pang2",
+"kind": "min",
+"group": 175,
+"opts": [
+"bang3",
+"pang2"
+],
+"opt_labels": [
+"bǎng",
+"páng"
+],
+"detector_gold": null
+},
+{
+"n": 40,
+"set": "hard",
+"part": "min",
+"id": 73,
+"version": "O",
+"char": "侗",
+"gold": "tong2",
+"alt": "dong4",
+"kind": "min",
+"group": 74,
+"opts": [
+"dong4",
+"tong2"
+],
+"opt_labels": [
+"dòng",
+"tóng"
+],
+"detector_gold": false
+},
+{
+"n": 41,
+"set": "hard",
+"part": "min",
+"id": 73,
+"version": "P",
+"char": "侗",
+"gold": "tong2",
+"alt": "dong4",
+"kind": "min",
+"group": 74,
+"opts": [
+"dong4",
+"tong2"
+],
+"opt_labels": [
+"dòng",
+"tóng"
+],
+"detector_gold": true
+},
+{
+"n": 42,
+"set": "hard",
+"part": "min",
+"id": 145,
+"version": "O",
+"char": "句",
+"gold": "gou1",
+"alt": "ju4",
+"kind": "min",
+"group": 154,
+"opts": [
+"gou1",
+"ju4"
+],
+"opt_labels": [
+"gōu",
+"jù"
+],
+"detector_gold": false
+},
+{
+"n": 43,
+"set": "hard",
+"part": "min",
+"id": 145,
+"version": "P",
+"char": "句",
+"gold": "gou1",
+"alt": "ju4",
+"kind": "min",
+"group": 154,
+"opts": [
+"ju4",
+"gou1"
+],
+"opt_labels": [
+"jù",
+"gōu"
+],
+"detector_gold": true
+},
+{
+"n": 44,
+"set": "hard",
+"part": "min",
+"id": 216,
+"version": "O",
+"char": "垛",
+"gold": "duo4",
+"alt": "duo3",
+"kind": "min",
+"group": 47,
+"opts": [
+"duo4",
+"duo3"
+],
+"opt_labels": [
+"duò",
+"duǒ"
+],
+"detector_gold": true
+},
+{
+"n": 45,
+"set": "hard",
+"part": "min",
+"id": 216,
+"version": "P",
+"char": "垛",
+"gold": "duo4",
+"alt": "duo3",
+"kind": "min",
+"group": 47,
+"opts": [
+"duo4",
+"duo3"
+],
+"opt_labels": [
+"duò",
+"duǒ"
+],
+"detector_gold": false
+},
+{
+"n": 46,
+"set": "hard",
+"part": "min",
+"id": 212,
+"version": "O",
+"char": "咯",
+"gold": "ge1",
+"alt": "luo4",
+"kind": "min",
+"group": 48,
+"opts": [
+"ge1",
+"luo4"
+],
+"opt_labels": [
+"gē",
+"luò"
+],
+"detector_gold": true
+},
+{
+"n": 47,
+"set": "hard",
+"part": "min",
+"id": 212,
+"version": "P",
+"char": "咯",
+"gold": "ge1",
+"alt": "luo4",
+"kind": "min",
+"group": 48,
+"opts": [
+"ge1",
+"luo4"
+],
+"opt_labels": [
+"gē",
+"luò"
+],
+"detector_gold": true
+},
+{
+"n": 48,
+"set": "hard",
+"part": "min",
+"id": 184,
+"version": "O",
+"char": "镝",
+"gold": "di2",
+"alt": "di1",
+"kind": "min",
+"group": 100,
+"opts": [
+"di1",
+"di2"
+],
+"opt_labels": [
+"dī",
+"dí"
+],
+"detector_gold": false
+},
+{
+"n": 49,
+"set": "hard",
+"part": "min",
+"id": 184,
+"version": "P",
+"char": "镝",
+"gold": "di2",
+"alt": "di1",
+"kind": "min",
+"group": 100,
+"opts": [
+"di2",
+"di1"
+],
+"opt_labels": [
+"dí",
+"dī"
+],
+"detector_gold": true
+},
+{
+"n": 50,
+"set": "hard",
+"part": "min",
+"id": 236,
+"version": "O",
+"char": "相",
+"gold": "xiang4",
+"alt": "xiang1",
+"kind": "min",
+"group": 119,
+"opts": [
+"xiang1",
+"xiang4"
+],
+"opt_labels": [
+"xiāng",
+"xiàng"
+],
+"detector_gold": true
+},
+{
+"n": 51,
+"set": "hard",
+"part": "min",
+"id": 236,
+"version": "P",
+"char": "相",
+"gold": "xiang4",
+"alt": "xiang1",
+"kind": "min",
+"group": 119,
+"opts": [
+"xiang1",
+"xiang4"
+],
+"opt_labels": [
+"xiāng",
+"xiàng"
+],
+"detector_gold": true
+},
+{
+"n": 52,
+"set": "hard",
+"part": "min",
+"id": 21,
+"version": "O",
+"char": "伺",
+"gold": "ci4",
+"alt": "si4",
+"kind": "min",
+"group": 54,
+"opts": [
+"si4",
+"ci4"
+],
+"opt_labels": [
+"sì",
+"cì"
+],
+"detector_gold": true
+},
+{
+"n": 53,
+"set": "hard",
+"part": "min",
+"id": 21,
+"version": "P",
+"char": "伺",
+"gold": "ci4",
+"alt": "si4",
+"kind": "min",
+"group": 54,
+"opts": [
+"si4",
+"ci4"
+],
+"opt_labels": [
+"sì",
+"cì"
+],
+"detector_gold": true
+},
+{
+"n": 54,
+"set": "hard",
+"part": "min",
+"id": 133,
+"version": "O",
+"char": "斗",
+"gold": "dou3",
+"alt": "dou4",
+"kind": "min",
+"group": 28,
+"opts": [
+"dou4",
+"dou3"
+],
+"opt_labels": [
+"dòu",
+"dǒu"
+],
+"detector_gold": true
+},
+{
+"n": 55,
+"set": "hard",
+"part": "min",
+"id": 133,
+"version": "P",
+"char": "斗",
+"gold": "dou3",
+"alt": "dou4",
+"kind": "min",
+"group": 28,
+"opts": [
+"dou4",
+"dou3"
+],
+"opt_labels": [
+"dòu",
+"dǒu"
+],
+"detector_gold": false
+},
+{
+"n": 56,
+"set": "hard",
+"part": "min",
+"id": 172,
+"version": "O",
+"char": "吒",
+"gold": "zha4",
+"alt": "zha1",
+"kind": "min",
+"group": 165,
+"opts": [
+"zha1",
+"zha4"
+],
+"opt_labels": [
+"zhā",
+"zhà"
+],
+"detector_gold": false
+},
+{
+"n": 57,
+"set": "hard",
+"part": "min",
+"id": 172,
+"version": "P",
+"char": "吒",
+"gold": "zha4",
+"alt": "zha1",
+"kind": "min",
+"group": 165,
+"opts": [
+"zha4",
+"zha1"
+],
+"opt_labels": [
+"zhà",
+"zhā"
+],
+"detector_gold": true
+},
+{
+"n": 58,
+"set": "hard",
+"part": "min",
+"id": 200,
+"version": "O",
+"char": "莘",
+"gold": "xin1",
+"alt": "shen1",
+"kind": "min",
+"group": 31,
+"opts": [
+"xin1",
+"shen1"
+],
+"opt_labels": [
+"xīn",
+"shēn"
+],
+"detector_gold": false
+},
+{
+"n": 59,
+"set": "hard",
+"part": "min",
+"id": 200,
+"version": "P",
+"char": "莘",
+"gold": "xin1",
+"alt": "shen1",
+"kind": "min",
+"group": 31,
+"opts": [
+"xin1",
+"shen1"
+],
+"opt_labels": [
+"xīn",
+"shēn"
+],
+"detector_gold": true
+},
+{
+"n": 60,
+"set": "hard",
+"part": "min",
+"id": 148,
+"version": "O",
+"char": "挣",
+"gold": "zheng1",
+"alt": "zheng4",
+"kind": "min",
+"group": 170,
+"opts": [
+"zheng4",
+"zheng1"
+],
+"opt_labels": [
+"zhèng",
+"zhēng"
+],
+"detector_gold": false
+},
+{
+"n": 61,
+"set": "hard",
+"part": "min",
+"id": 148,
+"version": "P",
+"char": "挣",
+"gold": "zheng1",
+"alt": "zheng4",
+"kind": "min",
+"group": 170,
+"opts": [
+"zheng4",
+"zheng1"
+],
+"opt_labels": [
+"zhèng",
+"zhēng"
+],
+"detector_gold": true
+},
+{
+"n": 62,
+"set": "hard",
+"part": "min",
+"id": 94,
+"version": "O",
+"char": "监",
+"gold": "jian4",
+"alt": "jian1",
+"kind": "min",
+"group": 153,
+"opts": [
+"jian1",
+"jian4"
+],
+"opt_labels": [
+"jiān",
+"jiàn"
+],
+"detector_gold": false
+},
+{
+"n": 63,
+"set": "hard",
+"part": "min",
+"id": 94,
+"version": "P",
+"char": "监",
+"gold": "jian4",
+"alt": "jian1",
+"kind": "min",
+"group": 153,
+"opts": [
+"jian1",
+"jian4"
+],
+"opt_labels": [
+"jiān",
+"jiàn"
+],
+"detector_gold": true
+},
+{
+"n": 64,
+"set": "hard",
+"part": "min",
+"id": 150,
+"version": "O",
+"char": "翘",
+"gold": "qiao2",
+"alt": "qiao4",
+"kind": "min",
+"group": 77,
+"opts": [
+"qiao2",
+"qiao4"
+],
+"opt_labels": [
+"qiáo",
+"qiào"
+],
+"detector_gold": false
+},
+{
+"n": 65,
+"set": "hard",
+"part": "min",
+"id": 150,
+"version": "P",
+"char": "翘",
+"gold": "qiao2",
+"alt": "qiao4",
+"kind": "min",
+"group": 77,
+"opts": [
+"qiao4",
+"qiao2"
+],
+"opt_labels": [
+"qiào",
+"qiáo"
+],
+"detector_gold": true
+},
+{
+"n": 66,
+"set": "hard",
+"part": "min",
+"id": 83,
+"version": "O",
+"char": "蒙",
+"gold": "meng3",
+"alt": "meng2",
+"kind": "min",
+"group": 30,
+"opts": [
+"meng2",
+"meng3"
+],
+"opt_labels": [
+"méng",
+"měng"
+],
+"detector_gold": false
+},
+{
+"n": 67,
+"set": "hard",
+"part": "min",
+"id": 83,
+"version": "P",
+"char": "蒙",
+"gold": "meng3",
+"alt": "meng2",
+"kind": "min",
+"group": 30,
+"opts": [
+"meng2",
+"meng3"
+],
+"opt_labels": [
+"méng",
+"měng"
+],
+"detector_gold": true
+},
+{
+"n": 68,
+"set": "hard",
+"part": "min",
+"id": 78,
+"version": "O",
+"char": "仇",
+"gold": "qiu2",
+"alt": "chou2",
+"kind": "min",
+"group": 56,
+"opts": [
+"chou2",
+"qiu2"
+],
+"opt_labels": [
+"chóu",
+"qiú"
+],
+"detector_gold": false
+},
+{
+"n": 69,
+"set": "hard",
+"part": "min",
+"id": 78,
+"version": "P",
+"char": "仇",
+"gold": "qiu2",
+"alt": "chou2",
+"kind": "min",
+"group": 56,
+"opts": [
+"qiu2",
+"chou2"
+],
+"opt_labels": [
+"qiú",
+"chóu"
+],
+"detector_gold": true
+},
+{
+"n": 70,
+"set": "hard",
+"part": "min",
+"id": 97,
+"version": "O",
+"char": "媛",
+"gold": "yuan4",
+"alt": "yuan2",
+"kind": "min",
+"group": 129,
+"opts": [
+"yuan4",
+"yuan2"
+],
+"opt_labels": [
+"yuàn",
+"yuán"
+],
+"detector_gold": null
+},
+{
+"n": 71,
+"set": "hard",
+"part": "min",
+"id": 97,
+"version": "P",
+"char": "媛",
+"gold": "yuan4",
+"alt": "yuan2",
+"kind": "min",
+"group": 129,
+"opts": [
+"yuan4",
+"yuan2"
+],
+"opt_labels": [
+"yuàn",
+"yuán"
+],
+"detector_gold": false
+},
+{
+"n": 72,
+"set": "hard",
+"part": "min",
+"id": 192,
+"version": "O",
+"char": "峒",
+"gold": "dong4",
+"alt": "tong2",
+"kind": "min",
+"group": 61,
+"opts": [
+"dong4",
+"tong2"
+],
+"opt_labels": [
+"dòng",
+"tóng"
+],
+"detector_gold": false
+},
+{
+"n": 73,
+"set": "hard",
+"part": "min",
+"id": 192,
+"version": "P",
+"char": "峒",
+"gold": "dong4",
+"alt": "tong2",
+"kind": "min",
+"group": 61,
+"opts": [
+"tong2",
+"dong4"
+],
+"opt_labels": [
+"tóng",
+"dòng"
+],
+"detector_gold": true
+},
+{
+"n": 74,
+"set": "hard",
+"part": "min",
+"id": 35,
+"version": "O",
+"char": "钉",
+"gold": "ding4",
+"alt": "ding1",
+"kind": "min",
+"group": 32,
+"opts": [
+"ding4",
+"ding1"
+],
+"opt_labels": [
+"dìng",
+"dīng"
+],
+"detector_gold": false
+},
+{
+"n": 75,
+"set": "hard",
+"part": "min",
+"id": 35,
+"version": "P",
+"char": "钉",
+"gold": "ding4",
+"alt": "ding1",
+"kind": "min",
+"group": 32,
+"opts": [
+"ding4",
+"ding1"
+],
+"opt_labels": [
+"dìng",
+"dīng"
+],
+"detector_gold": false
+},
+{
+"n": 76,
+"set": "hard",
+"part": "min",
+"id": 66,
+"version": "O",
+"char": "蜇",
+"gold": "zhe1",
+"alt": "zhe2",
+"kind": "min",
+"group": 196,
+"opts": [
+"zhe1",
+"zhe2"
+],
+"opt_labels": [
+"zhē",
+"zhé"
+],
+"detector_gold": null
+},
+{
+"n": 77,
+"set": "hard",
+"part": "min",
+"id": 66,
+"version": "P",
+"char": "蜇",
+"gold": "zhe1",
+"alt": "zhe2",
+"kind": "min",
+"group": 196,
+"opts": [
+"zhe2",
+"zhe1"
+],
+"opt_labels": [
+"zhé",
+"zhē"
+],
+"detector_gold": null
+},
+{
+"n": 78,
+"set": "hard",
+"part": "min",
+"id": 141,
+"version": "O",
+"char": "迤",
+"gold": "yi2",
+"alt": "yi3",
+"kind": "min",
+"group": 85,
+"opts": [
+"yi3",
+"yi2"
+],
+"opt_labels": [
+"yǐ",
+"yí"
+],
+"detector_gold": true
+},
+{
+"n": 79,
+"set": "hard",
+"part": "min",
+"id": 141,
+"version": "P",
+"char": "迤",
+"gold": "yi2",
+"alt": "yi3",
+"kind": "min",
+"group": 85,
+"opts": [
+"yi3",
+"yi2"
+],
+"opt_labels": [
+"yǐ",
+"yí"
+],
+"detector_gold": true
+},
+{
+"n": 80,
+"set": "natural2",
+"part": "nat2",
+"id": 4,
+"version": "O",
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"kind": "maj",
+"group": "为",
+"opts": [
+"wei2",
+"wei4"
+],
+"opt_labels": [
+"wéi",
+"wèi"
+],
+"detector_gold": true
+},
+{
+"n": 81,
+"set": "natural2",
+"part": "nat2",
+"id": 4,
+"version": "P",
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"kind": "maj",
+"group": "为",
+"opts": [
+"wei4",
+"wei2"
+],
+"opt_labels": [
+"wèi",
+"wéi"
+],
+"detector_gold": true
+},
+{
+"n": 82,
+"set": "natural2",
+"part": "nat2",
+"id": 71,
+"version": "O",
+"char": "长",
+"gold": "zhang3",
+"alt": "chang2",
+"kind": "maj",
+"group": "长",
+"opts": [
+"zhang3",
+"chang2"
+],
+"opt_labels": [
+"zhǎng",
+"cháng"
+],
+"detector_gold": false
+},
+{
+"n": 83,
+"set": "natural2",
+"part": "nat2",
+"id": 71,
+"version": "P",
+"char": "长",
+"gold": "zhang3",
+"alt": "chang2",
+"kind": "maj",
+"group": "长",
+"opts": [
+"zhang3",
+"chang2"
+],
+"opt_labels": [
+"zhǎng",
+"cháng"
+],
+"detector_gold": false
+},
+{
+"n": 84,
+"set": "natural2",
+"part": "nat2",
+"id": 21,
+"version": "O",
+"char": "吓",
+"gold": "xia4",
+"alt": "he4",
+"kind": "maj",
+"group": "吓",
+"opts": [
+"xia4",
+"he4"
+],
+"opt_labels": [
+"xià",
+"hè"
+],
+"detector_gold": true
+},
+{
+"n": 85,
+"set": "natural2",
+"part": "nat2",
+"id": 21,
+"version": "P",
+"char": "吓",
+"gold": "xia4",
+"alt": "he4",
+"kind": "maj",
+"group": "吓",
+"opts": [
+"xia4",
+"he4"
+],
+"opt_labels": [
+"xià",
+"hè"
+],
+"detector_gold": true
+},
+{
+"n": 86,
+"set": "natural2",
+"part": "nat2",
+"id": 79,
+"version": "O",
+"char": "坊",
+"gold": "fang1",
+"alt": "fang2",
+"kind": "maj",
+"group": "坊",
+"opts": [
+"fang2",
+"fang1"
+],
+"opt_labels": [
+"fáng",
+"fāng"
+],
+"detector_gold": true
+},
+{
+"n": 87,
+"set": "natural2",
+"part": "nat2",
+"id": 79,
+"version": "P",
+"char": "坊",
+"gold": "fang1",
+"alt": "fang2",
+"kind": "maj",
+"group": "坊",
+"opts": [
+"fang1",
+"fang2"
+],
+"opt_labels": [
+"fāng",
+"fáng"
+],
+"detector_gold": true
+},
+{
+"n": 88,
+"set": "natural2",
+"part": "nat2",
+"id": 98,
+"version": "O",
+"char": "都",
+"gold": "du1",
+"alt": "dou1",
+"kind": "min",
+"group": "都",
+"opts": [
+"dou1",
+"du1"
+],
+"opt_labels": [
+"dōu",
+"dū"
+],
+"detector_gold": true
+},
+{
+"n": 89,
+"set": "natural2",
+"part": "nat2",
+"id": 98,
+"version": "P",
+"char": "都",
+"gold": "du1",
+"alt": "dou1",
+"kind": "min",
+"group": "都",
+"opts": [
+"du1",
+"dou1"
+],
+"opt_labels": [
+"dū",
+"dōu"
+],
+"detector_gold": true
+},
+{
+"n": 90,
+"set": "natural2",
+"part": "nat2",
+"id": 47,
+"version": "O",
+"char": "丽",
+"gold": "li4",
+"alt": "li2",
+"kind": "maj",
+"group": "丽",
+"opts": [
+"li4",
+"li2"
+],
+"opt_labels": [
+"lì",
+"lí"
+],
+"detector_gold": true
+},
+{
+"n": 91,
+"set": "natural2",
+"part": "nat2",
+"id": 47,
+"version": "P",
+"char": "丽",
+"gold": "li4",
+"alt": "li2",
+"kind": "maj",
+"group": "丽",
+"opts": [
+"li2",
+"li4"
+],
+"opt_labels": [
+"lí",
+"lì"
+],
+"detector_gold": true
+},
+{
+"n": 92,
+"set": "natural2",
+"part": "nat2",
+"id": 34,
+"version": "O",
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"kind": "maj",
+"group": "为",
+"opts": [
+"wei2",
+"wei4"
+],
+"opt_labels": [
+"wéi",
+"wèi"
+],
+"detector_gold": true
+},
+{
+"n": 93,
+"set": "natural2",
+"part": "nat2",
+"id": 34,
+"version": "P",
+"char": "为",
+"gold": "wei2",
+"alt": "wei4",
+"kind": "maj",
+"group": "为",
+"opts": [
+"wei2",
+"wei4"
+],
+"opt_labels": [
+"wéi",
+"wèi"
+],
+"detector_gold": true
+},
+{
+"n": 94,
+"set": "natural2",
+"part": "nat2",
+"id": 29,
+"version": "O",
+"char": "蠡",
+"gold": "li3",
+"alt": "li2",
+"kind": "maj",
+"group": "蠡",
+"opts": [
+"li2",
+"li3"
+],
+"opt_labels": [
+"lí",
+"lǐ"
+],
+"detector_gold": false
+},
+{
+"n": 95,
+"set": "natural2",
+"part": "nat2",
+"id": 29,
+"version": "P",
+"char": "蠡",
+"gold": "li3",
+"alt": "li2",
+"kind": "maj",
+"group": "蠡",
+"opts": [
+"li3",
+"li2"
+],
+"opt_labels": [
+"lǐ",
+"lí"
+],
+"detector_gold": true
+},
+{
+"n": 96,
+"set": "natural2",
+"part": "nat2",
+"id": 57,
+"version": "O",
+"char": "角",
+"gold": "jiao3",
+"alt": "jue2",
+"kind": "maj",
+"group": "角",
+"opts": [
+"jiao3",
+"jue2"
+],
+"opt_labels": [
+"jiǎo",
+"jué"
+],
+"detector_gold": true
+},
+{
+"n": 97,
+"set": "natural2",
+"part": "nat2",
+"id": 57,
+"version": "P",
+"char": "角",
+"gold": "jiao3",
+"alt": "jue2",
+"kind": "maj",
+"group": "角",
+"opts": [
+"jue2",
+"jiao3"
+],
+"opt_labels": [
+"jué",
+"jiǎo"
+],
+"detector_gold": true
+},
+{
+"n": 98,
+"set": "natural2",
+"part": "nat2",
+"id": 86,
+"version": "O",
+"char": "汗",
+"gold": "han2",
+"alt": "han4",
+"kind": "maj",
+"group": "汗",
+"opts": [
+"han4",
+"han2"
+],
+"opt_labels": [
+"hàn",
+"hán"
+],
+"detector_gold": true
+},
+{
+"n": 99,
+"set": "natural2",
+"part": "nat2",
+"id": 86,
+"version": "P",
+"char": "汗",
+"gold": "han2",
+"alt": "han4",
+"kind": "maj",
+"group": "汗",
+"opts": [
+"han2",
+"han4"
+],
+"opt_labels": [
+"hán",
+"hàn"
+],
+"detector_gold": false
+},
+{
+"n": 100,
+"set": "natural2",
+"part": "nat2",
+"id": 122,
+"version": "O",
+"char": "还",
+"gold": "huan2",
+"alt": "hai2",
+"kind": "min",
+"group": "还",
+"opts": [
+"huan2",
+"hai2"
+],
+"opt_labels": [
+"huán",
+"hái"
+],
+"detector_gold": null
+},
+{
+"n": 101,
+"set": "natural2",
+"part": "nat2",
+"id": 122,
+"version": "P",
+"char": "还",
+"gold": "huan2",
+"alt": "hai2",
+"kind": "min",
+"group": "还",
+"opts": [
+"huan2",
+"hai2"
+],
+"opt_labels": [
+"huán",
+"hái"
+],
+"detector_gold": null
+},
+{
+"n": 102,
+"set": "natural2",
+"part": "nat2",
+"id": 22,
+"version": "O",
+"char": "称",
+"gold": "cheng1",
+"alt": "chen4",
+"kind": "maj",
+"group": "称",
+"opts": [
+"cheng1",
+"chen4"
+],
+"opt_labels": [
+"chēng",
+"chèn"
+],
+"detector_gold": true
+},
+{
+"n": 103,
+"set": "natural2",
+"part": "nat2",
+"id": 22,
+"version": "P",
+"char": "称",
+"gold": "cheng1",
+"alt": "chen4",
+"kind": "maj",
+"group": "称",
+"opts": [
+"chen4",
+"cheng1"
+],
+"opt_labels": [
+"chèn",
+"chēng"
+],
+"detector_gold": true
+},
+{
+"n": 104,
+"set": "natural2",
+"part": "nat2",
+"id": 7,
+"version": "O",
+"char": "冠",
+"gold": "guan1",
+"alt": "guan4",
+"kind": "maj",
+"group": "冠",
+"opts": [
+"guan4",
+"guan1"
+],
+"opt_labels": [
+"guàn",
+"guān"
+],
+"detector_gold": false
+},
+{
+"n": 105,
+"set": "natural2",
+"part": "nat2",
+"id": 7,
+"version": "P",
+"char": "冠",
+"gold": "guan1",
+"alt": "guan4",
+"kind": "maj",
+"group": "冠",
+"opts": [
+"guan1",
+"guan4"
+],
+"opt_labels": [
+"guān",
+"guàn"
+],
+"detector_gold": true
+},
+{
+"n": 106,
+"set": "natural2",
+"part": "nat2",
+"id": 67,
+"version": "O",
+"char": "干",
+"gold": "gan1",
+"alt": "gan4",
+"kind": "min",
+"group": "干",
+"opts": [
+"gan4",
+"gan1"
+],
+"opt_labels": [
+"gàn",
+"gān"
+],
+"detector_gold": true
+},
+{
+"n": 107,
+"set": "natural2",
+"part": "nat2",
+"id": 67,
+"version": "P",
+"char": "干",
+"gold": "gan1",
+"alt": "gan4",
+"kind": "min",
+"group": "干",
+"opts": [
+"gan4",
+"gan1"
+],
+"opt_labels": [
+"gàn",
+"gān"
+],
+"detector_gold": true
+},
+{
+"n": 108,
+"set": "natural2",
+"part": "nat2",
+"id": 60,
+"version": "O",
+"char": "称",
+"gold": "cheng1",
+"alt": "chen4",
+"kind": "maj",
+"group": "称",
+"opts": [
+"cheng1",
+"chen4"
+],
+"opt_labels": [
+"chēng",
+"chèn"
+],
+"detector_gold": true
+},
+{
+"n": 109,
+"set": "natural2",
+"part": "nat2",
+"id": 60,
+"version": "P",
+"char": "称",
+"gold": "cheng1",
+"alt": "chen4",
+"kind": "maj",
+"group": "称",
+"opts": [
+"cheng1",
+"chen4"
+],
+"opt_labels": [
+"chēng",
+"chèn"
+],
+"detector_gold": true
+},
+{
+"n": 110,
+"set": "natural2",
+"part": "nat2",
+"id": 14,
+"version": "O",
+"char": "假",
+"gold": "jia3",
+"alt": "jia4",
+"kind": "maj",
+"group": "假",
+"opts": [
+"jia3",
+"jia4"
+],
+"opt_labels": [
+"jiǎ",
+"jià"
+],
+"detector_gold": true
+},
+{
+"n": 111,
+"set": "natural2",
+"part": "nat2",
+"id": 14,
+"version": "P",
+"char": "假",
+"gold": "jia3",
+"alt": "jia4",
+"kind": "maj",
+"group": "假",
+"opts": [
+"jia3",
+"jia4"
+],
+"opt_labels": [
+"jiǎ",
+"jià"
+],
+"detector_gold": true
+},
+{
+"n": 112,
+"set": "natural2",
+"part": "nat2",
+"id": 99,
+"version": "O",
+"char": "都",
+"gold": "du1",
+"alt": "dou1",
+"kind": "min",
+"group": "都",
+"opts": [
+"dou1",
+"du1"
+],
+"opt_labels": [
+"dōu",
+"dū"
+],
+"detector_gold": true
+},
+{
+"n": 113,
+"set": "natural2",
+"part": "nat2",
+"id": 99,
+"version": "P",
+"char": "都",
+"gold": "du1",
+"alt": "dou1",
+"kind": "min",
+"group": "都",
+"opts": [
+"dou1",
+"du1"
+],
+"opt_labels": [
+"dōu",
+"dū"
+],
+"detector_gold": true
+},
+{
+"n": 114,
+"set": "natural2",
+"part": "nat2",
+"id": 33,
+"version": "O",
+"char": "率",
+"gold": "lu:4",
+"alt": "shuai4",
+"kind": "maj",
+"group": "率",
+"opts": [
+"lu:4",
+"shuai4"
+],
+"opt_labels": [
+"lǜ",
+"shuài"
+],
+"detector_gold": true
+},
+{
+"n": 115,
+"set": "natural2",
+"part": "nat2",
+"id": 33,
+"version": "P",
+"char": "率",
+"gold": "lu:4",
+"alt": "shuai4",
+"kind": "maj",
+"group": "率",
+"opts": [
+"lu:4",
+"shuai4"
+],
+"opt_labels": [
+"lǜ",
+"shuài"
+],
+"detector_gold": true
+},
+{
+"n": 116,
+"set": "natural2",
+"part": "nat2",
+"id": 80,
+"version": "O",
+"char": "斗",
+"gold": "dou3",
+"alt": "dou4",
+"kind": "min",
+"group": "斗",
+"opts": [
+"dou3",
+"dou4"
+],
+"opt_labels": [
+"dǒu",
+"dòu"
+],
+"detector_gold": true
+},
+{
+"n": 117,
+"set": "natural2",
+"part": "nat2",
+"id": 80,
+"version": "P",
+"char": "斗",
+"gold": "dou3",
+"alt": "dou4",
+"kind": "min",
+"group": "斗",
+"opts": [
+"dou4",
+"dou3"
+],
+"opt_labels": [
+"dòu",
+"dǒu"
+],
+"detector_gold": false
+},
+{
+"n": 118,
+"set": "natural2",
+"part": "nat2",
+"id": 91,
+"version": "O",
+"char": "吓",
+"gold": "xia4",
+"alt": "he4",
+"kind": "maj",
+"group": "吓",
+"opts": [
+"xia4",
+"he4"
+],
+"opt_labels": [
+"xià",
+"hè"
+],
+"detector_gold": true
+},
+{
+"n": 119,
+"set": "natural2",
+"part": "nat2",
+"id": 91,
+"version": "P",
+"char": "吓",
+"gold": "xia4",
+"alt": "he4",
+"kind": "maj",
+"group": "吓",
+"opts": [
+"xia4",
+"he4"
+],
+"opt_labels": [
+"xià",
+"hè"
+],
+"detector_gold": true
+},
+{
+"n": 120,
+"set": "natural2",
+"part": "nat2",
+"id": 126,
+"version": "O",
+"char": "粘",
+"gold": "nian2",
+"alt": "zhan1",
+"kind": "maj",
+"group": "粘",
+"opts": [
+"nian2",
+"zhan1"
+],
+"opt_labels": [
+"nián",
+"zhān"
+],
+"detector_gold": true
+},
+{
+"n": 121,
+"set": "natural2",
+"part": "nat2",
+"id": 126,
+"version": "P",
+"char": "粘",
+"gold": "nian2",
+"alt": "zhan1",
+"kind": "maj",
+"group": "粘",
+"opts": [
+"nian2",
+"zhan1"
+],
+"opt_labels": [
+"nián",
+"zhān"
+],
+"detector_gold": true
+},
+{
+"n": 122,
+"set": "natural2",
+"part": "nat2",
+"id": 10,
+"version": "O",
+"char": "传",
+"gold": "chuan2",
+"alt": "zhuan4",
+"kind": "maj",
+"group": "传",
+"opts": [
+"chuan2",
+"zhuan4"
+],
+"opt_labels": [
+"chuán",
+"zhuàn"
+],
+"detector_gold": true
+},
+{
+"n": 123,
+"set": "natural2",
+"part": "nat2",
+"id": 10,
+"version": "P",
+"char": "传",
+"gold": "chuan2",
+"alt": "zhuan4",
+"kind": "maj",
+"group": "传",
+"opts": [
+"chuan2",
+"zhuan4"
+],
+"opt_labels": [
+"chuán",
+"zhuàn"
+],
+"detector_gold": true
+},
+{
+"n": 124,
+"set": "natural2",
+"part": "nat2",
+"id": 46,
+"version": "O",
+"char": "将",
+"gold": "jiang4",
+"alt": "jiang1",
+"kind": "min",
+"group": "将",
+"opts": [
+"jiang4",
+"jiang1"
+],
+"opt_labels": [
+"jiàng",
+"jiāng"
+],
+"detector_gold": true
+},
+{
+"n": 125,
+"set": "natural2",
+"part": "nat2",
+"id": 46,
+"version": "P",
+"char": "将",
+"gold": "jiang4",
+"alt": "jiang1",
+"kind": "min",
+"group": "将",
+"opts": [
+"jiang1",
+"jiang4"
+],
+"opt_labels": [
+"jiāng",
+"jiàng"
+],
+"detector_gold": true
+},
+{
+"n": 126,
+"set": "natural2",
+"part": "nat2",
+"id": 134,
+"version": "O",
+"char": "涡",
+"gold": "wo1",
+"alt": "guo1",
+"kind": "maj",
+"group": "涡",
+"opts": [
+"wo1",
+"guo1"
+],
+"opt_labels": [
+"wō",
+"guō"
+],
+"detector_gold": true
+},
+{
+"n": 127,
+"set": "natural2",
+"part": "nat2",
+"id": 134,
+"version": "P",
+"char": "涡",
+"gold": "wo1",
+"alt": "guo1",
+"kind": "maj",
+"group": "涡",
+"opts": [
+"guo1",
+"wo1"
+],
+"opt_labels": [
+"guō",
+"wō"
+],
+"detector_gold": true
+},
+{
+"n": 128,
+"set": "natural2",
+"part": "nat2",
+"id": 132,
+"version": "O",
+"char": "蚂",
+"gold": "ma3",
+"alt": "ma4",
+"kind": "maj",
+"group": "蚂",
+"opts": [
+"ma4",
+"ma3"
+],
+"opt_labels": [
+"mà",
+"mǎ"
+],
+"detector_gold": true
+},
+{
+"n": 129,
+"set": "natural2",
+"part": "nat2",
+"id": 132,
+"version": "P",
+"char": "蚂",
+"gold": "ma3",
+"alt": "ma4",
+"kind": "maj",
+"group": "蚂",
+"opts": [
+"ma3",
+"ma4"
+],
+"opt_labels": [
+"mǎ",
+"mà"
+],
+"detector_gold": true
+},
+{
+"n": 130,
+"set": "natural2",
+"part": "nat2",
+"id": 92,
+"version": "O",
+"char": "番",
+"gold": "pan1",
+"alt": "fan1",
+"kind": "min",
+"group": "番",
+"opts": [
+"pan1",
+"fan1"
+],
+"opt_labels": [
+"pān",
+"fān"
+],
+"detector_gold": null
+},
+{
+"n": 131,
+"set": "natural2",
+"part": "nat2",
+"id": 92,
+"version": "P",
+"char": "番",
+"gold": "pan1",
+"alt": "fan1",
+"kind": "min",
+"group": "番",
+"opts": [
+"fan1",
+"pan1"
+],
+"opt_labels": [
+"fān",
+"pān"
+],
+"detector_gold": null
+},
+{
+"n": 132,
+"set": "natural2",
+"part": "nat2",
+"id": 133,
+"version": "O",
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"kind": "maj",
+"group": "将",
+"opts": [
+"jiang1",
+"jiang4"
+],
+"opt_labels": [
+"jiāng",
+"jiàng"
+],
+"detector_gold": true
+},
+{
+"n": 133,
+"set": "natural2",
+"part": "nat2",
+"id": 133,
+"version": "P",
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"kind": "maj",
+"group": "将",
+"opts": [
+"jiang1",
+"jiang4"
+],
+"opt_labels": [
+"jiāng",
+"jiàng"
+],
+"detector_gold": true
+},
+{
+"n": 134,
+"set": "natural2",
+"part": "nat2",
+"id": 85,
+"version": "O",
+"char": "杆",
+"gold": "gan1",
+"alt": "gan3",
+"kind": "maj",
+"group": "杆",
+"opts": [
+"gan1",
+"gan3"
+],
+"opt_labels": [
+"gān",
+"gǎn"
+],
+"detector_gold": true
+},
+{
+"n": 135,
+"set": "natural2",
+"part": "nat2",
+"id": 85,
+"version": "P",
+"char": "杆",
+"gold": "gan1",
+"alt": "gan3",
+"kind": "maj",
+"group": "杆",
+"opts": [
+"gan3",
+"gan1"
+],
+"opt_labels": [
+"gǎn",
+"gān"
+],
+"detector_gold": true
+},
+{
+"n": 136,
+"set": "natural2",
+"part": "nat2",
+"id": 9,
+"version": "O",
+"char": "冠",
+"gold": "guan1",
+"alt": "guan4",
+"kind": "maj",
+"group": "冠",
+"opts": [
+"guan1",
+"guan4"
+],
+"opt_labels": [
+"guān",
+"guàn"
+],
+"detector_gold": true
+},
+{
+"n": 137,
+"set": "natural2",
+"part": "nat2",
+"id": 9,
+"version": "P",
+"char": "冠",
+"gold": "guan1",
+"alt": "guan4",
+"kind": "maj",
+"group": "冠",
+"opts": [
+"guan1",
+"guan4"
+],
+"opt_labels": [
+"guān",
+"guàn"
+],
+"detector_gold": true
+},
+{
+"n": 138,
+"set": "natural2",
+"part": "nat2",
+"id": 118,
+"version": "O",
+"char": "丽",
+"gold": "li4",
+"alt": "li2",
+"kind": "maj",
+"group": "丽",
+"opts": [
+"li2",
+"li4"
+],
+"opt_labels": [
+"lí",
+"lì"
+],
+"detector_gold": true
+},
+{
+"n": 139,
+"set": "natural2",
+"part": "nat2",
+"id": 118,
+"version": "P",
+"char": "丽",
+"gold": "li4",
+"alt": "li2",
+"kind": "maj",
+"group": "丽",
+"opts": [
+"li2",
+"li4"
+],
+"opt_labels": [
+"lí",
+"lì"
+],
+"detector_gold": true
+},
+{
+"n": 140,
+"set": "hard",
+"part": "catch",
+"id": 1,
+"version": "R_g",
+"char": "镐",
+"gold": "gao3",
+"alt": "hao4",
+"kind": "min",
+"group": 58,
+"opts": [
+"hao4",
+"gao3"
+],
+"opt_labels": [
+"hào",
+"gǎo"
+],
+"detector_gold": true
+},
+{
+"n": 141,
+"set": "natural2",
+"part": "catch",
+"id": 12,
+"version": "R_g",
+"char": "角",
+"gold": "jiao3",
+"alt": "jue2",
+"kind": "maj",
+"group": "角",
+"opts": [
+"jue2",
+"jiao3"
+],
+"opt_labels": [
+"jué",
+"jiǎo"
+],
+"detector_gold": true
+},
+{
+"n": 142,
+"set": "hard",
+"part": "catch",
+"id": 123,
+"version": "R_g",
+"char": "长",
+"gold": "chang2",
+"alt": "zhang3",
+"kind": "min",
+"group": 168,
+"opts": [
+"chang2",
+"zhang3"
+],
+"opt_labels": [
+"cháng",
+"zhǎng"
+],
+"detector_gold": true
+},
+{
+"n": 143,
+"set": "natural2",
+"part": "catch",
+"id": 84,
+"version": "R_g",
+"char": "长",
+"gold": "zhang3",
+"alt": "chang2",
+"kind": "maj",
+"group": "长",
+"opts": [
+"zhang3",
+"chang2"
+],
+"opt_labels": [
+"zhǎng",
+"cháng"
+],
+"detector_gold": true
+},
+{
+"n": 144,
+"set": "hard",
+"part": "catch",
+"id": 120,
+"version": "R_g",
+"char": "颉",
+"gold": "xie2",
+"alt": "jie2",
+"kind": "min",
+"group": 89,
+"opts": [
+"jie2",
+"xie2"
+],
+"opt_labels": [
+"jié",
+"xié"
+],
+"detector_gold": true
+},
+{
+"n": 145,
+"set": "hard",
+"part": "catch",
+"id": 319,
+"version": "R_a",
+"char": "幢",
+"gold": "zhuang4",
+"alt": "chuang2",
+"kind": "maj",
+"group": 14,
+"opts": [
+"chuang2",
+"zhuang4"
+],
+"opt_labels": [
+"chuáng",
+"zhuàng"
+],
+"detector_gold": false
+},
+{
+"n": 146,
+"set": "hard",
+"part": "catch",
+"id": 301,
+"version": "R_a",
+"char": "磨",
+"gold": "mo2",
+"alt": "mo4",
+"kind": "maj",
+"group": 155,
+"opts": [
+"mo4",
+"mo2"
+],
+"opt_labels": [
+"mò",
+"mó"
+],
+"detector_gold": false
+},
+{
+"n": 147,
+"set": "hard",
+"part": "catch",
+"id": 235,
+"version": "R_a",
+"char": "轧",
+"gold": "ya4",
+"alt": "zha2",
+"kind": "min",
+"group": 0,
+"opts": [
+"zha2",
+"ya4"
+],
+"opt_labels": [
+"zhá",
+"yà"
+],
+"detector_gold": false
+},
+{
+"n": 148,
+"set": "hard",
+"part": "catch",
+"id": 250,
+"version": "R_a",
+"char": "将",
+"gold": "jiang1",
+"alt": "jiang4",
+"kind": "maj",
+"group": 96,
+"opts": [
+"jiang1",
+"jiang4"
+],
+"opt_labels": [
+"jiāng",
+"jiàng"
+],
+"detector_gold": false
+},
+{
+"n": 149,
+"set": "hard",
+"part": "catch",
+"id": 273,
+"version": "R_a",
+"char": "鬲",
+"gold": "li4",
+"alt": "ge2",
+"kind": "maj",
+"group": 161,
+"opts": [
+"ge2",
+"li4"
+],
+"opt_labels": [
+"gé",
+"lì"
+],
+"detector_gold": false
+}
+]
+}

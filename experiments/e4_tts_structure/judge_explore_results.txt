@@ -1,0 +1,38 @@
+charsiu    centred seg  TTS says-g 0.985 says-a 0.956 | human 0.659 (n 41)
+charsiu    centred tone TTS says-g 0.987 says-a 0.974 | human 0.804 (n 46)
+charsiu    raw     seg  TTS says-g 0.985 says-a 0.971 | human 0.951 (n 41)
+charsiu    raw     tone TTS says-g 0.987 says-a 0.934 | human 0.804 (n 46)
+sensevoice centred seg  TTS says-g 1.000 says-a 0.993 | human 0.935 (n 31)
+sensevoice centred tone TTS says-g 0.986 says-a 0.957 | human 0.804 (n 46)
+sensevoice raw     seg  TTS says-g 0.963 says-a 0.971 | human 0.516 (n 31)
+sensevoice raw     tone TTS says-g 0.914 says-a 0.829 | human 0.652 (n 46)
+paraformer centred seg  TTS says-g 0.992 says-a 0.992 | human 0.903 (n 31)
+paraformer centred tone TTS says-g 1.000 says-a 0.957 | human 0.889 (n 45)
+paraformer raw     seg  TTS says-g 0.880 says-a 0.932 | human 0.742 (n 31)
+paraformer raw     tone TTS says-g 0.786 says-a 0.857 | human 0.644 (n 45)
+whisper    centred seg  TTS says-g 0.985 says-a 0.985 | human 0.917 (n 36)
+whisper    centred tone TTS says-g 0.960 says-a 0.960 | human 0.826 (n 46)
+whisper    raw     seg  TTS says-g 0.905 says-a 0.934 | human 0.611 (n 36)
+whisper    raw     tone TTS says-g 0.827 says-a 0.787 | human 0.717 (n 46)
+qwen       centred seg  TTS says-g 1.000 says-a 0.993 | human 0.935 (n 31)
+qwen       centred tone TTS says-g 0.971 says-a 0.943 | human 0.733 (n 45)
+qwen       raw     seg  TTS says-g 0.904 says-a 0.926 | human 0.387 (n 31)
+qwen       raw     tone TTS says-g 0.800 says-a 0.757 | human 0.600 (n 45)
+
+human clips every judge scores as the other reading: 5
+  露 lu4/lou4 汉能发布中期财报披露
+  露 lu4/lou4 但其并未向记者透露项目盈利水平预测
+  为 wei4/wei2 这一项目将为神农架林区的孩子筹建开放式体育空间
+  为 wei4/wei2 他一直无法用药物来缓解疼痛，因为比赛禁止参赛者服用这些药物。
+  肖 xiao4/xiao1 他还参与了许多国家的纸币雕版制作，近期作品包括加拿大新版 5
+human rate with those clips removed
+  charsiu    seg  0.692 (n 39)
+  charsiu    tone 0.860 (n 43)
+  sensevoice seg  1.000 (n 29)
+  sensevoice tone 0.860 (n 43)
+  paraformer seg  0.966 (n 29)
+  paraformer tone 0.952 (n 42)
+  whisper    seg  0.971 (n 34)
+  whisper    tone 0.884 (n 43)
+  qwen       seg  1.000 (n 29)
+  qwen       tone 0.786 (n 42)

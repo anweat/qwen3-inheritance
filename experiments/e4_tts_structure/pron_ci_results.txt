@@ -1,0 +1,86 @@
+47738 samples, 199 groups, test samples 2335
+majority acc 0.7662; dictionary acc 0.7135 recall 0.6593
+==== LLM-0.6B ====
+  B LLM-0.6B     t    dev-selected L20 acc 0.9413 minority recall 0.8278
+     test accuracy/minority recall by layer: L8:0.934/0.828 L20:0.941/0.828 L28:0.935/0.833
+  B LLM-0.6B     t+2  dev-selected L28 acc 0.9396 minority recall 0.8315
+     test accuracy/minority recall by layer: L8:0.943/0.839 L20:0.938/0.821 L28:0.940/0.832
+  B LLM-0.6B@L8  t    dev-selected L8 acc 0.9345 minority recall 0.8278
+     test accuracy/minority recall by layer: L8:0.934/0.828
+  B LLM-0.6B@L8  t+2  dev-selected L8 acc 0.9430 minority recall 0.8388
+     test accuracy/minority recall by layer: L8:0.943/0.839
+==== Random-0.6B ====
+  B Random-0.6B  t    dev-selected L1 acc 0.8266 minority recall 0.4670
+     test accuracy/minority recall by layer: L1:0.827/0.467
+  B Random-0.6B  t+2  dev-selected L1 acc 0.8463 minority recall 0.4817
+     test accuracy/minority recall by layer: L1:0.846/0.482
+==== TTS-0.6B ====
+  B TTS-0.6B     t    dev-selected L5 acc 0.9019 minority recall 0.7088
+     test accuracy/minority recall by layer: L5:0.902/0.709 L6:0.897/0.703
+  B TTS-0.6B     t+2  dev-selected L6 acc 0.9118 minority recall 0.7491
+     test accuracy/minority recall by layer: L5:0.908/0.729 L6:0.912/0.749
+==== LLM-1.7B ====
+  B LLM-1.7B     t    dev-selected L12 acc 0.9435 minority recall 0.8333
+     test accuracy/minority recall by layer: L8:0.939/0.837 L12:0.943/0.833 L16:0.943/0.828
+  B LLM-1.7B     t+2  dev-selected L16 acc 0.9435 minority recall 0.8352
+     test accuracy/minority recall by layer: L8:0.943/0.837 L12:0.944/0.824 L16:0.943/0.835
+  B LLM-1.7B@L8  t    dev-selected L8 acc 0.9388 minority recall 0.8370
+     test accuracy/minority recall by layer: L8:0.939/0.837
+  B LLM-1.7B@L8  t+2  dev-selected L8 acc 0.9435 minority recall 0.8370
+     test accuracy/minority recall by layer: L8:0.943/0.837
+==== TTS-1.7B ====
+  B TTS-1.7B     t    dev-selected L4 acc 0.9058 minority recall 0.7308
+     test accuracy/minority recall by layer: L4:0.906/0.731 L16:0.904/0.723
+  B TTS-1.7B     t+2  dev-selected L16 acc 0.9156 minority recall 0.7399
+     test accuracy/minority recall by layer: L4:0.917/0.756 L16:0.916/0.740
+neighbour tokens t-2..t+2 embeddings: acc 0.9323 recall 0.7692
+LLM-0.6B feature t+2, L28: accuracy 0.9396 recall 0.8315
+   vs TTS-0.6B   accuracy 0.9118 diff +0.0278 [+0.0178, +0.0386]; recall 0.7491 diff +0.0824 [+0.0514, +0.1168]
+   vs TTS-1.7B   accuracy 0.9156 diff +0.0240 [+0.0133, +0.0349]; recall 0.7399 diff +0.0916 [+0.0545, +0.1312]
+   vs dictionary accuracy 0.7135 diff +0.2261 [+0.1775, +0.2754]; recall 0.6593 diff +0.1722 [+0.0870, +0.2595]
+   vs neighbours accuracy 0.9323 diff +0.0073 [-0.0039, +0.0185]; recall 0.7692 diff +0.0623 [+0.0262, +0.1009]
+   vs random     accuracy 0.8463 diff +0.0934 [+0.0749, +0.1132]; recall 0.4817 diff +0.3498 [+0.2874, +0.4179]
+LLM-0.6B feature t, L20: accuracy 0.9413 recall 0.8278
+   vs TTS-0.6B   accuracy 0.9118 diff +0.0296 [+0.0177, +0.0415]; recall 0.7491 diff +0.0788 [+0.0429, +0.1158]
+   vs TTS-1.7B   accuracy 0.9156 diff +0.0257 [+0.0141, +0.0375]; recall 0.7399 diff +0.0879 [+0.0495, +0.1294]
+   vs dictionary accuracy 0.7135 diff +0.2278 [+0.1785, +0.2780]; recall 0.6593 diff +0.1685 [+0.0811, +0.2568]
+   vs neighbours accuracy 0.9323 diff +0.0090 [-0.0038, +0.0216]; recall 0.7692 diff +0.0586 [+0.0134, +0.1043]
+   vs random     accuracy 0.8463 diff +0.0951 [+0.0768, +0.1150]; recall 0.4817 diff +0.3462 [+0.2824, +0.4153]
+LLM-1.7B feature t+2, L16: accuracy 0.9435 recall 0.8352
+   vs TTS-0.6B   accuracy 0.9118 diff +0.0317 [+0.0214, +0.0423]; recall 0.7491 diff +0.0861 [+0.0573, +0.1171]
+   vs TTS-1.7B   accuracy 0.9156 diff +0.0278 [+0.0178, +0.0385]; recall 0.7399 diff +0.0952 [+0.0614, +0.1318]
+   vs dictionary accuracy 0.7135 diff +0.2300 [+0.1813, +0.2793]; recall 0.6593 diff +0.1758 [+0.0877, +0.2657]
+   vs neighbours accuracy 0.9323 diff +0.0111 [+0.0000, +0.0223]; recall 0.7692 diff +0.0659 [+0.0289, +0.1038]
+   vs random     accuracy 0.8463 diff +0.0972 [+0.0788, +0.1173]; recall 0.4817 diff +0.3535 [+0.2912, +0.4192]
+LLM-1.7B feature t, L12: accuracy 0.9435 recall 0.8333
+   vs TTS-0.6B   accuracy 0.9118 diff +0.0317 [+0.0203, +0.0434]; recall 0.7491 diff +0.0842 [+0.0493, +0.1209]
+   vs TTS-1.7B   accuracy 0.9156 diff +0.0278 [+0.0170, +0.0391]; recall 0.7399 diff +0.0934 [+0.0559, +0.1324]
+   vs dictionary accuracy 0.7135 diff +0.2300 [+0.1811, +0.2800]; recall 0.6593 diff +0.1740 [+0.0863, +0.2626]
+   vs neighbours accuracy 0.9323 diff +0.0111 [-0.0004, +0.0229]; recall 0.7692 diff +0.0641 [+0.0235, +0.1062]
+   vs random     accuracy 0.8463 diff +0.0972 [+0.0791, +0.1172]; recall 0.4817 diff +0.3516 [+0.2904, +0.4192]
+LLM-0.6B@L8 feature t+2, L8: accuracy 0.9430 recall 0.8388
+   vs TTS-0.6B   accuracy 0.9118 diff +0.0313 [+0.0201, +0.0426]; recall 0.7491 diff +0.0897 [+0.0568, +0.1245]
+   vs TTS-1.7B   accuracy 0.9156 diff +0.0274 [+0.0174, +0.0383]; recall 0.7399 diff +0.0989 [+0.0636, +0.1364]
+   vs dictionary accuracy 0.7135 diff +0.2296 [+0.1814, +0.2777]; recall 0.6593 diff +0.1795 [+0.0946, +0.2663]
+   vs neighbours accuracy 0.9323 diff +0.0107 [+0.0000, +0.0215]; recall 0.7692 diff +0.0696 [+0.0325, +0.1073]
+   vs random     accuracy 0.8463 diff +0.0968 [+0.0788, +0.1165]; recall 0.4817 diff +0.3571 [+0.2958, +0.4223]
+LLM-0.6B@L8 feature t, L8: accuracy 0.9345 recall 0.8278
+   vs TTS-0.6B   accuracy 0.9118 diff +0.0227 [+0.0108, +0.0354]; recall 0.7491 diff +0.0788 [+0.0423, +0.1178]
+   vs TTS-1.7B   accuracy 0.9156 diff +0.0188 [+0.0075, +0.0303]; recall 0.7399 diff +0.0879 [+0.0499, +0.1285]
+   vs dictionary accuracy 0.7135 diff +0.2210 [+0.1726, +0.2704]; recall 0.6593 diff +0.1685 [+0.0808, +0.2576]
+   vs neighbours accuracy 0.9323 diff +0.0021 [-0.0102, +0.0146]; recall 0.7692 diff +0.0586 [+0.0193, +0.1016]
+   vs random     accuracy 0.8463 diff +0.0882 [+0.0696, +0.1086]; recall 0.4817 diff +0.3462 [+0.2831, +0.4148]
+LLM-1.7B@L8 feature t+2, L8: accuracy 0.9435 recall 0.8370
+   vs TTS-0.6B   accuracy 0.9118 diff +0.0317 [+0.0215, +0.0425]; recall 0.7491 diff +0.0879 [+0.0571, +0.1209]
+   vs TTS-1.7B   accuracy 0.9156 diff +0.0278 [+0.0174, +0.0391]; recall 0.7399 diff +0.0971 [+0.0626, +0.1370]
+   vs dictionary accuracy 0.7135 diff +0.2300 [+0.1806, +0.2794]; recall 0.6593 diff +0.1777 [+0.0920, +0.2662]
+   vs neighbours accuracy 0.9323 diff +0.0111 [+0.0004, +0.0218]; recall 0.7692 diff +0.0678 [+0.0338, +0.1033]
+   vs random     accuracy 0.8463 diff +0.0972 [+0.0790, +0.1170]; recall 0.4817 diff +0.3553 [+0.2951, +0.4214]
+LLM-1.7B@L8 feature t, L8: accuracy 0.9388 recall 0.8370
+   vs TTS-0.6B   accuracy 0.9118 diff +0.0270 [+0.0158, +0.0387]; recall 0.7491 diff +0.0879 [+0.0514, +0.1277]
+   vs TTS-1.7B   accuracy 0.9156 diff +0.0231 [+0.0117, +0.0350]; recall 0.7399 diff +0.0971 [+0.0584, +0.1375]
+   vs dictionary accuracy 0.7135 diff +0.2253 [+0.1760, +0.2746]; recall 0.6593 diff +0.1777 [+0.0930, +0.2631]
+   vs neighbours accuracy 0.9323 diff +0.0064 [-0.0056, +0.0187]; recall 0.7692 diff +0.0678 [+0.0275, +0.1101]
+   vs random     accuracy 0.8463 diff +0.0925 [+0.0743, +0.1125]; recall 0.4817 diff +0.3553 [+0.2911, +0.4251]
+PRONCIDONE
+[runner] exit code 0 at 2026-11-06T13:33:41

@@ -1,0 +1,42 @@
+clips with no <asr_text> marker, and clips with a different language header than intact
+  intact                     no marker    0  header differs    0
+  standalone_q4              no marker   45  header differs  132
+  base_q4_plus_2bit          no marker   24  header differs   24
+  instruct_q4_plus_2bit      no marker  104  header differs  104
+
+per set: no-marker clips
+  set                          intact   standalone_q4  base_q4_plus_2  instruct_q4_pl
+  aishell                           0               0               0               0
+  cantonese_md                      0               0               0               4
+  fleurs_ar_eg                      0               1               0               1
+  fleurs_cmn_hans_cn                0              16               0               0
+  fleurs_en_us                      0               0               1               0
+  fleurs_ja_jp                      0               1               7               4
+  fleurs_ko_kr                      0               0               4               1
+  fleurs_ru_ru                      0               2               9              33
+  fleurs_th_th                      0               0               1              44
+  fleurs_vi_vn                      0               0               0              17
+  fleurs_yue_hant_hk                0               1               0               0
+  henan                             0               0               0               0
+  northeast                         0              10               1               0
+  sichuan                           0               8               0               0
+  wu                                0               6               1               0
+
+error rate on clips where every scheme kept the intact header: 562 of 800
+  all                n=562 intact   8.80 standalone_q4  10.53 base_q4_plus_2  10.44 instruct_q4_pl  10.94
+  Chinese+dialect    n=335 intact   8.03 standalone_q4   8.78 base_q4_plus_2   7.52 instruct_q4_pl   8.32
+  other languages    n=227 intact   9.97 standalone_q4  13.21 base_q4_plus_2  14.88 instruct_q4_pl  14.92
+
+all clips, Chinese+dialect subset (subset chosen after the criterion was set, so exploratory)
+  Chinese+dialect n=450: intact 8.98 standalone_q4 17.39 base_q4_plus_2 9.06 instruct_q4_pl 9.73
+    base_q4_plus_2bit          vs standalone Q4  -8.32 [-11.03, -5.66]
+    instruct_q4_plus_2bit      vs standalone Q4  -7.66 [-10.36, -5.11]
+    standalone_q4              vs intact         +8.41 [+5.87, +11.21]
+    base_q4_plus_2bit          vs intact         +0.09 [-0.65, +0.92]
+    instruct_q4_plus_2bit      vs intact         +0.75 [+0.10, +1.45]
+  other languages n=350: intact 10.71 standalone_q4 14.98 base_q4_plus_2 19.60 instruct_q4_pl 31.00
+    base_q4_plus_2bit          vs standalone Q4  +4.63 [+1.86, +7.99]
+    instruct_q4_plus_2bit      vs standalone Q4 +16.02 [+11.23, +21.51]
+    standalone_q4              vs intact         +4.27 [+3.27, +5.43]
+    base_q4_plus_2bit          vs intact         +8.89 [+6.18, +12.19]
+    instruct_q4_plus_2bit      vs intact        +20.29 [+15.53, +25.53]

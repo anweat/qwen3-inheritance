@@ -1,0 +1,40 @@
+### graft: error rate (WER for English, CER for Chinese); 'shared' = share of decoder matrix weights equal to Base
+  intact ASR                                          librispeech  0.040 say_en  0.000 say_zh  0.029  shared  0.0%  [51s]
+      ('librispeech', 'MISTER QUILTER IS THE APOSTLE OF THE MIDDLE CLASSES AND WE A', 'Mr. Quilter is the apostle of the middle classes, and we are')
+      ('librispeech', "NOR IS MISTER QUILTER'S MANNER LESS INTERESTING THAN HIS MAT", "Nor is Mister Quilter's manner less interesting than his mat")
+      ('librispeech', 'HE TELLS US THAT AT THIS FESTIVE SEASON OF THE YEAR WITH CHR', 'He tells us that at this festive season of the year, with Ch')
+      ('say_zh', '他们通知说那座桥整个三月份都要封闭维修。', '他们通知说：“要缩小整个三月份，都要封闭维修。”')
+      ('say_zh', '小时候我们每年夏天都会去湖边的外婆家住一段时间。', '小时候，我们每年夏天都会去湖边的外婆家住一段时间。')
+      ('say_zh', '谢谢你打电话过来，我查一下这个问题，尽快给你回复。', '谢谢你的电话过来，我查一下这个问题，尽快给你回复。')
+  all matrices = Base                                 librispeech  1.000 say_en  1.000 say_zh  1.000  shared 100.0%  [218s]
+  all matrices = Instruct                             librispeech  1.747 say_en  2.777 say_zh  4.000  [236s]
+  alpha*Base (shrink only)                            librispeech  1.000 say_en  1.000 say_zh  1.000  [17s]
+  alpha*Base + isotropic noise, same residual norm    librispeech  1.000 say_en  1.000 say_zh  1.000  [239s]
+  alpha*Base + shuffled residual                      librispeech  1.413 say_en  1.451 say_zh  2.318  [239s]
+  interpolate Base -> ASR t=0.9                       librispeech  0.040 say_en  0.000 say_zh  0.032  [56s]
+  interpolate Base -> ASR t=0.75                      librispeech  1.000 say_en  1.000 say_zh  1.000  [16s]
+  interpolate Base -> ASR t=0.5                       librispeech  1.000 say_en  1.000 say_zh  1.000  [13s]
+  interpolate Base -> ASR t=0.25                      librispeech  1.020 say_en  1.098 say_zh  1.138  [220s]
+  alpha*Base + residual in top-20% band               librispeech  1.000 say_en  1.000 say_zh  1.000  [284s]
+  alpha*Base + residual in bottom-50% band            librispeech  1.000 say_en  1.000 say_zh  1.000  [256s]
+  -- restore parts of ASR to Base
+  layers L0-2 = Base                                  librispeech  1.000 say_en  1.000 say_zh  1.000  shared 10.7%  [13s]
+  layers L0-9 = Base                                  librispeech  1.000 say_en  1.000 say_zh  1.000  shared 35.7%  [13s]
+  layers L10-18 = Base                                librispeech  1.000 say_en  1.000 say_zh  1.000  shared 32.1%  [14s]
+  layers L19-27 = Base                                librispeech  1.000 say_en  1.170 say_zh  1.000  shared 32.1%  [231s]
+  layers L27 = Base                                   librispeech  0.931 say_en  1.091 say_zh  0.579  shared  3.6%  [235s]
+  attention matrices = Base                           librispeech  1.000 say_en  1.000 say_zh  1.000  shared 40.0%  [13s]
+  MLP matrices = Base                                 librispeech  1.246 say_en  1.000 say_zh  1.000  shared 60.0%  [231s]
+  25% MLP neurons = Base: least plastic               librispeech  1.000 say_en  1.000 say_zh  1.000  shared 15.0%  [13s]
+  25% MLP neurons = Base: most plastic                librispeech  0.477 say_en  0.610 say_zh  0.374  shared 15.0%  [47s]
+  25% MLP neurons = Base: random                      librispeech  0.064 say_en  0.133 say_zh  0.432  shared 15.0%  [66s]
+  50% MLP neurons = Base: least plastic               librispeech  1.000 say_en  1.000 say_zh  1.000  shared 30.0%  [68s]
+  50% MLP neurons = Base: most plastic                librispeech  1.000 say_en  1.000 say_zh  1.000  shared 30.0%  [14s]
+  50% MLP neurons = Base: random                      librispeech  1.000 say_en  1.000 say_zh  1.000  shared 30.0%  [13s]
+  75% MLP neurons = Base: least plastic               librispeech  1.000 say_en  1.000 say_zh  1.000  shared 45.0%  [33s]
+  75% MLP neurons = Base: most plastic                librispeech  1.000 say_en  1.000 say_zh  1.000  shared 45.0%  [13s]
+  75% MLP neurons = Base: random                      librispeech  1.199 say_en  1.280 say_zh  1.000  shared 45.0%  [245s]
+  50% heads (q,o) = Base: least plastic               librispeech  0.087 say_en  0.390 say_zh  0.682  [47s]
+  50% heads (q,o) = Base: most plastic                librispeech  1.000 say_en  1.000 say_zh  1.000  [18s]
+  (matrices back to ASR)                              librispeech  0.040 say_en  0.000 say_zh  0.029  shared  0.0%  [56s]
+  embedding table = Base                              librispeech  0.998 say_en  1.000 say_zh  1.000

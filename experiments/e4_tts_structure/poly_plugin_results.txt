@@ -1,0 +1,110 @@
+==== TTS-0.6B: head accuracy against the TTS's reading rate, same items ====
+ CPP minority: n 230, groups 77, TTS rate 0.522
+   dictionary       0.596  minus TTS +0.074 [-0.040, +0.188]
+   LLM-0.6B@L2      0.683  minus TTS +0.161 [+0.019, +0.299]
+   LLM-0.6B@L4      0.761  minus TTS +0.239 [+0.105, +0.370]
+   LLM-0.6B@L8      0.809  minus TTS +0.287 [+0.152, +0.422]
+   LLM-0.6B@L12     0.813  minus TTS +0.291 [+0.156, +0.429]
+   LLM-0.6B@L28     0.783  minus TTS +0.261 [+0.124, +0.397]
+   TTS-0.6B@L6      0.752  minus TTS +0.230 [+0.096, +0.360]
+   TTS-1.7B@L16     0.704  minus TTS +0.183 [+0.057, +0.303]
+   inheritance LLM-0.6B@L2    minus TTS-0.6B@L6: -0.070 [-0.127, -0.017]
+   inheritance LLM-0.6B@L4    minus TTS-0.6B@L6: +0.009 [-0.030, +0.047]
+   inheritance LLM-0.6B@L8    minus TTS-0.6B@L6: +0.057 [+0.004, +0.112]
+   inheritance LLM-0.6B@L12   minus TTS-0.6B@L6: +0.061 [+0.014, +0.113]
+   inheritance LLM-0.6B@L28   minus TTS-0.6B@L6: +0.030 [-0.010, +0.077]
+ CPP majority: n 90, groups 61, TTS rate 0.722
+   dictionary       0.744  minus TTS +0.022 [-0.108, +0.146]
+   LLM-0.6B@L2      0.967  minus TTS +0.244 [+0.144, +0.352]
+   LLM-0.6B@L4      0.956  minus TTS +0.233 [+0.129, +0.347]
+   LLM-0.6B@L8      0.967  minus TTS +0.244 [+0.141, +0.353]
+   LLM-0.6B@L12     0.989  minus TTS +0.267 [+0.163, +0.376]
+   LLM-0.6B@L28     0.956  minus TTS +0.233 [+0.131, +0.342]
+   TTS-0.6B@L6      0.922  minus TTS +0.200 [+0.085, +0.319]
+   TTS-1.7B@L16     0.944  minus TTS +0.222 [+0.118, +0.333]
+   inheritance LLM-0.6B@L2    minus TTS-0.6B@L6: +0.044 [+0.000, +0.102]
+   inheritance LLM-0.6B@L4    minus TTS-0.6B@L6: +0.033 [-0.021, +0.097]
+   inheritance LLM-0.6B@L8    minus TTS-0.6B@L6: +0.044 [-0.010, +0.098]
+   inheritance LLM-0.6B@L12   minus TTS-0.6B@L6: +0.067 [+0.000, +0.146]
+   inheritance LLM-0.6B@L28   minus TTS-0.6B@L6: +0.033 [-0.034, +0.108]
+==== TTS-0.6B: end to end with the reading-vector port, audio actually synthesized ====
+ CPP minority: n 78, groups 35, TTS alone 0.410
+   dictionary       0.526  minus TTS +0.115 [-0.014, +0.268]
+   LLM-0.6B@L2      0.679  minus TTS +0.269 [+0.070, +0.455]
+   LLM-0.6B@L4      0.782  minus TTS +0.372 [+0.185, +0.544]
+   LLM-0.6B@L8      0.808  minus TTS +0.397 [+0.207, +0.581]
+   LLM-0.6B@L12     0.833  minus TTS +0.423 [+0.232, +0.605]
+   LLM-0.6B@L28     0.795  minus TTS +0.385 [+0.176, +0.583]
+   TTS-0.6B@L6      0.795  minus TTS +0.385 [+0.203, +0.558]
+   TTS-1.7B@L16     0.705  minus TTS +0.295 [+0.111, +0.473]
+ CPP majority: n 33, groups 25, TTS alone 0.697
+   dictionary       0.727  minus TTS +0.030 [-0.114, +0.207]
+   LLM-0.6B@L2      0.909  minus TTS +0.212 [+0.062, +0.387]
+   LLM-0.6B@L4      0.879  minus TTS +0.182 [+0.000, +0.371]
+   LLM-0.6B@L8      0.939  minus TTS +0.242 [+0.088, +0.419]
+   LLM-0.6B@L12     0.970  minus TTS +0.273 [+0.100, +0.469]
+   LLM-0.6B@L28     0.939  minus TTS +0.242 [+0.088, +0.419]
+   TTS-0.6B@L6      0.818  minus TTS +0.121 [-0.031, +0.300]
+   TTS-1.7B@L16     0.879  minus TTS +0.182 [+0.033, +0.344]
+==== TTS-0.6B: natural sentences, do no harm (lower bound above -.05) ====
+ TTS alone 0.921, n 76, characters 21
+   LLM-0.6B@L2      n 21 head 0.857  minus TTS -0.095 [-0.316, +0.188]  not shown safe
+   LLM-0.6B@L4      n 21 head 0.905  minus TTS -0.048 [-0.208, +0.188]  not shown safe
+   LLM-0.6B@L8      n 21 head 0.905  minus TTS -0.048 [-0.208, +0.188]  not shown safe
+   LLM-0.6B@L28     n 21 head 0.857  minus TTS -0.095 [-0.316, +0.188]  not shown safe
+   TTS-0.6B@L6      n 21 head 0.857  minus TTS -0.095 [-0.316, +0.188]  not shown safe
+==== TTS-1.7B: head accuracy against the TTS's reading rate, same items ====
+ CPP minority: n 230, groups 77, TTS rate 0.478
+   dictionary       0.596  minus TTS +0.117 [-0.015, +0.248]
+   LLM-0.6B@L2      0.683  minus TTS +0.204 [+0.057, +0.347]
+   LLM-0.6B@L4      0.761  minus TTS +0.283 [+0.140, +0.421]
+   LLM-0.6B@L8      0.809  minus TTS +0.330 [+0.192, +0.468]
+   LLM-0.6B@L12     0.813  minus TTS +0.335 [+0.196, +0.476]
+   LLM-0.6B@L28     0.783  minus TTS +0.304 [+0.160, +0.444]
+   TTS-0.6B@L6      0.752  minus TTS +0.274 [+0.129, +0.413]
+   TTS-1.7B@L16     0.704  minus TTS +0.226 [+0.087, +0.359]
+   inheritance LLM-0.6B@L2    minus TTS-0.6B@L6: -0.070 [-0.127, -0.017]
+   inheritance LLM-0.6B@L4    minus TTS-0.6B@L6: +0.009 [-0.030, +0.047]
+   inheritance LLM-0.6B@L8    minus TTS-0.6B@L6: +0.057 [+0.004, +0.112]
+   inheritance LLM-0.6B@L12   minus TTS-0.6B@L6: +0.061 [+0.014, +0.113]
+   inheritance LLM-0.6B@L28   minus TTS-0.6B@L6: +0.030 [-0.010, +0.077]
+ CPP majority: n 90, groups 61, TTS rate 0.767
+   dictionary       0.744  minus TTS -0.022 [-0.143, +0.099]
+   LLM-0.6B@L2      0.967  minus TTS +0.200 [+0.101, +0.312]
+   LLM-0.6B@L4      0.956  minus TTS +0.189 [+0.088, +0.302]
+   LLM-0.6B@L8      0.967  minus TTS +0.200 [+0.102, +0.312]
+   LLM-0.6B@L12     0.989  minus TTS +0.222 [+0.124, +0.337]
+   LLM-0.6B@L28     0.956  minus TTS +0.189 [+0.096, +0.296]
+   TTS-0.6B@L6      0.922  minus TTS +0.156 [+0.041, +0.279]
+   TTS-1.7B@L16     0.944  minus TTS +0.178 [+0.077, +0.289]
+   inheritance LLM-0.6B@L2    minus TTS-0.6B@L6: +0.044 [+0.000, +0.102]
+   inheritance LLM-0.6B@L4    minus TTS-0.6B@L6: +0.033 [-0.021, +0.097]
+   inheritance LLM-0.6B@L8    minus TTS-0.6B@L6: +0.044 [-0.010, +0.098]
+   inheritance LLM-0.6B@L12   minus TTS-0.6B@L6: +0.067 [+0.000, +0.146]
+   inheritance LLM-0.6B@L28   minus TTS-0.6B@L6: +0.033 [-0.034, +0.108]
+==== TTS-1.7B: end to end with the reading-vector port, audio actually synthesized ====
+ CPP minority: n 78, groups 35, TTS alone 0.346
+   dictionary       0.526  minus TTS +0.179 [+0.037, +0.344]
+   LLM-0.6B@L2      0.679  minus TTS +0.333 [+0.136, +0.512]
+   LLM-0.6B@L4      0.782  minus TTS +0.436 [+0.246, +0.609]
+   LLM-0.6B@L8      0.795  minus TTS +0.449 [+0.250, +0.635]
+   LLM-0.6B@L12     0.821  minus TTS +0.474 [+0.274, +0.658]
+   LLM-0.6B@L28     0.782  minus TTS +0.436 [+0.232, +0.622]
+   TTS-0.6B@L6      0.782  minus TTS +0.436 [+0.236, +0.614]
+   TTS-1.7B@L16     0.692  minus TTS +0.346 [+0.152, +0.522]
+ CPP majority: n 33, groups 25, TTS alone 0.788
+   dictionary       0.697  minus TTS -0.091 [-0.222, +0.039]
+   LLM-0.6B@L2      0.909  minus TTS +0.121 [+0.000, +0.286]
+   LLM-0.6B@L4      0.879  minus TTS +0.091 [-0.061, +0.269]
+   LLM-0.6B@L8      0.939  minus TTS +0.152 [+0.000, +0.321]
+   LLM-0.6B@L12     0.970  minus TTS +0.182 [+0.024, +0.375]
+   LLM-0.6B@L28     0.939  minus TTS +0.152 [+0.000, +0.321]
+   TTS-0.6B@L6      0.818  minus TTS +0.030 [-0.114, +0.214]
+   TTS-1.7B@L16     0.879  minus TTS +0.091 [-0.030, +0.241]
+==== TTS-1.7B: natural sentences, do no harm (lower bound above -.05) ====
+ TTS alone 0.934, n 76, characters 21
+   LLM-0.6B@L2      n 21 head 0.857  minus TTS -0.048 [-0.208, +0.188]  not shown safe
+   LLM-0.6B@L4      n 21 head 0.905  minus TTS +0.000 [-0.103, +0.188]  not shown safe
+   LLM-0.6B@L8      n 21 head 0.905  minus TTS +0.000 [-0.103, +0.188]  not shown safe
+   LLM-0.6B@L28     n 21 head 0.857  minus TTS -0.048 [-0.208, +0.188]  not shown safe
+   TTS-0.6B@L6      n 21 head 0.857  minus TTS -0.048 [-0.208, +0.188]  not shown safe

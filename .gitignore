@@ -1,0 +1,24 @@
+# Python virtual environments (created per-experiment, not part of the release)
+.venv/
+.venv-*/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# TeX build artefacts (the compiled PDF is committed on purpose)
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+
+# local scratch
+/tmp/
+*.swp

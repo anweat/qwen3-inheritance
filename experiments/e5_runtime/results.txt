@@ -1,0 +1,65 @@
+clips complete for all schemes: 800 of 800
+
+error rate (%), MLX on M4, language forced
+set                    n    intact    q4_g32   res_g32    q4_g64   res_g64
+aishell              100      3.24      3.38      3.65      3.72      4.07
+fleurs_cmn_hans_cn    50      8.61      9.65      8.95      8.67      8.78
+fleurs_yue_hant_hk    50      7.44      7.95      8.58      7.84      9.15
+cantonese_md          50      9.67      5.66      4.96      4.71      4.56
+sichuan               50      4.44      6.10      5.24      6.56      5.57
+northeast             50      6.57      6.76      6.57      7.02      5.74
+henan                 50      5.61      6.35      6.60      6.42      5.92
+wu                    50     34.98     36.47     39.26     36.56     39.07
+fleurs_en_us          50      4.09      4.55      5.48      4.65      5.02
+fleurs_ko_kr          50     14.62     17.90     20.49     21.99     22.68
+fleurs_ja_jp          50      9.44     12.84     15.67     16.00     17.82
+fleurs_vi_vn          50      9.39     12.85     15.47     11.65     15.25
+fleurs_th_th          50     10.99     13.07     15.33     13.03     16.72
+fleurs_ar_eg          50     21.87     28.24     32.42     27.80     34.51
+fleurs_ru_ru          50      7.95     10.41     12.96     12.39     14.47
+ALL                  800      9.93     11.36     12.68     11.69     13.31
+Chinese+dialect      450      9.10      9.14      9.20      8.98      9.07
+other                350     10.69     13.39     15.85     14.16     17.17
+
+ACCURACY (preset): res_gG minus q4_gG, pooled, 95% CI; worst set point estimate
+  G=32: +1.31 [+0.74, +1.88]  worst sets fleurs_ar_eg:+4.2 fleurs_ja_jp:+2.8 wu:+2.8  -> FAIL
+        Chinese+dialect  +0.06 [-0.58, +0.63]
+        other            +2.46 [+1.56, +3.41]
+  G=64: +1.62 [+0.28, +3.19]  worst sets fleurs_ar_eg:+6.7 fleurs_th_th:+3.7 fleurs_vi_vn:+3.6  -> FAIL
+        Chinese+dialect  +0.09 [-0.49, +0.61]
+        other            +3.01 [+0.65, +5.93]
+  context, each vs intact (MLX bf16):
+    q4_g32   +1.43 [+0.99, +1.85]
+    res_g32  +2.75 [+2.16, +3.32]
+    q4_g64   +1.76 [+1.11, +2.62]
+    res_g64  +3.37 [+2.30, +4.86]
+
+RUNTIME (preset): median per clip, interleaved; end to end = audio tower (prep.py, torch MPS fp32) + prefill + decode
+  intact   prefill   89.4 ms  decode 14.12 ms/token  end to end  692.5 ms  (mean tokens 31.5)
+  q4_g32   prefill   85.0 ms  decode  8.33 ms/token  end to end  526.1 ms  (mean tokens 31.5)
+  res_g32  prefill  160.0 ms  decode 10.55 ms/token  end to end  706.5 ms  (mean tokens 31.3)
+  q4_g64   prefill   89.0 ms  decode  8.05 ms/token  end to end  508.0 ms  (mean tokens 31.7)
+  res_g64  prefill  162.1 ms  decode 10.40 ms/token  end to end  703.8 ms  (mean tokens 31.8)
+  G=32: end-to-end ratio res/q4 median 1.337 (IQR 1.28-1.43) -> NOT ACCEPTABLE; decode per token 1.286, prefill 1.886
+  G=64: end-to-end ratio res/q4 median 1.359 (IQR 1.30-1.49) -> NOT ACCEPTABLE; decode per token 1.300, prefill 1.879
+
+MEMORY: decoder matrices incl. scales/biases (MB); embedding bf16 311.2 MB in every scheme
+  intact bf16 880.8
+  G=32: LLM Q4 275.3 + separate ASR Q4 275.3 = 550.5;  shared: LLM Q4 275.3 + residual 165.2 = 440.4  -> ASR-specific decoder bytes 0.60 x; bits/weight q4 5.00, residual 3.00
+  G=64: LLM Q4 247.7 + separate ASR Q4 247.7 = 495.5;  shared: LLM Q4 247.7 + residual 137.6 = 385.4  -> ASR-specific decoder bytes 0.56 x; bits/weight q4 4.50, residual 2.50
+  weight relative error (Frobenius): {"32": {"rel_err_q4": 0.0821886918380025, "rel_err_res": 0.1129025871022965}, "64": {"rel_err_q4": 0.09292838850839705, "rel_err_res": 0.11678766021116803}}
+
+BENCH (reported): one token at context 138, medians of 300 interleaved rounds (ms)
+  intact   layers 17.91  lm_head 4.46
+  q4_g32   layers 11.79  lm_head 4.62
+  res_g32  layers 15.64  lm_head 4.44
+  q4_g64   layers 11.89  lm_head 4.51
+  res_g64  layers 15.72  lm_head 4.61
+  G=32: decoder layers res/q4 1.327
+  G=64: decoder layers res/q4 1.322
+
+SANITY: MLX bf16 intact vs E3 torch fp32 forced intact
+  n 800  E3 torch 9.88  MLX 9.93  identical transcripts 0.906
+  hit the 200-token cap: {'intact': 0, 'q4_g32': 0, 'res_g32': 0, 'q4_g64': 1, 'res_g64': 1}
+
+VERDICT: {'G=32': 'accuracy FAIL, runtime NOT ACCEPTABLE', 'G=64': 'accuracy FAIL, runtime NOT ACCEPTABLE'}

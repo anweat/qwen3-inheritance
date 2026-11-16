@@ -1,0 +1,161 @@
+
+==================== family 0.6B ====================
+
+[A] direct pairwise distance ||Wa-Wb||/sqrt(||Wa|| ||Wb||)
+                     Base instruc Guard-G Guard-S Embeddi Reranke     ASR ForcedA TTS-Bas TTS-Cus
+  Base              0.000   0.123   0.005   0.124   0.078   0.128   0.365   0.661   1.504   1.504
+  instruct          0.123   0.000   0.123   0.013   0.146   0.036   0.365   0.661   1.500   1.500
+  Guard-Gen         0.005   0.123   0.000   0.124   0.078   0.128   0.365   0.661   1.504   1.504
+  Guard-Stream      0.124   0.013   0.124   0.000   0.147   0.038   0.365   0.661   1.500   1.500
+  Embedding         0.078   0.146   0.078   0.147   0.000   0.150   0.374   0.666   1.505   1.505
+  Reranker          0.128   0.036   0.128   0.038   0.150   0.000   0.367   0.662   1.500   1.500
+  ASR               0.365   0.365   0.365   0.365   0.374   0.367   0.000   0.586   1.461   1.461
+  ForcedAligner     0.661   0.661   0.661   0.661   0.666   0.662   0.586   0.000   1.457   1.457
+  TTS-Base          1.504   1.500   1.504   1.500   1.505   1.500   1.461   1.457   0.000   0.014
+  TTS-CustomVoice   1.504   1.500   1.504   1.500   1.505   1.500   1.461   1.457   0.014   0.000
+
+[B] minimum spanning tree (edges by distance)
+  Base                   -- Guard-Gen              0.005
+  instruct               -- Guard-Stream           0.013
+  TTS-Base               -- TTS-CustomVoice        0.014
+  instruct               -- Reranker               0.036
+  Base                   -- Embedding              0.078
+  Base                   -- instruct               0.123
+  Guard-Stream           -- ASR                    0.365
+  ASR                    -- ForcedAligner          0.586
+  ForcedAligner          -- TTS-Base               1.457
+
+[C] residual lineage: cosine of R = W - alpha*B (shrink removed)
+                  instruc Guard-G Guard-S Embeddi Reranke     ASR ForcedA TTS-Bas TTS-Cus
+  instruct          1.000   0.002   0.995   0.001   0.959   0.135   0.055   0.000   0.000
+  Guard-Gen         0.002   1.000   0.007   0.001   0.002   0.001   0.000   0.000   0.000
+  Guard-Stream      0.995   0.007   1.000   0.001   0.954   0.135   0.055   0.000   0.000
+  Embedding         0.001   0.001   0.001   1.000   0.001   0.001   0.002  -0.000  -0.000
+  Reranker          0.959   0.002   0.954   0.001   1.000   0.130   0.053   0.000   0.000
+  ASR               0.135   0.001   0.135   0.001   0.130   1.000   0.392  -0.000  -0.000
+  ForcedAligner     0.055   0.000   0.055   0.002   0.053   0.392   1.000  -0.000  -0.000
+  TTS-Base          0.000   0.000   0.000  -0.000   0.000  -0.000  -0.000   1.000   1.000
+  TTS-CustomVoice   0.000   0.000   0.000  -0.000   0.000  -0.000  -0.000   1.000   1.000
+
+[D] concentration on shrink-removed residuals, normalized by base group energy
+  instruct               head gini 0.152  neuron gini 0.234 top10% 0.193  gate~up 0.256 gate~down 0.260
+  Guard-Gen              head gini 0.147  neuron gini 0.294 top10% 0.240  gate~up 0.244 gate~down 0.199
+  Guard-Stream           head gini 0.151  neuron gini 0.232 top10% 0.192  gate~up 0.256 gate~down 0.259
+  Embedding              head gini 0.162  neuron gini 0.398 top10% 0.299  gate~up -0.013 gate~down -0.009
+  Reranker               head gini 0.146  neuron gini 0.230 top10% 0.192  gate~up 0.221 gate~down 0.236
+  ASR                    head gini 0.197  neuron gini 0.172 top10% 0.172  gate~up 0.271 gate~down 0.181
+  ForcedAligner          head gini 0.167  neuron gini 0.216 top10% 0.195  gate~up 0.313 gate~down 0.212
+  TTS-Base               head gini 0.152  neuron gini 0.273 top10% 0.248  gate~up 0.134 gate~down 0.013
+  TTS-CustomVoice        head gini 0.152  neuron gini 0.273 top10% 0.248  gate~up 0.134 gate~down 0.013
+
+[E] same heads/neurons across models after shrink removal (relative residual energy, correlation)
+  neuron profile correlation
+                  instruc Guard-G Guard-S Embeddi Reranke     ASR ForcedA TTS-Bas TTS-Cus
+  instruct          1.000   0.300   1.000   0.228   0.975   0.625   0.445   0.221   0.221
+  Guard-Gen         0.300   1.000   0.302   0.172   0.305   0.245   0.343   0.182   0.182
+  Guard-Stream      1.000   0.302   1.000   0.231   0.975   0.625   0.449   0.224   0.224
+  Embedding         0.228   0.172   0.231   1.000   0.234   0.199   0.288   0.123   0.123
+  Reranker          0.975   0.305   0.975   0.234   1.000   0.617   0.454   0.229   0.229
+  ASR               0.625   0.245   0.625   0.199   0.617   1.000   0.458   0.246   0.246
+  ForcedAligner     0.445   0.343   0.449   0.288   0.454   0.458   1.000   0.285   0.285
+  TTS-Base          0.221   0.182   0.224   0.123   0.229   0.246   0.285   1.000   1.000
+  TTS-CustomVoice   0.221   0.182   0.224   0.123   0.229   0.246   0.285   1.000   1.000
+
+[F] clade centroid as shared base: mean distance to members, 1-bit proxy error, vs best real member and vs Base
+  text             n=3  centroid d=0.017 1bit=0.011 | best member instruct       d=0.016 1bit=0.010 | Base d=0.126 1bit=0.078
+  base+guard+emb   n=3  centroid d=0.030 1bit=0.019 | best member Base           d=0.024 1bit=0.016 | Base d=0.024 1bit=0.016
+  all-text         n=6  centroid d=0.068 1bit=0.043 | best member instruct       d=0.073 1bit=0.045 | Base d=0.075 1bit=0.047
+  audio            n=2  centroid d=0.301 1bit=0.189 | best member ASR            d=0.300 1bit=0.188 | Base d=0.561 1bit=0.352
+  tts              n=2  centroid d=0.007 1bit=0.004 | best member TTS-CustomVoic d=0.007 1bit=0.004 | Base d=1.917 1bit=1.213
+
+[G] weight tails: r90 of W, top-1% energy share, Q4 block-32 relative error (mean of q_proj and gate_proj at mid layer)
+  Base                   r90 q  473 gate  628  top1% energy q 0.189 gate 0.144  Q4 err q 0.0989 gate 0.0991  Q8 err q 0.00545 gate 0.00547
+  instruct               r90 q  476 gate  628  top1% energy q 0.186 gate 0.145  Q4 err q 0.0989 gate 0.0991  Q8 err q 0.00545 gate 0.00548
+  Guard-Gen              r90 q  473 gate  628  top1% energy q 0.189 gate 0.144  Q4 err q 0.0989 gate 0.0991  Q8 err q 0.00545 gate 0.00548
+  Guard-Stream           r90 q  476 gate  628  top1% energy q 0.186 gate 0.145  Q4 err q 0.0989 gate 0.0991  Q8 err q 0.00545 gate 0.00548
+  Embedding              r90 q  474 gate  627  top1% energy q 0.188 gate 0.144  Q4 err q 0.0989 gate 0.0991  Q8 err q 0.00545 gate 0.00547
+  Reranker               r90 q  476 gate  628  top1% energy q 0.185 gate 0.144  Q4 err q 0.0989 gate 0.0991  Q8 err q 0.00545 gate 0.00546
+  ASR                    r90 q  479 gate  624  top1% energy q 0.186 gate 0.145  Q4 err q 0.0990 gate 0.0991  Q8 err q 0.00546 gate 0.00547
+  ForcedAligner          r90 q  479 gate  611  top1% energy q 0.150 gate 0.115  Q4 err q 0.0978 gate 0.0982  Q8 err q 0.00539 gate 0.00542
+  TTS-Base               r90 q  482 gate  540  top1% energy q 0.204 gate 0.236  Q4 err q 0.1003 gate 0.0993  Q8 err q 0.00553 gate 0.00548
+  TTS-CustomVoice        r90 q  482 gate  540  top1% energy q 0.204 gate 0.236  Q4 err q 0.1002 gate 0.0993  Q8 err q 0.00554 gate 0.00548
+
+==================== family 1.7B ====================
+
+[A] direct pairwise distance ||Wa-Wb||/sqrt(||Wa|| ||Wb||)
+                     Base instruc     ASR TTS-Bas TTS-Cus TTS-Voi VL-Inst VL-Thin VL-Embe VL-Rera
+  Base              0.000   0.117   0.325   1.416   1.417   1.421   0.255   0.268   0.260   0.266
+  instruct          0.117   0.000   0.316   1.411   1.412   1.416   0.246   0.252   0.250   0.257
+  ASR               0.325   0.316   0.000   1.353   1.354   1.358   0.248   0.252   0.253   0.261
+  TTS-Base          1.416   1.411   1.353   0.000   0.077   0.156   1.385   1.383   1.385   1.386
+  TTS-CustomVoice   1.417   1.412   1.354   0.077   0.000   0.144   1.386   1.385   1.386   1.387
+  TTS-VoiceDesign   1.421   1.416   1.358   0.156   0.144   0.000   1.390   1.388   1.390   1.391
+  VL-Instruct       0.255   0.246   0.248   1.385   1.386   1.390   0.000   0.066   0.051   0.079
+  VL-Thinking       0.268   0.252   0.252   1.383   1.385   1.388   0.066   0.000   0.083   0.103
+  VL-Embedding      0.260   0.250   0.253   1.385   1.386   1.390   0.051   0.083   0.000   0.094
+  VL-Reranker       0.266   0.257   0.261   1.386   1.387   1.391   0.079   0.103   0.094   0.000
+
+[B] minimum spanning tree (edges by distance)
+  VL-Instruct            -- VL-Embedding           0.051
+  VL-Instruct            -- VL-Thinking            0.066
+  TTS-Base               -- TTS-CustomVoice        0.077
+  VL-Instruct            -- VL-Reranker            0.079
+  Base                   -- instruct               0.117
+  TTS-CustomVoice        -- TTS-VoiceDesign        0.144
+  instruct               -- VL-Instruct            0.246
+  VL-Instruct            -- ASR                    0.248
+  ASR                    -- TTS-Base               1.353
+
+[C] residual lineage: cosine of R = W - alpha*B (shrink removed)
+                  instruc     ASR TTS-Bas TTS-Cus TTS-Voi VL-Inst VL-Thin VL-Embe VL-Rera
+  instruct          1.000   0.233   0.003   0.003   0.003   0.289   0.330   0.283   0.275
+  ASR               0.233   1.000   0.015   0.015   0.015   0.613   0.607   0.600   0.583
+  TTS-Base          0.003   0.015   1.000   0.997   0.987   0.012   0.013   0.012   0.012
+  TTS-CustomVoice   0.003   0.015   0.997   1.000   0.989   0.012   0.013   0.012   0.012
+  TTS-VoiceDesign   0.003   0.015   0.987   0.989   1.000   0.012   0.012   0.012   0.012
+  VL-Instruct       0.289   0.613   0.012   0.012   0.012   1.000   0.966   0.979   0.950
+  VL-Thinking       0.330   0.607   0.013   0.013   0.012   0.966   1.000   0.945   0.918
+  VL-Embedding      0.283   0.600   0.012   0.012   0.012   0.979   0.945   1.000   0.930
+  VL-Reranker       0.275   0.583   0.012   0.012   0.012   0.950   0.918   0.930   1.000
+
+[D] concentration on shrink-removed residuals, normalized by base group energy
+  instruct               head gini 0.112  neuron gini 0.215 top10% 0.174  gate~up -0.000 gate~down 0.152
+  ASR                    head gini 0.156  neuron gini 0.194 top10% 0.170  gate~up 0.100 gate~down 0.141
+  TTS-Base               head gini 0.102  neuron gini 0.194 top10% 0.195  gate~up 0.048 gate~down -0.248
+  TTS-CustomVoice        head gini 0.102  neuron gini 0.194 top10% 0.195  gate~up 0.045 gate~down -0.250
+  TTS-VoiceDesign        head gini 0.102  neuron gini 0.194 top10% 0.195  gate~up 0.040 gate~down -0.252
+  VL-Instruct            head gini 0.145  neuron gini 0.218 top10% 0.175  gate~up 0.243 gate~down 0.289
+  VL-Thinking            head gini 0.139  neuron gini 0.211 top10% 0.172  gate~up 0.225 gate~down 0.270
+  VL-Embedding           head gini 0.143  neuron gini 0.215 top10% 0.174  gate~up 0.213 gate~down 0.257
+  VL-Reranker            head gini 0.134  neuron gini 0.213 top10% 0.175  gate~up 0.198 gate~down 0.223
+
+[E] same heads/neurons across models after shrink removal (relative residual energy, correlation)
+  neuron profile correlation
+                  instruc     ASR TTS-Bas TTS-Cus TTS-Voi VL-Inst VL-Thin VL-Embe VL-Rera
+  instruct          1.000   0.603   0.131   0.133   0.132   0.596   0.636   0.603   0.608
+  ASR               0.603   1.000   0.159   0.160   0.159   0.845   0.847   0.848   0.840
+  TTS-Base          0.131   0.159   1.000   1.000   1.000   0.179   0.180   0.186   0.191
+  TTS-CustomVoice   0.133   0.160   1.000   1.000   1.000   0.181   0.181   0.188   0.193
+  TTS-VoiceDesign   0.132   0.159   1.000   1.000   1.000   0.180   0.180   0.187   0.192
+  VL-Instruct       0.596   0.845   0.179   0.181   0.180   1.000   0.997   0.993   0.975
+  VL-Thinking       0.636   0.847   0.180   0.181   0.180   0.997   1.000   0.991   0.973
+  VL-Embedding      0.603   0.848   0.186   0.188   0.187   0.993   0.991   1.000   0.971
+  VL-Reranker       0.608   0.840   0.191   0.193   0.192   0.975   0.973   0.971   1.000
+
+[F] clade centroid as shared base: mean distance to members, 1-bit proxy error, vs best real member and vs Base
+  vl               n=4  centroid d=0.045 1bit=0.028 | best member VL-Instruct    d=0.045 1bit=0.028 | Base d=0.269 1bit=0.168
+  vl+asr           n=5  centroid d=0.092 1bit=0.057 | best member VL-Instruct    d=0.086 1bit=0.054 | Base d=0.285 1bit=0.178
+  text+vl+asr      n=3  centroid d=0.152 1bit=0.095 | best member VL-Instruct    d=0.161 1bit=0.101 | Base d=0.242 1bit=0.151
+  tts              n=3  centroid d=0.072 1bit=0.044 | best member TTS-CustomVoic d=0.072 1bit=0.044 | Base d=1.941 1bit=1.230
+
+[G] weight tails: r90 of W, top-1% energy share, Q4 block-32 relative error (mean of q_proj and gate_proj at mid layer)
+  Base                   r90 q  683 gate 1317  top1% energy q 0.170 gate 0.122  Q4 err q 0.1005 gate 0.1013  Q8 err q 0.00555 gate 0.00559
+  instruct               r90 q  686 gate 1316  top1% energy q 0.168 gate 0.122  Q4 err q 0.1006 gate 0.1013  Q8 err q 0.00555 gate 0.00559
+  ASR                    r90 q  687 gate 1310  top1% energy q 0.170 gate 0.123  Q4 err q 0.1006 gate 0.1013  Q8 err q 0.00555 gate 0.00559
+  TTS-Base               r90 q  770 gate 1243  top1% energy q 0.191 gate 0.159  Q4 err q 0.0992 gate 0.0988  Q8 err q 0.00548 gate 0.00545
+  TTS-CustomVoice        r90 q  772 gate 1245  top1% energy q 0.190 gate 0.159  Q4 err q 0.0992 gate 0.0988  Q8 err q 0.00548 gate 0.00545
+  TTS-VoiceDesign        r90 q  773 gate 1245  top1% energy q 0.191 gate 0.159  Q4 err q 0.0992 gate 0.0988  Q8 err q 0.00548 gate 0.00545
+  VL-Instruct            r90 q  686 gate 1312  top1% energy q 0.169 gate 0.123  Q4 err q 0.1004 gate 0.1013  Q8 err q 0.00554 gate 0.00559
+  VL-Thinking            r90 q  688 gate 1313  top1% energy q 0.168 gate 0.122  Q4 err q 0.1004 gate 0.1013  Q8 err q 0.00554 gate 0.00559
+  VL-Embedding           r90 q  687 gate 1311  top1% energy q 0.169 gate 0.122  Q4 err q 0.1004 gate 0.1013  Q8 err q 0.00554 gate 0.00559
+  VL-Reranker            r90 q  688 gate 1312  top1% energy q 0.168 gate 0.122  Q4 err q 0.1004 gate 0.1013  Q8 err q 0.00554 gate 0.00559

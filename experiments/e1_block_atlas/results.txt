@@ -1,0 +1,184 @@
+
+==================== family 0.6B: reference Qwen3-0.6B-Base, layers [2, 14, 26] ====================
+
+[1] block drift ||W-B||/||B||, cos, alpha (W≈alpha*B), residual ||W-alpha*B||/||W|| (mean over layers/matrices)
+  Qwen3-0.6B                         drift 0.123  cos 0.992  alpha 0.981  resid 0.123
+  Qwen3Guard-Gen-0.6B                drift 0.006  cos 1.000  alpha 1.000  resid 0.006
+  Qwen3Guard-Stream-0.6B             drift 0.123  cos 0.992  alpha 0.979  resid 0.123
+  Qwen3-Embedding-0.6B               drift 0.068  cos 0.997  alpha 1.000  resid 0.068
+  Qwen3-Reranker-0.6B                drift 0.129  cos 0.991  alpha 0.981  resid 0.128
+  Qwen3-ASR-0.6B                     drift 0.343  cos 0.942  alpha 0.812  resid 0.332
+  Qwen3-ForcedAligner-0.6B           drift 0.628  cos 0.783  alpha 0.674  resid 0.616
+  Qwen3-TTS-12Hz-0.6B-Base           drift 1.182  cos 0.000  alpha 0.000  resid 1.000
+  Qwen3-TTS-12Hz-0.6B-CustomVoice    drift 1.182  cos 0.000  alpha 0.000  resid 1.000
+
+[2] drift by matrix type (mean over layers)
+                                     q_proj  k_proj  v_proj  o_proj  gate_p  up_pro  down_p  | ln-corr
+  Qwen3-0.6B                          0.119   0.135   0.108   0.116   0.133   0.122   0.126  | 1.000
+  Qwen3Guard-Gen-0.6B                 0.005   0.006   0.005   0.006   0.006   0.006   0.006  | 1.000
+  Qwen3Guard-Stream-0.6B              0.119   0.136   0.108   0.117   0.133   0.123   0.127  | 1.000
+  Qwen3-Embedding-0.6B                0.060   0.060   0.049   0.058   0.102   0.085   0.062  | 1.000
+  Qwen3-Reranker-0.6B                 0.125   0.143   0.113   0.122   0.140   0.129   0.129  | 1.000
+  Qwen3-ASR-0.6B                      0.384   0.384   0.315   0.343   0.327   0.331   0.315  | 1.000
+  Qwen3-ForcedAligner-0.6B            0.645   0.694   0.578   0.633   0.593   0.616   0.634  | 0.997
+  Qwen3-TTS-12Hz-0.6B-Base            1.154   1.203   1.174   1.200   1.166   1.192   1.184  | -0.004
+  Qwen3-TTS-12Hz-0.6B-CustomVoice     1.154   1.203   1.174   1.200   1.166   1.192   1.184  | -0.004
+
+[3] concentration: Gini and top-10% share of delta energy across heads (q/k/v/o) and MLP neurons (gate/up/down)
+  iid-noise null, self_attn.q_proj    gini 0.003  top10% 0.063
+  iid-noise null, mlp.gate_proj       gini 0.025  top10% 0.108
+  iid-noise null, mlp.down_proj       gini 0.025  top10% 0.108
+  Qwen3-0.6B                         head gini 0.117 drift[0.10,0.15]  neuron gini 0.179 top10% 0.167  corr gate~up 0.414 gate~down 0.325
+  Qwen3Guard-Gen-0.6B                head gini 0.118 drift[0.00,0.01]  neuron gini 0.238 top10% 0.212  corr gate~up 0.443 gate~down 0.375
+  Qwen3Guard-Stream-0.6B             head gini 0.115 drift[0.10,0.15]  neuron gini 0.176 top10% 0.166  corr gate~up 0.412 gate~down 0.323
+  Qwen3-Embedding-0.6B               head gini 0.108 drift[0.04,0.08]  neuron gini 0.369 top10% 0.278  corr gate~up 0.010 gate~down 0.029
+  Qwen3-Reranker-0.6B                head gini 0.108 drift[0.10,0.16]  neuron gini 0.179 top10% 0.167  corr gate~up 0.325 gate~down 0.261
+  Qwen3-ASR-0.6B                     head gini 0.129 drift[0.27,0.47]  neuron gini 0.160 top10% 0.161  corr gate~up 0.326 gate~down 0.127
+  Qwen3-ForcedAligner-0.6B           head gini 0.104 drift[0.55,0.81]  neuron gini 0.129 top10% 0.148  corr gate~up 0.575 gate~down 0.472
+  Qwen3-TTS-12Hz-0.6B-Base           head gini 0.100 drift[1.12,1.29]  neuron gini 0.149 top10% 0.161  corr gate~up 0.377 gate~down 0.074
+  Qwen3-TTS-12Hz-0.6B-CustomVoice    head gini 0.100 drift[1.12,1.29]  neuron gini 0.149 top10% 0.161  corr gate~up 0.378 gate~down 0.074
+
+[4] lineage: cosine between deltas from the reference (all sampled matrices concatenated)
+                     instruct Guard-Gen Guard-Str Embedding  Reranker       ASR ForcedAli  TTS-Base TTS-Custo
+  instruct              1.000     0.013     0.995     0.001     0.960     0.196     0.129     0.133     0.133
+  Guard-Gen             0.013     1.000     0.019     0.001     0.013     0.039     0.038     0.060     0.060
+  Guard-Stream          0.995     0.019     1.000     0.001     0.955     0.201     0.134     0.142     0.142
+  Embedding             0.001     0.001     0.001     1.000     0.001     0.000     0.001    -0.001    -0.001
+  Reranker              0.960     0.013     0.955     0.001     1.000     0.188     0.123     0.128     0.128
+  ASR                   0.196     0.039     0.201     0.000     0.188     1.000     0.566     0.462     0.462
+  ForcedAligner         0.129     0.038     0.134     0.001     0.123     0.566     1.000     0.454     0.454
+  TTS-Base              0.133     0.060     0.142    -0.001     0.128     0.462     0.454     1.000     1.000
+  TTS-CustomVoice       0.133     0.060     0.142    -0.001     0.128     0.462     0.454     1.000     1.000
+
+[5] do the same heads/neurons move across functions? correlation of per-group delta energy (mean over layers)
+  Qwen3-TTS-12Hz-0.6B-Base|Qwen3-TTS-12Hz-0.6B-CustomVoice           head 1.000  neuron 1.000
+  Qwen3-0.6B|Qwen3Guard-Stream-0.6B                                  head 1.000  neuron 0.999
+  Qwen3Guard-Stream-0.6B|Qwen3-Reranker-0.6B                         head 0.995  neuron 0.924
+  Qwen3-0.6B|Qwen3-Reranker-0.6B                                     head 0.995  neuron 0.924
+  Qwen3-ASR-0.6B|Qwen3-ForcedAligner-0.6B                            head 0.383  neuron 0.519
+  Qwen3-ForcedAligner-0.6B|Qwen3-TTS-12Hz-0.6B-CustomVoice           head 0.408  neuron 0.506
+  Qwen3-ForcedAligner-0.6B|Qwen3-TTS-12Hz-0.6B-Base                  head 0.408  neuron 0.506
+  Qwen3-ASR-0.6B|Qwen3-TTS-12Hz-0.6B-CustomVoice                     head 0.224  neuron 0.502
+  ...
+  Qwen3-Embedding-0.6B|Qwen3-TTS-12Hz-0.6B-Base                      head 0.120  neuron 0.040
+  Qwen3Guard-Gen-0.6B|Qwen3-Reranker-0.6B                            head 0.265  neuron 0.035
+  Qwen3Guard-Gen-0.6B|Qwen3Guard-Stream-0.6B                         head 0.242  neuron 0.012
+  Qwen3-0.6B|Qwen3Guard-Gen-0.6B                                     head 0.239  neuron 0.011
+
+[6] top-64 input-subspace overlap with reference (1=same subspace; random≈64/dim), stable rank, weight kurtosis
+  random expectation ≈ 0.062
+  Qwen3-0.6B-Base                    overlap q 1.000 gate 1.000  stable-rank q 53 gate 102  kurtosis q 4.08 gate 2.33
+  Qwen3-0.6B                         overlap q 0.986 gate 0.967  stable-rank q 53 gate 103  kurtosis q 3.92 gate 2.35
+  Qwen3Guard-Gen-0.6B                overlap q 1.000 gate 1.000  stable-rank q 53 gate 102  kurtosis q 4.09 gate 2.33
+  Qwen3Guard-Stream-0.6B             overlap q 0.986 gate 0.967  stable-rank q 53 gate 103  kurtosis q 3.92 gate 2.35
+  Qwen3-Embedding-0.6B               overlap q 0.998 gate 0.958  stable-rank q 52 gate 100  kurtosis q 4.06 gate 2.29
+  Qwen3-Reranker-0.6B                overlap q 0.985 gate 0.957  stable-rank q 54 gate 103  kurtosis q 3.91 gate 2.33
+  Qwen3-ASR-0.6B                     overlap q 0.893 gate 0.890  stable-rank q 51 gate 84  kurtosis q 3.94 gate 2.37
+  Qwen3-ForcedAligner-0.6B           overlap q 0.461 gate 0.334  stable-rank q 30 gate 51  kurtosis q 2.15 gate 0.99
+  Qwen3-TTS-12Hz-0.6B-Base           overlap q 0.061 gate 0.062  stable-rank q 15 gate 35  kurtosis q 7.15 gate 8.40
+  Qwen3-TTS-12Hz-0.6B-CustomVoice    overlap q 0.061 gate 0.062  stable-rank q 15 gate 35  kurtosis q 7.15 gate 8.40
+
+[7] RMSNorm depth profile: mean input_layernorm scale per layer (every 3rd layer)
+                                    L0     L3     L6     L9     L12    L15    L18    L21    L24    L27   
+  Qwen3-0.6B-Base                     0.18   0.51   0.55   1.12   1.62   2.62   3.81   6.65  10.84  14.55
+  Qwen3-0.6B                          0.17   0.51   0.55   1.12   1.62   2.62   3.81   6.65  10.84  14.55
+  Qwen3Guard-Gen-0.6B                 0.18   0.51   0.55   1.12   1.62   2.62   3.81   6.65  10.84  14.55
+  Qwen3Guard-Stream-0.6B              0.17   0.51   0.55   1.12   1.62   2.62   3.81   6.65  10.84  14.55
+  Qwen3-Embedding-0.6B                0.18   0.51   0.55   1.12   1.62   2.62   3.81   6.65  10.84  14.55
+  Qwen3-Reranker-0.6B                 0.17   0.51   0.55   1.12   1.62   2.62   3.81   6.65  10.84  14.55
+  Qwen3-ASR-0.6B                      0.18   0.51   0.55   1.12   1.63   2.62   3.81   6.65  10.84  14.55
+  Qwen3-ForcedAligner-0.6B            0.23   0.50   0.55   1.12   1.60   2.61   3.82   6.63  10.84  14.55
+  Qwen3-TTS-12Hz-0.6B-Base            0.28   0.65   0.58   1.27   0.85   0.91   1.13   1.44   1.32   1.34
+  Qwen3-TTS-12Hz-0.6B-CustomVoice     0.28   0.65   0.58   1.27   0.85   0.91   1.13   1.44   1.32   1.34
+
+==================== family 1.7B: reference Qwen3-1.7B-Base, layers [14] ====================
+
+[1] block drift ||W-B||/||B||, cos, alpha (W≈alpha*B), residual ||W-alpha*B||/||W|| (mean over layers/matrices)
+  Qwen3-1.7B                         drift 0.113  cos 0.994  alpha 0.982  resid 0.113
+  Qwen3-ASR-1.7B                     drift 0.297  cos 0.961  alpha 0.819  resid 0.276
+  Qwen3-TTS-12Hz-1.7B-Base           drift 1.024  cos 0.220  alpha 0.116  resid 0.974
+  Qwen3-TTS-12Hz-1.7B-CustomVoice    drift 1.025  cos 0.220  alpha 0.115  resid 0.974
+  Qwen3-TTS-12Hz-1.7B-VoiceDesign    drift 1.024  cos 0.218  alpha 0.114  resid 0.974
+  Qwen3-VL-2B-Instruct               drift 0.243  cos 0.971  alpha 0.900  resid 0.239
+  Qwen3-VL-2B-Thinking               drift 0.254  cos 0.968  alpha 0.894  resid 0.250
+  Qwen3-VL-Embedding-2B              drift 0.246  cos 0.970  alpha 0.900  resid 0.242
+  Qwen3-VL-Reranker-2B               drift 0.253  cos 0.968  alpha 0.900  resid 0.250
+
+[2] drift by matrix type (mean over layers)
+                                     q_proj  k_proj  v_proj  o_proj  gate_p  up_pro  down_p  | ln-corr
+  Qwen3-1.7B                          0.115   0.127   0.094   0.098   0.130   0.112   0.114  | 1.000
+  Qwen3-ASR-1.7B                      0.323   0.323   0.259   0.272   0.316   0.296   0.292  | 1.000
+  Qwen3-TTS-12Hz-1.7B-Base            1.061   1.041   0.958   1.003   1.055   1.033   1.020  | 0.903
+  Qwen3-TTS-12Hz-1.7B-CustomVoice     1.061   1.041   0.958   1.003   1.055   1.033   1.020  | 0.903
+  Qwen3-TTS-12Hz-1.7B-VoiceDesign     1.060   1.040   0.959   1.003   1.055   1.033   1.020  | 0.903
+  Qwen3-VL-2B-Instruct                0.266   0.275   0.206   0.215   0.263   0.240   0.236  | 1.000
+  Qwen3-VL-2B-Thinking                0.278   0.287   0.215   0.225   0.275   0.251   0.248  | 1.000
+  Qwen3-VL-Embedding-2B               0.270   0.277   0.209   0.215   0.270   0.244   0.240  | 1.000
+  Qwen3-VL-Reranker-2B                0.274   0.283   0.214   0.227   0.274   0.250   0.249  | 1.000
+
+[3] concentration: Gini and top-10% share of delta energy across heads (q/k/v/o) and MLP neurons (gate/up/down)
+  iid-noise null, self_attn.q_proj    gini 0.002  top10% 0.063
+  iid-noise null, mlp.gate_proj       gini 0.018  top10% 0.105
+  iid-noise null, mlp.down_proj       gini 0.017  top10% 0.105
+  Qwen3-1.7B                         head gini 0.099 drift[0.09,0.13]  neuron gini 0.191 top10% 0.163  corr gate~up 0.460 gate~down 0.503
+  Qwen3-ASR-1.7B                     head gini 0.093 drift[0.24,0.37]  neuron gini 0.165 top10% 0.159  corr gate~up 0.559 gate~down 0.314
+  Qwen3-TTS-12Hz-1.7B-Base           head gini 0.073 drift[0.95,1.06]  neuron gini 0.183 top10% 0.166  corr gate~up 0.479 gate~down 0.130
+  Qwen3-TTS-12Hz-1.7B-CustomVoice    head gini 0.073 drift[0.95,1.06]  neuron gini 0.183 top10% 0.166  corr gate~up 0.478 gate~down 0.129
+  Qwen3-TTS-12Hz-1.7B-VoiceDesign    head gini 0.073 drift[0.95,1.06]  neuron gini 0.182 top10% 0.166  corr gate~up 0.478 gate~down 0.127
+  Qwen3-VL-2B-Instruct               head gini 0.111 drift[0.20,0.31]  neuron gini 0.193 top10% 0.166  corr gate~up 0.581 gate~down 0.521
+  Qwen3-VL-2B-Thinking               head gini 0.107 drift[0.21,0.32]  neuron gini 0.188 top10% 0.164  corr gate~up 0.582 gate~down 0.515
+  Qwen3-VL-Embedding-2B              head gini 0.110 drift[0.20,0.31]  neuron gini 0.189 top10% 0.165  corr gate~up 0.571 gate~down 0.509
+  Qwen3-VL-Reranker-2B               head gini 0.102 drift[0.21,0.32]  neuron gini 0.184 top10% 0.164  corr gate~up 0.553 gate~down 0.487
+
+[4] lineage: cosine between deltas from the reference (all sampled matrices concatenated)
+                     instruct       ASR  TTS-Base TTS-Custo TTS-Voice VL-2B-Ins VL-2B-Thi VL-Embedd VL-Rerank
+  instruct              1.000     0.279     0.139     0.139     0.139     0.325     0.362     0.319     0.312
+  ASR                   0.279     1.000     0.522     0.522     0.523     0.691     0.688     0.679     0.662
+  TTS-Base              0.139     0.522     1.000     0.999     0.997     0.355     0.359     0.348     0.340
+  TTS-CustomVoice       0.139     0.522     0.999     1.000     0.997     0.355     0.359     0.349     0.340
+  TTS-VoiceDesign       0.139     0.523     0.997     0.997     1.000     0.356     0.360     0.349     0.341
+  VL-2B-Instruct        0.325     0.691     0.355     0.355     0.356     1.000     0.971     0.982     0.958
+  VL-2B-Thinking        0.362     0.688     0.359     0.359     0.360     0.971     1.000     0.954     0.931
+  VL-Embedding-2B       0.319     0.679     0.348     0.349     0.349     0.982     0.954     1.000     0.941
+  VL-Reranker-2B        0.312     0.662     0.340     0.340     0.341     0.958     0.931     0.941     1.000
+
+[5] do the same heads/neurons move across functions? correlation of per-group delta energy (mean over layers)
+  Qwen3-TTS-12Hz-1.7B-Base|Qwen3-TTS-12Hz-1.7B-CustomVoice           head 1.000  neuron 1.000
+  Qwen3-TTS-12Hz-1.7B-CustomVoice|Qwen3-TTS-12Hz-1.7B-VoiceDesign    head 1.000  neuron 1.000
+  Qwen3-TTS-12Hz-1.7B-Base|Qwen3-TTS-12Hz-1.7B-VoiceDesign           head 1.000  neuron 1.000
+  Qwen3-VL-2B-Instruct|Qwen3-VL-2B-Thinking                          head 0.997  neuron 0.997
+  Qwen3-VL-2B-Instruct|Qwen3-VL-Embedding-2B                         head 1.000  neuron 0.994
+  Qwen3-VL-2B-Thinking|Qwen3-VL-Embedding-2B                         head 0.997  neuron 0.991
+  Qwen3-VL-2B-Instruct|Qwen3-VL-Reranker-2B                          head 0.999  neuron 0.982
+  Qwen3-VL-2B-Thinking|Qwen3-VL-Reranker-2B                          head 0.999  neuron 0.979
+  ...
+  Qwen3-1.7B|Qwen3-ASR-1.7B                                          head 0.544  neuron 0.444
+  Qwen3-1.7B|Qwen3-TTS-12Hz-1.7B-CustomVoice                         head 0.369  neuron 0.369
+  Qwen3-1.7B|Qwen3-TTS-12Hz-1.7B-VoiceDesign                         head 0.369  neuron 0.369
+  Qwen3-1.7B|Qwen3-TTS-12Hz-1.7B-Base                                head 0.369  neuron 0.368
+
+[6] top-64 input-subspace overlap with reference (1=same subspace; random≈64/dim), stable rank, weight kurtosis
+  random expectation ≈ 0.031
+  Qwen3-1.7B-Base                    overlap q 1.000 gate 1.000  stable-rank q 56 gate 155  kurtosis q 3.11 gate 1.46
+  Qwen3-1.7B                         overlap q 0.991 gate 0.986  stable-rank q 56 gate 155  kurtosis q 3.04 gate 1.47
+  Qwen3-ASR-1.7B                     overlap q 0.932 gate 0.935  stable-rank q 54 gate 151  kurtosis q 3.11 gate 1.52
+  Qwen3-TTS-12Hz-1.7B-Base           overlap q 0.100 gate 0.069  stable-rank q 35 gate 67  kurtosis q 4.33 gate 2.90
+  Qwen3-TTS-12Hz-1.7B-CustomVoice    overlap q 0.100 gate 0.069  stable-rank q 35 gate 67  kurtosis q 4.31 gate 2.87
+  Qwen3-TTS-12Hz-1.7B-VoiceDesign    overlap q 0.099 gate 0.069  stable-rank q 36 gate 66  kurtosis q 4.34 gate 2.89
+  Qwen3-VL-2B-Instruct               overlap q 0.952 gate 0.954  stable-rank q 54 gate 152  kurtosis q 3.05 gate 1.52
+  Qwen3-VL-2B-Thinking               overlap q 0.944 gate 0.948  stable-rank q 55 gate 152  kurtosis q 3.02 gate 1.53
+  Qwen3-VL-Embedding-2B              overlap q 0.951 gate 0.929  stable-rank q 54 gate 152  kurtosis q 3.04 gate 1.51
+  Qwen3-VL-Reranker-2B               overlap q 0.947 gate 0.935  stable-rank q 54 gate 153  kurtosis q 3.03 gate 1.50
+
+[7] RMSNorm depth profile: mean input_layernorm scale per layer (every 3rd layer)
+                                    L0     L3     L6     L9     L12    L15    L18    L21    L24    L27   
+  Qwen3-1.7B-Base                     0.09   0.32   0.36   0.79   1.20   2.38   4.19   7.87  13.59  17.28
+  Qwen3-1.7B                          0.09   0.32   0.36   0.79   1.20   2.38   4.19   7.87  13.59  17.28
+  Qwen3-ASR-1.7B                      0.09   0.32   0.36   0.80   1.21   2.38   4.19   7.87  13.59  17.28
+  Qwen3-TTS-12Hz-1.7B-Base            0.13   0.36   0.43   0.83   1.12   2.35   4.11   7.91  13.54  17.14
+  Qwen3-TTS-12Hz-1.7B-CustomVoice     0.13   0.36   0.43   0.83   1.12   2.35   4.11   7.91  13.54  17.14
+  Qwen3-TTS-12Hz-1.7B-VoiceDesign     0.13   0.36   0.43   0.83   1.12   2.35   4.11   7.91  13.54  17.14
+  Qwen3-VL-2B-Instruct                0.09   0.32   0.36   0.79   1.20   2.38   4.19   7.87  13.59  17.28
+  Qwen3-VL-2B-Thinking                0.09   0.32   0.36   0.79   1.20   2.38   4.19   7.87  13.59  17.28
+  Qwen3-VL-Embedding-2B               0.09   0.32   0.36   0.79   1.20   2.38   4.19   7.87  13.59  17.28
+  Qwen3-VL-Reranker-2B                0.09   0.32   0.36   0.79   1.20   2.38   4.19   7.87  13.59  17.28

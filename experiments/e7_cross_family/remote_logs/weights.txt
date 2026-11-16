@@ -1,0 +1,11 @@
+cosy       vs qwen_base   layers 24  rel resid mean 1.838 (first/mid/last third 1.782/1.843/1.889)  cos 0.000  depth rho +0.82  embed rows 151936 rel 0.436  vocab 151936 vs 151936
+cosy       vs qwen_inst   layers 24  rel resid mean 1.870 (first/mid/last third 1.813/1.876/1.922)  cos 0.000  depth rho +0.82  embed rows 151936 rel 0.443  vocab 151936 vs 151936
+cosy       vs cosy_blank  layers 24  rel resid mean 1.873 (first/mid/last third 1.774/1.892/1.954)  cos 0.310  depth rho +0.90  embed rows 151936 rel 0.083  vocab 151936 vs 151936
+cosy_blank vs qwen_base   layers 24  rel resid mean 0.928 (first/mid/last third 0.918/0.931/0.935)  cos 0.001  depth rho +0.50  embed rows 151936 rel 0.975  vocab 151936 vs 151936
+cosy_blank vs qwen_inst   layers 24  rel resid mean 0.944 (first/mid/last third 0.934/0.948/0.951)  cos 0.001  depth rho +0.50  embed rows 151936 rel 0.998  vocab 151936 vs 151936
+spark      vs qwen_base   layers 24  rel resid mean 7.141 (first/mid/last third 6.897/7.371/7.154)  cos 0.200  depth rho +0.33  embed rows 151936 rel 4.623  vocab 166000 vs 151936
+spark      vs qwen_inst   layers 24  rel resid mean 7.266 (first/mid/last third 7.017/7.503/7.279)  cos 0.200  depth rho +0.33  embed rows 151936 rel 4.742  vocab 166000 vs 151936
+llasa      vs llama_base  layers 16  rel resid mean 0.893 (first/mid/last third 0.815/0.935/0.944)  cos 0.659  depth rho +0.87  embed rows 128256 rel 0.625  vocab 193800 vs 128256
+llasa      vs llama_inst  layers 16  rel resid mean 0.899 (first/mid/last third 0.821/0.941/0.952)  cos 0.666  depth rho +0.88  embed rows 128256 rel 0.661  vocab 193800 vs 128256
+qwen_inst  vs qwen_base   layers 24  rel resid mean 0.075 (first/mid/last third 0.070/0.081/0.074)  cos 0.997  depth rho +0.35  embed rows 151936 rel 0.103  vocab 151936 vs 151936
+llama_inst vs llama_base  layers 16  rel resid mean 0.155 (first/mid/last third 0.139/0.164/0.166)  cos 0.987  depth rho +0.78  embed rows 128256 rel 0.176  vocab 128256 vs 128256

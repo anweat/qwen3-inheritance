@@ -1,0 +1,12 @@
+
+### noise on Qwen3-0.6B-Base
+                                                  code       en_doc       zh_doc    spoken_en    spoken_zh         chat   (CE / JS bits vs intact)
+  intact Qwen3-0.6B-Base                   2.192  2.538  4.535  2.765  4.142  4.896
+  all layer matrices from -ASR-0.6B d=0.33719.534/0.907 22.189/0.947 22.171/0.957 24.743/0.982 17.357/0.950 21.550/0.936
+    residual only (no shrink)             14.750/0.862 16.969/0.913 16.075/0.890 19.092/0.949 12.795/0.863 17.432/0.903
+    shrink only (alpha*B)                  2.330/0.051  2.766/0.067  4.719/0.089  2.910/0.061  4.513/0.068  4.862/0.089
+    isotropic noise, same residual norm    7.197/0.779  7.253/0.775  8.619/0.725  6.751/0.685  8.504/0.713  8.871/0.749
+    shuffled residual (same values, positions lost) 6.961/0.755  6.958/0.718  8.712/0.748  6.868/0.708  8.372/0.722  8.520/0.729
+    shrink + residual in Base top-20% singular band 2.635/0.121  3.018/0.150  4.970/0.145  3.124/0.139  4.528/0.085  5.266/0.167
+    isotropic noise, norm of top-band residual 2.457/0.078  2.887/0.100  4.822/0.133  3.072/0.103  4.679/0.099  4.899/0.125
+    shrink + residual in Base bottom-50% band 2.519/0.102  2.922/0.125  4.875/0.144  3.115/0.121  4.648/0.111  5.106/0.142

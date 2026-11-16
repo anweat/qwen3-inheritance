@@ -1,0 +1,308 @@
+\begin{thebibliography}{40}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[An et~al.(2024)An, Chen, Deng, Du, Gao, Gao, Gu, He, Hu, Hu,
+  et~al.]{sensevoice}
+Keyu An, Qian Chen, Chong Deng, Zhihao Du, Changfeng Gao, Zhifu Gao, Yue Gu,
+  Ting He, Hangrui Hu, Kai Hu, et~al.
+\newblock {FunAudioLLM}: Voice understanding and generation foundation models
+  for natural interaction between humans and {LLMs}.
+\newblock \emph{arXiv preprint arXiv:2407.04051}, 2024.
+
+\bibitem[Bansal et~al.(2021)Bansal, Nakkiran, and Barak]{bansal2021stitching}
+Yamini Bansal, Preetum Nakkiran, and Boaz Barak.
+\newblock Revisiting model stitching to compare neural representations.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~34, 2021.
+
+\bibitem[Baroudi et~al.(2026)Baroudi, Labrak, Motlicek, Bredin, and
+  Marxer]{baroudi2026qwen3tts}
+S{\'e}verin Baroudi, Yanis Labrak, Petr Motlicek, Herv{\'e} Bredin, and Ricard
+  Marxer.
+\newblock Beyond the benchmark: Conditioning, domains and failure modes of
+  {Qwen3-TTS}.
+\newblock \emph{arXiv preprint arXiv:2610.23678}, 2026.
+
+\bibitem[Bu et~al.(2017)Bu, Du, Na, Wu, and Zheng]{aishell1}
+Hui Bu, Jiayu Du, Xingyu Na, Bengu Wu, and Hao Zheng.
+\newblock {AISHELL-1}: An open-source {Mandarin} speech corpus and a speech
+  recognition baseline.
+\newblock In \emph{2017 20th Conference of the Oriental Chapter of the
+  International Coordinating Committee on Speech Databases and Speech I/O
+  Systems and Assessment (O-COCOSDA)}, pages 1--5, 2017.
+\newblock \doi{10.1109/ICSDA.2017.8384449}.
+
+\bibitem[Burns et~al.(2023)Burns, Ye, Klein, and Steinhardt]{burns2023latent}
+Collin Burns, Haotian Ye, Dan Klein, and Jacob Steinhardt.
+\newblock Discovering latent knowledge in language models without supervision.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2023.
+
+\bibitem[Chen et~al.(2022)Chen, Chang, Chang, and Yeh]{g2pw}
+Yi-Chang Chen, Yu-Chuan Chang, Yen-Cheng Chang, and Yi-Ren Yeh.
+\newblock {g2pW}: A conditional weighted softmax {BERT} for polyphone
+  disambiguation in {Mandarin}.
+\newblock In \emph{Proceedings of Interspeech 2022}, pages 1926--1930, 2022.
+\newblock \doi{10.21437/Interspeech.2022-216}.
+
+\bibitem[Chu et~al.(2023)Chu, Xu, Zhou, Yang, Zhang, Yan, Zhou, and
+  Zhou]{qwenaudio}
+Yunfei Chu, Jin Xu, Xiaohuan Zhou, Qian Yang, Shiliang Zhang, Zhijie Yan, Chang
+  Zhou, and Jingren Zhou.
+\newblock {Qwen-Audio}: Advancing universal audio understanding via unified
+  large-scale audio-language models.
+\newblock \emph{arXiv preprint arXiv:2311.07919}, 2023.
+
+\bibitem[Chu et~al.(2024)Chu, Xu, Yang, Wei, Wei, Guo, Leng, Lv, He, Lin,
+  et~al.]{qwen2audio}
+Yunfei Chu, Jin Xu, Qian Yang, Haojie Wei, Xipin Wei, Zhifang Guo, Yichong
+  Leng, Yuanjun Lv, Jinzheng He, Junyang Lin, et~al.
+\newblock {Qwen2-Audio} technical report.
+\newblock \emph{arXiv preprint arXiv:2407.10759}, 2024.
+
+\bibitem[Conneau et~al.(2023)Conneau, Ma, Khanuja, Zhang, Axelrod, Dalmia,
+  Riesa, Rivera, and Bapna]{fleurs}
+Alexis Conneau, Min Ma, Simran Khanuja, Yu~Zhang, Vera Axelrod, Siddharth
+  Dalmia, Jason Riesa, Clara Rivera, and Ankur Bapna.
+\newblock {FLEURS}: Few-shot learning evaluation of universal representations
+  of speech.
+\newblock In \emph{2022 IEEE Spoken Language Technology Workshop (SLT)}, pages
+  798--805, 2023.
+\newblock \doi{10.1109/SLT54892.2023.10023141}.
+
+\bibitem[Davari et~al.(2023)Davari, Horoi, Natik, Lajoie, Wolf, and
+  Belilovsky]{davari2023cka}
+MohammadReza Davari, Stefan Horoi, Amine Natik, Guillaume Lajoie, Guy Wolf, and
+  Eugene Belilovsky.
+\newblock Reliability of {CKA} as a similarity measure in deep learning.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2023.
+
+\bibitem[Dettmers et~al.(2022)Dettmers, Lewis, Belkada, and
+  Zettlemoyer]{dettmers2022int8}
+Tim Dettmers, Mike Lewis, Younes Belkada, and Luke Zettlemoyer.
+\newblock {LLM.int8()}: 8-bit matrix multiplication for transformers at scale.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~35, 2022.
+
+\bibitem[Du et~al.(2024)Du, Wang, Chen, Shi, Lv, Zhao, Gao, Yang, Gao, Wang,
+  et~al.]{cosyvoice2}
+Zhihao Du, Yuxuan Wang, Qian Chen, Xian Shi, Xiang Lv, Tianyu Zhao, Zhifu Gao,
+  Yexin Yang, Changfeng Gao, Hui Wang, et~al.
+\newblock {CosyVoice} 2: Scalable streaming speech synthesis with large
+  language models.
+\newblock \emph{arXiv preprint arXiv:2412.10117}, 2024.
+
+\bibitem[Gao et~al.(2022)Gao, Zhang, McLoughlin, and Yan]{paraformer}
+Zhifu Gao, Shiliang Zhang, Ian McLoughlin, and Zhijie Yan.
+\newblock Paraformer: Fast and accurate parallel transformer for
+  non-autoregressive end-to-end speech recognition.
+\newblock In \emph{Proceedings of Interspeech 2022}, pages 2063--2067, 2022.
+\newblock \doi{10.21437/Interspeech.2022-9996}.
+
+\bibitem[Grattafiori et~al.(2024)Grattafiori, Dubey, Jauhri, Pandey, Kadian,
+  Al-Dahle, Letman, Mathur, Schelten, Vaughan, et~al.]{llama3}
+Aaron Grattafiori, Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey, Abhishek
+  Kadian, Ahmad Al-Dahle, Aiesha Letman, Akhil Mathur, Alan Schelten, Alex
+  Vaughan, et~al.
+\newblock The {Llama} 3 herd of models.
+\newblock \emph{arXiv preprint arXiv:2407.21783}, 2024.
+
+\bibitem[Hannun et~al.(2023)Hannun, Digani, Katharopoulos, and Collobert]{mlx}
+Awni Hannun, Jagrit Digani, Angelos Katharopoulos, and Ronan Collobert.
+\newblock {MLX}: Efficient and flexible machine learning on {Apple} silicon.
+\newblock \url{https://github.com/ml-explore/mlx}, 2023.
+
+\bibitem[Hewitt and Liang(2019)]{hewitt2019control}
+John Hewitt and Percy Liang.
+\newblock Designing and interpreting probes with control tasks.
+\newblock In \emph{Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing and the 9th International Joint Conference on
+  Natural Language Processing (EMNLP-IJCNLP)}, pages 2733--2743, 2019.
+\newblock \doi{10.18653/v1/D19-1275}.
+
+\bibitem[Hsu et~al.(2026)Hsu, Tian, Zhang, Lu, Wang, and Wu]{hsu2026geometric}
+Ming-Hao Hsu, Xiaohai Tian, Jun Zhang, Lu~Lu, Yuxuan Wang, and Zhizheng Wu.
+\newblock Geometric alignment without functional equivalence: A layer-wise
+  analysis of the speech-text modality gap.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2026.
+\newblock arXiv:2603.01502.
+
+\bibitem[Hu et~al.(2026)Hu, Zhu, He, Guo, Zhang, Wang, Guo, Jiang, Hao, Guo,
+  et~al.]{qwen3tts}
+Hangrui Hu, Xinfa Zhu, Ting He, Dake Guo, Bin Zhang, Xiong Wang, Zhifang Guo,
+  Ziyue Jiang, Hongkun Hao, Zishan Guo, et~al.
+\newblock {Qwen3-TTS} technical report.
+\newblock \emph{arXiv preprint arXiv:2601.15621}, 2026.
+\newblock URL \url{https://github.com/QwenLM/Qwen3-TTS}.
+
+\bibitem[Ilharco et~al.(2023)Ilharco, Ribeiro, Wortsman, Gururangan, Schmidt,
+  Hajishirzi, and Farhadi]{ilharco2023task}
+Gabriel Ilharco, Marco~Tulio Ribeiro, Mitchell Wortsman, Suchin Gururangan,
+  Ludwig Schmidt, Hannaneh Hajishirzi, and Ali Farhadi.
+\newblock Editing models with task arithmetic.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2023.
+
+\bibitem[Kornblith et~al.(2019)Kornblith, Norouzi, Lee, and
+  Hinton]{kornblith2019cka}
+Simon Kornblith, Mohammad Norouzi, Honglak Lee, and Geoffrey Hinton.
+\newblock Similarity of neural network representations revisited.
+\newblock In \emph{Proceedings of the 36th International Conference on Machine
+  Learning (ICML)}, volume~97 of \emph{Proceedings of Machine Learning
+  Research}, 2019.
+
+\bibitem[Lenc and Vedaldi(2015)]{lenc2015equivariance}
+Karel Lenc and Andrea Vedaldi.
+\newblock Understanding image representations by measuring their equivariance
+  and equivalence.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, pages 991--999, 2015.
+\newblock \doi{10.1109/CVPR.2015.7298701}.
+
+\bibitem[Liu et~al.(2024)Liu, Xiao, Li, Lee, Han, Dao, and
+  Cai]{liu2024bitdelta}
+James Liu, Guangxuan Xiao, Kai Li, Jason~D. Lee, Song Han, Tri Dao, and Tianle
+  Cai.
+\newblock {BitDelta}: Your fine-tune may only be worth one bit.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~37, 2024.
+
+\bibitem[{\`O}g{\'u}nr{\`e}m{\'i} et~al.(2025){\`O}g{\'u}nr{\`e}m{\'i},
+  Manning, Jurafsky, and Livescu]{ogunremi2025transcribe}
+Tol{\'u}lop{\'e} {\`O}g{\'u}nr{\`e}m{\'i}, Christopher~D. Manning, Dan
+  Jurafsky, and Karen Livescu.
+\newblock Transcribe, translate, or transliterate: An investigation of
+  intermediate representations in spoken language models.
+\newblock In \emph{IEEE Automatic Speech Recognition and Understanding Workshop
+  (ASRU)}, 2025.
+
+\bibitem[Park and Lee(2020)]{g2pm}
+Kyubyong Park and Seanie Lee.
+\newblock {g2pM}: A neural grapheme-to-phoneme conversion package for {Mandarin
+  Chinese} based on a new open benchmark dataset.
+\newblock In \emph{Proceedings of Interspeech 2020}, pages 1723--1727, 2020.
+\newblock \doi{10.21437/Interspeech.2020-1094}.
+
+\bibitem[{Qwen Team} et~al.(2024){Qwen Team}, Yang, Yang, Zhang, Hui, Zheng,
+  Yu, Li, Liu, Huang, et~al.]{qwen25}
+{Qwen Team}, An~Yang, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo~Zheng, Bowen
+  Yu, Chengyuan Li, Dayiheng Liu, Fei Huang, et~al.
+\newblock Qwen2.5 technical report.
+\newblock \emph{arXiv preprint arXiv:2412.15115}, 2024.
+
+\bibitem[Radford et~al.(2023)Radford, Kim, Xu, Brockman, McLeavey, and
+  Sutskever]{whisper}
+Alec Radford, Jong~Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and
+  Ilya Sutskever.
+\newblock Robust speech recognition via large-scale weak supervision.
+\newblock In \emph{Proceedings of the 40th International Conference on Machine
+  Learning (ICML)}, volume 202 of \emph{Proceedings of Machine Learning
+  Research}, 2023.
+
+\bibitem[Raghu et~al.(2017)Raghu, Gilmer, Yosinski, and
+  Sohl-Dickstein]{raghu2017svcca}
+Maithra Raghu, Justin Gilmer, Jason Yosinski, and Jascha Sohl-Dickstein.
+\newblock {SVCCA}: Singular vector canonical correlation analysis for deep
+  learning dynamics and interpretability.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~30, 2017.
+
+\bibitem[Shi et~al.(2026)Shi, Wang, Guo, Wang, Zhang, Zhang, Guo, Hao, Xi,
+  Yang, et~al.]{qwen3asr}
+Xian Shi, Xiong Wang, Zhifang Guo, Yongqi Wang, Pei Zhang, Xinyu Zhang, Zishan
+  Guo, Hongkun Hao, Yu~Xi, Baosong Yang, et~al.
+\newblock {Qwen3-ASR} technical report.
+\newblock \emph{arXiv preprint arXiv:2601.21337}, 2026.
+\newblock URL \url{https://github.com/QwenLM/Qwen3-ASR}.
+
+\bibitem[Sun()]{jieba}
+Junyi Sun.
+\newblock jieba: {Chinese} text segmentation.
+\newblock \url{https://github.com/fxsjy/jieba}.
+\newblock Version 0.42.1, accessed November 2026.
+
+\bibitem[Sun et~al.(2024)Sun, Chen, Kolter, and Liu]{sun2024massive}
+Mingjie Sun, Xinlei Chen, J.~Zico Kolter, and Zhuang Liu.
+\newblock Massive activations in large language models.
+\newblock In \emph{First Conference on Language Modeling (COLM)}, 2024.
+
+\bibitem[Wang et~al.(2025{\natexlab{a}})Wang, Zheng, Ai, and
+  Ling]{wang2025textdegradation}
+Chao Wang, Rui-Chen Zheng, Yang Ai, and Zhen-Hua Ling.
+\newblock Understanding textual capability degradation in speech {LLMs} via
+  parameter importance analysis.
+\newblock \emph{arXiv preprint arXiv:2509.23755}, 2025{\natexlab{a}}.
+
+\bibitem[Wang et~al.(2023)Wang, Chen, Wu, Zhang, Zhou, Liu, Chen, Liu, Wang,
+  Li, et~al.]{valle}
+Chengyi Wang, Sanyuan Chen, Yu~Wu, Ziqiang Zhang, Long Zhou, Shujie Liu, Zhuo
+  Chen, Yanqing Liu, Huaming Wang, Jinyu Li, et~al.
+\newblock Neural codec language models are zero-shot text to speech
+  synthesizers.
+\newblock \emph{arXiv preprint arXiv:2301.02111}, 2023.
+
+\bibitem[Wang et~al.(2025{\natexlab{b}})Wang, Jiang, Ma, Zhang, Liu, Li, Liang,
+  Zheng, Wang, Feng, et~al.]{sparktts}
+Xinsheng Wang, Mingqi Jiang, Ziyang Ma, Ziyu Zhang, Songxiang Liu, Linqin Li,
+  Zheng Liang, Qixi Zheng, Rui Wang, Xiaoqin Feng, et~al.
+\newblock {Spark-TTS}: An efficient {LLM}-based text-to-speech model with
+  single-stream decoupled speech tokens.
+\newblock \emph{arXiv preprint arXiv:2503.01710}, 2025{\natexlab{b}}.
+
+\bibitem[Xiang et~al.(2025)Xiang, Zhao, Guo, and Zou]{xiang2025modalitygap}
+Bajian Xiang, Shuaijiang Zhao, Tingwei Guo, and Wei Zou.
+\newblock Understanding the modality gap: An empirical study on the speech-text
+  alignment mechanism of large speech language models.
+\newblock In \emph{Proceedings of the 2025 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, 2025.
+
+\bibitem[Xiao et~al.(2024)Xiao, Tian, Chen, Han, and Lewis]{xiao2024sinks}
+Guangxuan Xiao, Yuandong Tian, Beidi Chen, Song Han, and Mike Lewis.
+\newblock Efficient streaming language models with attention sinks.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2024.
+
+\bibitem[Yadav et~al.(2023)Yadav, Tam, Choshen, Raffel, and
+  Bansal]{yadav2023ties}
+Prateek Yadav, Derek Tam, Leshem Choshen, Colin Raffel, and Mohit Bansal.
+\newblock {TIES}-merging: Resolving interference when merging models.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~36, 2023.
+
+\bibitem[Yang et~al.(2024)Yang, Yang, Hui, Zheng, Yu, Zhou, Li, Li, Liu, Huang,
+  et~al.]{qwen2}
+An~Yang, Baosong Yang, Binyuan Hui, Bo~Zheng, Bowen Yu, Chang Zhou, Chengpeng
+  Li, Chengyuan Li, Dayiheng Liu, Fei Huang, et~al.
+\newblock Qwen2 technical report.
+\newblock \emph{arXiv preprint arXiv:2407.10671}, 2024.
+
+\bibitem[Yang et~al.(2025)Yang, Li, Yang, Zhang, Hui, Zheng, Yu, Gao, Huang,
+  Lv, et~al.]{qwen3}
+An~Yang, Anfeng Li, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo~Zheng, Bowen
+  Yu, Chang Gao, Chengen Huang, Chenxu Lv, et~al.
+\newblock Qwen3 technical report.
+\newblock \emph{arXiv preprint arXiv:2505.09388}, 2025.
+
+\bibitem[Ye et~al.(2025)Ye, Zhu, Chan, Wang, Tan, Lei, Peng, Liu, Jin, Dai,
+  et~al.]{llasa}
+Zhen Ye, Xinfa Zhu, Chi-Min Chan, Xinsheng Wang, Xu~Tan, Jiahe Lei, Yi~Peng,
+  Haohe Liu, Yizhu Jin, Zheqi Dai, et~al.
+\newblock Llasa: Scaling train-time and inference-time compute for
+  {Llama}-based speech synthesis.
+\newblock \emph{arXiv preprint arXiv:2502.04128}, 2025.
+
+\bibitem[Yu et~al.(2024)Yu, Yu, Yu, Huang, and Li]{yu2024dare}
+Le~Yu, Bowen Yu, Haiyang Yu, Fei Huang, and Yongbin Li.
+\newblock Language models are super mario: Absorbing abilities from homologous
+  models as a free lunch.
+\newblock In \emph{Proceedings of the 41st International Conference on Machine
+  Learning (ICML)}, volume 235 of \emph{Proceedings of Machine Learning
+  Research}, 2024.
+
+\end{thebibliography}

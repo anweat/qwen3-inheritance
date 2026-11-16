@@ -1,0 +1,43 @@
+### trace: 60 clips, 1448 transcript tokens; attribution recon error 1.60e-07; mean dim35 at first token 5823.4
+  stream rms by layer (audio positions | first token | transcript)
+   L 0     0.019 |     0.01 |    0.025
+   L 2     0.303 |     0.38 |    0.281
+   L 3     0.345 |   183.51 |    0.331
+   L 8     0.597 |   183.39 |    0.577
+   L14     1.090 |   182.89 |    1.013
+   L20     2.863 |   182.87 |    2.872
+   L24     6.048 |   183.10 |    7.242
+   L27    11.340 |   174.41 |   13.863
+  where transcript-token attention goes (share, mean over heads; min-max across heads for audio)
+   L    audio(min-max)        first-token  other-text
+    0  0.113 (0.001-0.496)   0.001       0.885
+    3  0.144 (0.003-0.453)   0.663       0.193
+    6  0.242 (0.014-0.788)   0.465       0.294
+    9  0.159 (0.003-0.375)   0.498       0.344
+   12  0.227 (0.019-0.696)   0.472       0.301
+   15  0.155 (0.006-0.511)   0.478       0.366
+   18  0.266 (0.013-0.798)   0.454       0.280
+   21  0.245 (0.006-0.765)   0.643       0.112
+   24  0.186 (0.002-0.445)   0.694       0.121
+   27  0.012 (0.001-0.048)   0.799       0.190
+  link to plasticity (Spearman per layer): neuron plasticity vs audio-mode |DLA|, vs audio/text |DLA| ratio; head plasticity vs audio attention, vs audio-mode |DLA|
+   L 2  -0.116   0.025   0.397  -0.226   0.613
+   L 6  -0.078  -0.052   0.097  -0.021   0.554
+   L10  -0.145  -0.078   0.159  -0.094   0.531
+   L14  -0.329  -0.085   0.344  -0.047   0.642
+   L18  -0.178   0.026   0.424   0.400   0.543
+   L22  -0.115  -0.000   0.341  -0.194   0.417
+   L26  -0.392  -0.122   0.068  -0.065   0.416
+   L27  -0.380  -0.020  -0.256  -0.465   0.521
+   mean  -0.222  -0.059   0.122  -0.147   0.540   (last column: audio-mode vs text-mode |DLA| correlation)
+   top audio-mode neurons (layer, neuron, |DLA|, text-mode |DLA|, plasticity pct):
+     L27 n81  2.387  0.940  0.09
+     L27 n47  0.663  0.337  0.04
+     L27 n26  0.632  0.474  0.01
+     L27 n222  0.570  1.022  0.03
+     L27 n0  0.527  0.831  0.10
+     L27 n386  0.510  0.797  0.15
+     L27 n31  0.463  0.114  0.01
+     L25 n409  0.454  0.007  0.38
+     L25 n24  0.401  0.180  0.00
+     L22 n552  0.332  0.005  0.37

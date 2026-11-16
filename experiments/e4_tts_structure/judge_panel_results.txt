@@ -1,0 +1,64 @@
+
+==== charsiu ====
+  seg  TTS n 274 says-g 0.985 says-a 0.956 balanced 0.971 [0.942, 0.996] | human n  41 gold 0.659 [0.455, 0.921] -> no
+  tone TTS n 152 says-g 0.987 says-a 0.974 balanced 0.980 [0.957, 1.000] | human n  46 gold 0.804 [0.650, 0.889] -> no
+  top reading on TTS   n 1110 matches spoken 0.915, leaves pair 0.074
+  top reading on human n   89 matches spoken 0.674, leaves pair 0.315
+  third reading: no
+
+==== sensevoice ====
+  seg  TTS n 272 says-g 1.000 says-a 0.993 balanced 0.996 [0.989, 1.000] | human n  31 gold 0.935 [0.769, 1.000] -> QUALIFIES
+  tone TTS n 140 says-g 0.986 says-a 0.957 balanced 0.971 [0.933, 1.000] | human n  46 gold 0.804 [0.677, 0.964] -> no
+  top reading on TTS   n 1110 matches spoken 0.513, leaves pair 0.479
+  top reading on human n   89 matches spoken 0.382, leaves pair 0.607
+  third reading: no
+
+==== paraformer ====
+  seg  TTS n 266 says-g 0.992 says-a 0.992 balanced 0.992 [0.982, 1.000] | human n  31 gold 0.903 [0.750, 1.000] -> QUALIFIES
+  tone TTS n 140 says-g 1.000 says-a 0.957 balanced 0.979 [0.943, 1.000] | human n  45 gold 0.889 [0.783, 0.978] -> no
+  top reading on TTS   n 1110 matches spoken 0.541, leaves pair 0.443
+  top reading on human n   89 matches spoken 0.101, leaves pair 0.899
+  third reading: no
+
+==== whisper ====
+  seg  TTS n 274 says-g 0.985 says-a 0.985 balanced 0.985 [0.968, 1.000] | human n  36 gold 0.917 [0.743, 1.000] -> QUALIFIES
+  tone TTS n 150 says-g 0.960 says-a 0.960 balanced 0.960 [0.917, 0.989] | human n  46 gold 0.826 [0.719, 0.951] -> no
+  top reading on TTS   n 1110 matches spoken 0.673, leaves pair 0.314
+  top reading on human n   89 matches spoken 0.303, leaves pair 0.685
+  third reading: no
+
+==== qwen ====
+  seg  TTS n 272 says-g 1.000 says-a 0.993 balanced 0.996 [0.989, 1.000] | human n  31 gold 0.935 [0.769, 1.000] -> QUALIFIES
+  tone TTS n 140 says-g 0.971 says-a 0.943 balanced 0.957 [0.917, 0.992] | human n  45 gold 0.733 [0.540, 0.981] -> no
+  third reading: no top readings
+
+==== panel ====
+  seg: qualified outside Qwen ['sensevoice', 'paraformer', 'whisper'] -> ESTABLISHED
+  tone: qualified outside Qwen [] -> not established
+  third reading judges: []
+
+agreement between judges on O (share of clips with the same sign, exploratory)
+  charsiu    sensevoice n 323 0.932
+  charsiu    paraformer n 292 0.908
+  charsiu    whisper    n 330 0.906
+  charsiu    qwen       n 313 0.933
+  sensevoice paraformer n 299 0.923
+  sensevoice whisper    n 330 0.939
+  sensevoice qwen       n 320 0.947
+  paraformer whisper    n 299 0.923
+  paraformer qwen       n 299 0.940
+  whisper    qwen       n 320 0.928
+
+blind listening, exploratory (answers were seen before these judges ran)
+  charsiu    agrees on answered 1.000 (n 30), top reading leaves the pair: answered 1/30, neither 3/6
+  sensevoice agrees on answered 1.000 (n 30), top reading leaves the pair: answered 12/30, neither 3/6
+  paraformer agrees on answered 1.000 (n 30), top reading leaves the pair: answered 13/30, neither 2/6
+  whisper    agrees on answered 0.933 (n 30), top reading leaves the pair: answered 4/30, neither 4/6
+  qwen       agrees on answered 1.000 (n 30), top reading leaves the pair: answered 0/0, neither 0/6
+  neither clips, top reading by judge:
+    # 1 峒 dong4/tong2 charsiu=dong1 sensevoice=dong1 paraformer=dong1 whisper=dong1
+    #20 轧 ya4/zha2 charsiu=zan1 sensevoice=mi3 paraformer=ya2 whisper=ran2
+    #24 芾 fei4/fu2 charsiu=fu3 sensevoice=fu3 paraformer=fu3 whisper=fu3
+    #25 句 gou1/ju4 charsiu=gu1 sensevoice=gu1 paraformer=gu1 whisper=gu1
+    #32 桔 jie2/ju2 charsiu=jue2 sensevoice=jue2 paraformer=jue2 whisper=jue2
+    #35 镐 hao4/gao3 charsiu=gao4 sensevoice=gao4 paraformer=gao4 whisper=gou4

@@ -1,0 +1,69 @@
+share of clips by type (runaway: errors > 1.5x reference length; empty: no transcript)
+  intact                                 runaway 0.000 (0)  empty 0.000
+  standalone_q4                          runaway 0.000 (0)  empty 0.001
+  base_q4_plus_2bit                      runaway 0.000 (0)  empty 0.007
+  instruct_q4_plus_2bit                  runaway 0.003 (2)  empty 0.000
+  instruct_q4_plus_2bit_with_embedding   runaway 0.024 (19)  empty 0.018
+
+per-set counts of runaway clips
+  set                        intact standalone_q4 base_q4_plus_ instruct_q4_p instruct_q4_p
+  aishell                         0             0             0             0            14
+  cantonese_md                    0             0             0             0             0
+  fleurs_ar_eg                    0             0             0             0             2
+  fleurs_cmn_hans_cn              0             0             0             0             0
+  fleurs_en_us                    0             0             0             0             0
+  fleurs_ja_jp                    0             0             0             0             0
+  fleurs_ko_kr                    0             0             0             0             0
+  fleurs_ru_ru                    0             0             0             1             0
+  fleurs_th_th                    0             0             0             1             0
+  fleurs_vi_vn                    0             0             0             0             0
+  fleurs_yue_hant_hk              0             0             0             0             0
+  henan                           0             0             0             0             0
+  northeast                       0             0             0             0             0
+  sichuan                         0             0             0             0             0
+  wu                              0             0             0             0             3
+
+error rate (%) over clips where NO scheme ran away, same clips for all
+  kept 779 of 800
+  set                    n       intact standalone_q4 base_q4_plus_ instruct_q4_p instruct_q4_p
+  aishell               86         3.23          4.13          3.53          3.38         99.17
+  cantonese_md          50         9.32         10.32          3.96         10.67         62.32
+  fleurs_ar_eg          48        22.22         32.18         30.32         29.98         45.72
+  fleurs_cmn_hans_cn    50         8.61         38.82          9.82          9.07         53.38
+  fleurs_en_us          50         4.09          4.65          8.36          5.95         56.32
+  fleurs_ja_jp          50         9.32         14.82         26.77         19.12         78.25
+  fleurs_ko_kr          50        14.62         20.49         27.87         19.54         39.21
+  fleurs_ru_ru          49         8.54         15.64         33.30         53.55         76.01
+  fleurs_th_th          49        10.45         14.00         14.80         32.96         46.95
+  fleurs_vi_vn          50         9.46         11.72         14.55         35.38         90.40
+  fleurs_yue_hant_hk    50         7.32          8.01          7.72          7.89         82.78
+  henan                 50         5.55          6.42          5.74          5.92         52.75
+  northeast             50         6.44         21.62          7.72          5.55         54.27
+  sichuan               50         4.51         16.30          5.83          5.70         55.53
+  wu                    47        33.11         40.31         37.39         36.81        106.43
+  POOLED               779         9.68         16.02         14.45         19.87         63.75
+
+median per-clip error rate (%)
+  intact                                 5.67
+  standalone_q4                          7.94
+  base_q4_plus_2bit                      7.41
+  instruct_q4_plus_2bit                  9.09
+  instruct_q4_plus_2bit_with_embedding   64.29
+
+detected language differs from intact (share)
+  standalone_q4                          0.165
+  base_q4_plus_2bit                      0.009
+  instruct_q4_plus_2bit                  0.000
+  instruct_q4_plus_2bit_with_embedding   0.018
+  intact language by set: {'cantonese_md': [('Cantonese', 50)], 'fleurs_ru_ru': [('Russian', 50)], 'fleurs_yue_hant_hk': [('Cantonese', 50)], 'wu': [('Chinese', 50)]}
+
+examples of worst clips, cmn under standalone Q4 and ru under Base+2bit:
+  [standalone_q4] err 83 n 83 (intact err 11) hyp: '�'
+  [standalone_q4] err 73 n 73 (intact err 18) hyp: '�'
+  [base_q4_plus_2bit] err 36 n 36 (intact err 5) hyp: 'language Russian'
+  [base_q4_plus_2bit] err 33 n 33 (intact err 0) hyp: 'language Russian'
+
+paired difference vs standalone_q4 on kept clips, percentage points, 95% CI (exploratory)
+  base_q4_plus_2bit                      -1.57 [-3.64, +0.57]
+  instruct_q4_plus_2bit                  +3.85 [+1.24, +6.65]
+  instruct_q4_plus_2bit_with_embedding   +47.73 [+44.33, +51.16]

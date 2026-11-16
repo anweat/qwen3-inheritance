@@ -1,0 +1,54 @@
+relative ||W-W_base||/||W_base|| per layer (mean over 7 mats, first 64 rows); also vs instruct
+L   instruct   asr     tts    | asr-vs-inst tts-vs-inst
+ 0  0.0645   0.2249  0.9641 |  0.2243     0.9651
+ 1  0.0672   0.2745  1.0162 |  0.2743     1.0183
+ 2  0.0702   0.2633  0.9973 |  0.2627     0.9993
+ 3  0.0737   0.2790  0.9491 |  0.2803     0.9506
+ 4  0.0851   0.2931  1.0319 |  0.2946     1.0346
+ 5  0.0735   0.2577  0.9608 |  0.2570     0.9622
+ 6  0.0846   0.2694  0.9678 |  0.2679     0.9695
+ 7  0.0855   0.2760  0.9825 |  0.2732     0.9842
+ 8  0.0902   0.2785  1.0152 |  0.2750     1.0176
+ 9  0.0943   0.2751  1.0013 |  0.2699     1.0034
+10  0.0973   0.2904  1.0158 |  0.2867     1.0182
+11  0.0943   0.2600  0.9609 |  0.2542     0.9625
+12  0.1099   0.3060  0.9973 |  0.2977     0.9995
+13  0.1048   0.2994  1.0211 |  0.2928     1.0238
+14  0.1092   0.2828  1.0199 |  0.2746     1.0224
+15  0.1130   0.2708  1.0114 |  0.2653     1.0140
+16  0.1105   0.2904  1.0148 |  0.2830     1.0177
+17  0.1136   0.2874  0.9888 |  0.2813     0.9913
+18  0.1129   0.3286  1.0091 |  0.3268     1.0115
+19  0.1086   0.3219  1.0031 |  0.3205     1.0052
+20  0.1117   0.3339  1.0163 |  0.3336     1.0185
+21  0.0989   0.3033  1.0176 |  0.3018     1.0197
+22  0.1074   0.3277  1.0201 |  0.3283     1.0222
+23  0.1048   0.3366  1.0360 |  0.3393     1.0381
+24  0.0975   0.3088  1.0168 |  0.3091     1.0185
+25  0.0980   0.3232  1.0244 |  0.3248     1.0263
+26  0.0920   0.3311  1.0410 |  0.3333     1.0430
+27  0.0843   0.3135  1.0342 |  0.3149     1.0359
+instruct by matrix: {'q_proj': np.float64(0.0989), 'k_proj': np.float64(0.1077), 'v_proj': np.float64(0.0824), 'o_proj': np.float64(0.089), 'gate_proj': np.float64(0.1001), 'up_proj': np.float64(0.0916), 'down_proj': np.float64(0.0947)} embed: 0.0937 cos(min over mats): 0.99
+asr by matrix: {'q_proj': np.float64(0.3251), 'k_proj': np.float64(0.3243), 'v_proj': np.float64(0.2612), 'o_proj': np.float64(0.286), 'gate_proj': np.float64(0.2905), 'up_proj': np.float64(0.2862), 'down_proj': np.float64(0.2785)} embed: 0.2999 cos(min over mats): 0.9112
+tts by matrix: {'q_proj': np.float64(1.0526), 'k_proj': np.float64(1.0349), 'v_proj': np.float64(0.9426), 'o_proj': np.float64(0.9788), 'gate_proj': np.float64(1.0313), 'up_proj': np.float64(1.0083), 'down_proj': np.float64(0.9852)} embed: 1.1122 cos(min over mats): 0.0481
+asr lm_head vs its embed rel: 0.0
+
+BitDelta proxy (sign * per-matrix mean|d|), per model, first-64-row slabs:
+  instruct delta recon err 0.611   weight-level err 0.05881
+  asr      delta recon err 0.622   weight-level err 0.21381
+  tts      delta recon err 0.632   weight-level err 1.28378
+
+SVD of full q_proj delta: rank needed for 50/90% energy (of 2048), and top-64 energy share
+  instruct L 2  r50= 193  r90= 775  top64=0.253
+  instruct L14  r50= 174  r90= 704  top64=0.266
+  instruct L26  r50= 157  r90= 735  top64=0.314
+  asr      L 2  r50= 234  r90= 875  top64=0.230
+  asr      L14  r50= 231  r90= 851  top64=0.223
+  asr      L26  r50= 228  r90= 825  top64=0.223
+  tts      L 2  r50= 235  r90= 859  top64=0.235
+  tts      L14  r50= 192  r90= 790  top64=0.264
+  tts      L26  r50= 207  r90= 756  top64=0.227
+instruct norm ratio mean 0.988 [0.981,0.993]  cos mean 0.995 [0.990,0.999]  layernorm corr mean 1.000
+asr      norm ratio mean 0.854 [0.832,0.874]  cos mean 0.961 [0.911,0.996]  layernorm corr mean 1.000
+tts      norm ratio mean 0.501 [0.311,0.854]  cos mean 0.245 [0.048,0.651]  layernorm corr mean 0.903
+tts q_proj best cross-layer cos per layer: [0.185 0.154 0.175 0.289 0.136 0.148 0.248 0.193 0.145 0.193] argmax [0 1 2 3 4 5 6 7 8 9]

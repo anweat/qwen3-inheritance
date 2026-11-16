@@ -1,0 +1,62 @@
+76 positions, 21 characters, reference gap median 6.65, gap<=0 share 0.013
+  all                    H: n  76 chars  21 says gold 0.816 [0.656, 0.982]  position pct [0.08 0.87 1.12]
+  all                    O: n  76 chars  21 says gold 0.921 [0.856, 1.000]  position pct [0.57 0.92 1.16]
+  O minus H +0.105 [-0.018, +0.216]
+  gold is CPP majority   H: n  63 chars  18 says gold 0.857 [0.712, 1.000]  position pct [0.06 0.87 1.12]
+  gold is CPP majority   O: n  63 chars  18 says gold 0.937 [0.869, 1.000]  position pct [0.63 0.94 1.13]
+  gold is CPP minority   H: n  13 chars   6 says gold 0.615 [0.375, 1.000]  position pct [0.25 0.73 1.1 ]
+  gold is CPP minority   O: n  13 chars   6 says gold 0.846 [0.625, 1.000]  position pct [0.37 0.88 1.15]
+criterion: human audio scored as gold >= .90: 0.816 -> FAILS, stage 4 rates may be biased
+human scored wrong:
+  露 lu4/lou4 H -4.5 O +3.5 gap 6.9 汉能发布中期财报披露
+  为 wei2/wei4 H -1.6 O -0.2 gap 1.1 开发边界将作为城市发展的刚性约定
+  露 lu4/lou4 H -2.6 O +1.3 gap 6.6 但其并未向记者透露项目盈利水平预测
+  为 wei2/wei4 H -0.6 O +1.3 gap 4.0 城投债劵作为准市政债劵仍将是有效的融资工具
+  为 wei2/wei4 H -1.6 O +1.6 gap 3.4 因此，很可能这个符号只是作为一个标签添加的。
+  为 wei4/wei2 H -2.2 O +2.7 gap 11.7 这一项目将为神农架林区的孩子筹建开放式体育空间
+  为 wei4/wei2 H -1.7 O +2.6 gap 6.2 大脑病理和行为之间的相关性可以为科学家们的研究提供支持。
+  为 wei2/wei4 H -1.6 O -0.8 gap 0.1 这被称为化学物质的 pH 值。你可以使用红甘蓝汁制作指示剂。
+  为 wei4/wei2 H -0.6 O +0.3 gap 5.3 他一直无法用药物来缓解疼痛，因为比赛禁止参赛者服用这些药物。
+  为 wei2/wei4 H -3.6 O -3.7 gap 4.2 宇宙中的一切都由物质构成，而所有的物质都由被称为原子的微小粒
+  为 wei4/wei2 H -0.1 O +1.2 gap 2.3 这座城市与该国其他城市形成了鲜明对比，因为它更多的是阿拉伯风
+  肖 xiao4/xiao1 H -4.3 O -4.6 gap 8.5 他还参与了许多国家的纸币雕版制作，近期作品包括加拿大新版 5
+  为 wei2/wei4 H -1.6 O +1.4 gap 3.5 有些人认为他是对的，但也有很多人持相反意见；他们认为太阳系是
+  相 xiang1/xiang4 H -0.8 O +8.5 gap 11.4 有些人认为他是对的，但也有很多人持相反意见；他们认为太阳系是
+TTS scored wrong:
+  为 wei4/wei2 O -1.6 H +2.0 gap 9.2 id 22 为中国战队打响第一枪
+  为 wei2/wei4 O -0.2 H -1.6 gap 1.1 id 4 开发边界将作为城市发展的刚性约定
+  为 wei2/wei4 O -0.8 H -1.6 gap 0.1 id 62 这被称为化学物质的 pH 值。你可以使用红甘蓝汁制作指示剂。
+  都 dou1/du1 O -0.7 H +1.4 gap 2.2 id 51 这里几乎都是沙滩，游泳很安全，大部分地方都有新西兰圣诞树的树荫。
+  为 wei2/wei4 O -3.7 H -3.6 gap 4.2 id 68 宇宙中的一切都由物质构成，而所有的物质都由被称为原子的微小粒子组成。
+  肖 xiao4/xiao1 O -4.6 H -4.3 gap 8.5 id 70 他还参与了许多国家的纸币雕版制作，近期作品包括加拿大新版 5 元和 
+76 positions, 21 characters, reference gap median 6.94, gap<=0 share 0.000
+  all                    H: n  76 chars  21 says gold 0.803 [0.626, 0.982]  position pct [0.27 0.89 1.25]
+  all                    O: n  76 chars  21 says gold 0.934 [0.864, 1.000]  position pct [0.56 0.95 1.17]
+  O minus H +0.132 [+0.000, +0.247]
+  gold is CPP majority   H: n  63 chars  18 says gold 0.825 [0.633, 1.000]  position pct [0.31 0.9  1.32]
+  gold is CPP majority   O: n  63 chars  18 says gold 0.952 [0.878, 1.000]  position pct [0.58 0.96 1.2 ]
+  gold is CPP minority   H: n  13 chars   6 says gold 0.692 [0.500, 1.000]  position pct [0.13 0.78 1.12]
+  gold is CPP minority   O: n  13 chars   6 says gold 0.846 [0.625, 1.000]  position pct [0.24 0.76 1.  ]
+criterion: human audio scored as gold >= .90: 0.803 -> FAILS, stage 4 rates may be biased
+human scored wrong:
+  露 lu4/lou4 H -3.8 O +4.3 gap 6.4 汉能发布中期财报披露
+  为 wei2/wei4 H -2.3 O -0.4 gap 3.5 开发边界将作为城市发展的刚性约定
+  露 lu4/lou4 H -2.4 O +2.0 gap 6.8 但其并未向记者透露项目盈利水平预测
+  为 wei2/wei4 H -3.5 O -2.7 gap 5.2 城投债劵作为准市政债劵仍将是有效的融资工具
+  为 wei2/wei4 H -1.9 O +0.8 gap 2.2 因此，很可能这个符号只是作为一个标签添加的。
+  为 wei4/wei2 H -1.3 O -2.4 gap 7.2 这一项目将为神农架林区的孩子筹建开放式体育空间
+  为 wei2/wei4 H -1.6 O +1.4 gap 13.3 大脑病理和行为之间的相关性可以为科学家们的研究提供支持。
+  为 wei4/wei2 H -3.5 O +1.0 gap 7.5 大脑病理和行为之间的相关性可以为科学家们的研究提供支持。
+  为 wei2/wei4 H -0.6 O -0.5 gap 3.2 这被称为化学物质的 pH 值。你可以使用红甘蓝汁制作指示剂。
+  为 wei4/wei2 H -0.3 O +0.5 gap 8.4 他一直无法用药物来缓解疼痛，因为比赛禁止参赛者服用这些药物。
+  为 wei2/wei4 H -0.1 O +0.3 gap 7.7 宇宙中的一切都由物质构成，而所有的物质都由被称为原子的微小粒
+  肖 xiao4/xiao1 H -3.0 O -4.0 gap 7.2 他还参与了许多国家的纸币雕版制作，近期作品包括加拿大新版 5
+  为 wei2/wei4 H -0.8 O +2.0 gap 3.2 有些人认为他是对的，但也有很多人持相反意见；他们认为太阳系是
+  相 xiang1/xiang4 H -0.9 O +6.1 gap 10.9 有些人认为他是对的，但也有很多人持相反意见；他们认为太阳系是
+  为 wei2/wei4 H -0.3 O +2.7 gap 5.3 在另一种极端情况下，这个人会变成一个与之前迥然不同的个体，觉
+TTS scored wrong:
+  为 wei2/wei4 O -0.4 H -2.3 gap 3.5 id 4 开发边界将作为城市发展的刚性约定
+  为 wei2/wei4 O -2.7 H -3.5 gap 5.2 id 14 城投债劵作为准市政债劵仍将是有效的融资工具
+  为 wei4/wei2 O -2.4 H -1.3 gap 7.2 id 39 这一项目将为神农架林区的孩子筹建开放式体育空间
+  为 wei2/wei4 O -0.5 H -0.6 gap 3.2 id 62 这被称为化学物质的 pH 值。你可以使用红甘蓝汁制作指示剂。
+  肖 xiao4/xiao1 O -4.0 H -3.0 gap 7.2 id 70 他还参与了许多国家的纸币雕版制作，近期作品包括加拿大新版 5 元和 

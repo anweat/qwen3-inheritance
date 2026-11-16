@@ -1,0 +1,11 @@
+### ablate decoder neurons during transcription: error rate (WER en, CER zh)
+  intact                                              librispeech  0.040 say_en  0.000 say_zh  0.029
+  zero 10% per layer: random                          librispeech  0.674 say_en  1.000 say_zh  1.000  [20s]
+  zero 1% per layer: top audio-mode |DLA|             librispeech  1.550 say_en  1.333 say_zh  1.156  [134s]
+  zero 1% per layer: random                           librispeech  0.035 say_en  0.000 say_zh  0.024  [51s]
+  zero 1% per layer: audio-specific (audio/text |DLA| ratio)librispeech  1.000 say_en  1.000 say_zh  1.074  [15s]
+  zero 1% per layer: text-specific (text/audio |DLA| ratio)librispeech  1.000 say_en  1.000 say_zh  1.032  [224s]
+  zero 10% per layer: least plastic                   librispeech  2.135 say_en  2.292 say_zh  6.374  [224s]
+  zero 10% per layer: most plastic                    librispeech  0.064 say_en  0.000 say_zh  0.132  [51s]
+  zero 10% per layer: least plastic, audio |DLA|-matchedlibrispeech  1.000 say_en  1.000 say_zh  1.118  [17s]
+  zero 10% per layer: most plastic, audio |DLA|-matchedlibrispeech  0.058 say_en  0.000 say_zh  0.129  [51s]

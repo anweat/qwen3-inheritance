@@ -1,0 +1,132 @@
+72695 polyphone samples, 27643 static positions over 3986 characters
+  single: 199 groups, test samples 2335
+  multi: 58 groups, test samples 671
+  baseline single: majority acc 0.7662; dictionary acc 0.7135 minority recall 0.6593
+  baseline multi: majority acc 0.8137; dictionary acc 0.9419 minority recall 0.9280
+==== LLM-0.6B ====
+  padding check: relative error 0.00000
+  A LLM-0.6B     L0  initial 0.533 [0.499,0.568] (maj 0.137)  final 0.350 [0.318,0.383] (maj 0.121)  tone 0.640 [0.605,0.673] (maj 0.348)
+  A LLM-0.6B     L1  initial 0.561 [0.530,0.594] (maj 0.137)  final 0.376 [0.343,0.409] (maj 0.121)  tone 0.652 [0.619,0.684] (maj 0.348)
+  A LLM-0.6B     L2  initial 0.569 [0.538,0.600] (maj 0.137)  final 0.364 [0.333,0.396] (maj 0.121)  tone 0.660 [0.629,0.691] (maj 0.348)
+  A LLM-0.6B     L3  initial 0.553 [0.522,0.585] (maj 0.137)  final 0.360 [0.329,0.392] (maj 0.121)  tone 0.664 [0.633,0.694] (maj 0.348)
+  A LLM-0.6B     L4  initial 0.538 [0.507,0.571] (maj 0.137)  final 0.343 [0.314,0.374] (maj 0.121)  tone 0.650 [0.621,0.680] (maj 0.348)
+  A LLM-0.6B     L5  initial 0.518 [0.487,0.550] (maj 0.137)  final 0.352 [0.321,0.381] (maj 0.121)  tone 0.660 [0.630,0.690] (maj 0.348)
+  A LLM-0.6B     L6  initial 0.515 [0.486,0.546] (maj 0.137)  final 0.354 [0.324,0.383] (maj 0.121)  tone 0.653 [0.624,0.683] (maj 0.348)
+  A LLM-0.6B     L8  initial 0.498 [0.469,0.528] (maj 0.137)  final 0.342 [0.312,0.372] (maj 0.121)  tone 0.650 [0.621,0.682] (maj 0.348)
+  A LLM-0.6B     L12 initial 0.499 [0.470,0.529] (maj 0.137)  final 0.346 [0.315,0.374] (maj 0.121)  tone 0.643 [0.614,0.674] (maj 0.348)
+  A LLM-0.6B     L16 initial 0.498 [0.468,0.527] (maj 0.137)  final 0.330 [0.300,0.359] (maj 0.121)  tone 0.650 [0.622,0.679] (maj 0.348)
+  A LLM-0.6B     L20 initial 0.542 [0.514,0.573] (maj 0.137)  final 0.353 [0.323,0.382] (maj 0.121)  tone 0.645 [0.615,0.673] (maj 0.348)
+  A LLM-0.6B     L28 initial 0.349 [0.323,0.376] (maj 0.137)  final 0.248 [0.224,0.273] (maj 0.121)  tone 0.507 [0.480,0.533] (maj 0.348)
+ polyphones, single-character tokens:
+  B LLM-0.6B     t    dev-selected L20 acc 0.9418 minority recall 0.8278
+     test accuracy/minority recall by layer: L0:0.766/0.000 L1:0.904/0.744 L2:0.913/0.760 L3:0.917/0.740 L4:0.928/0.800 L5:0.929/0.815 L6:0.933/0.808 L8:0.934/0.828 L12:0.938/0.824 L16:0.940/0.822 L20:0.942/0.828 L28:0.935/0.833
+  B LLM-0.6B     t+2  dev-selected L28 acc 0.9396 minority recall 0.8315
+     test accuracy/minority recall by layer: L0:0.809/0.295 L1:0.897/0.722 L2:0.912/0.720 L3:0.915/0.762 L4:0.927/0.791 L5:0.931/0.786 L6:0.932/0.808 L8:0.943/0.839 L12:0.941/0.832 L16:0.939/0.821 L20:0.938/0.821 L28:0.940/0.832
+ polyphones, multi-character tokens:
+  B LLM-0.6B     t    dev-selected L4 acc 0.9911 minority recall 0.9600
+     test accuracy/minority recall by layer: L0:0.990/0.952 L1:0.990/0.952 L2:0.990/0.952 L3:0.990/0.952 L4:0.991/0.960 L5:0.990/0.952 L6:0.991/0.960 L8:0.991/0.960 L12:0.990/0.952 L16:0.990/0.952 L20:0.988/0.944 L28:0.975/0.880
+  B LLM-0.6B     t+2  dev-selected L1 acc 0.9896 minority recall 0.9520
+     test accuracy/minority recall by layer: L0:0.987/0.936 L1:0.990/0.952 L2:0.990/0.952 L3:0.988/0.944 L4:0.990/0.952 L5:0.990/0.952 L6:0.990/0.952 L8:0.982/0.920 L12:0.984/0.928 L16:0.984/0.928 L20:0.979/0.904 L28:0.957/0.808
+==== Random-0.6B ====
+  padding check: relative error 0.00000
+  A Random-0.6B  L0  initial 0.139 [0.117,0.163] (maj 0.137)  final 0.122 [0.100,0.146] (maj 0.121)  tone 0.345 [0.312,0.378] (maj 0.348)
+  A Random-0.6B  L1  initial 0.141 [0.118,0.166] (maj 0.137)  final 0.130 [0.108,0.153] (maj 0.121)  tone 0.340 [0.309,0.372] (maj 0.348)
+  A Random-0.6B  L2  initial 0.141 [0.118,0.166] (maj 0.137)  final 0.130 [0.107,0.153] (maj 0.121)  tone 0.341 [0.309,0.372] (maj 0.348)
+  A Random-0.6B  L3  initial 0.141 [0.118,0.166] (maj 0.137)  final 0.131 [0.108,0.153] (maj 0.121)  tone 0.341 [0.310,0.373] (maj 0.348)
+  A Random-0.6B  L4  initial 0.141 [0.118,0.166] (maj 0.137)  final 0.130 [0.108,0.153] (maj 0.121)  tone 0.341 [0.309,0.373] (maj 0.348)
+  A Random-0.6B  L5  initial 0.133 [0.114,0.154] (maj 0.137)  final 0.130 [0.108,0.153] (maj 0.121)  tone 0.341 [0.309,0.373] (maj 0.348)
+  A Random-0.6B  L6  initial 0.141 [0.118,0.166] (maj 0.137)  final 0.131 [0.108,0.153] (maj 0.121)  tone 0.341 [0.309,0.373] (maj 0.348)
+  A Random-0.6B  L8  initial 0.141 [0.118,0.166] (maj 0.137)  final 0.130 [0.108,0.153] (maj 0.121)  tone 0.341 [0.309,0.373] (maj 0.348)
+  A Random-0.6B  L12 initial 0.141 [0.118,0.166] (maj 0.137)  final 0.130 [0.108,0.153] (maj 0.121)  tone 0.341 [0.309,0.372] (maj 0.348)
+  A Random-0.6B  L16 initial 0.141 [0.118,0.166] (maj 0.137)  final 0.130 [0.108,0.153] (maj 0.121)  tone 0.341 [0.309,0.372] (maj 0.348)
+  A Random-0.6B  L20 initial 0.141 [0.118,0.166] (maj 0.137)  final 0.130 [0.108,0.153] (maj 0.121)  tone 0.340 [0.309,0.372] (maj 0.348)
+  A Random-0.6B  L28 initial 0.141 [0.118,0.166] (maj 0.137)  final 0.131 [0.108,0.154] (maj 0.121)  tone 0.341 [0.309,0.372] (maj 0.348)
+ polyphones, single-character tokens:
+  B Random-0.6B  t    dev-selected L1 acc 0.8266 minority recall 0.4670
+     test accuracy/minority recall by layer: L0:0.766/0.000 L1:0.827/0.467 L2:0.816/0.438 L3:0.816/0.407 L4:0.810/0.392 L5:0.812/0.396 L6:0.810/0.396 L8:0.810/0.374 L12:0.809/0.366 L16:0.811/0.377 L20:0.810/0.370 L28:0.809/0.366
+  B Random-0.6B  t+2  dev-selected L1 acc 0.8463 minority recall 0.4817
+     test accuracy/minority recall by layer: L0:0.803/0.269 L1:0.846/0.482 L2:0.841/0.462 L3:0.831/0.436 L4:0.827/0.405 L5:0.820/0.436 L6:0.825/0.419 L8:0.820/0.436 L12:0.821/0.438 L16:0.818/0.440 L20:0.819/0.441 L28:0.814/0.447
+ polyphones, multi-character tokens:
+  B Random-0.6B  t    dev-selected L0 acc 0.9806 minority recall 0.9120
+     test accuracy/minority recall by layer: L0:0.981/0.912 L1:0.920/0.600 L2:0.902/0.544 L3:0.894/0.504 L4:0.890/0.520 L5:0.884/0.456 L6:0.873/0.392 L8:0.863/0.376 L12:0.870/0.424 L16:0.851/0.368 L20:0.861/0.376 L28:0.849/0.272
+  B Random-0.6B  t+2  dev-selected L0 acc 0.9776 minority recall 0.9120
+     test accuracy/minority recall by layer: L0:0.978/0.912 L1:0.914/0.568 L2:0.885/0.448 L3:0.879/0.416 L4:0.876/0.432 L5:0.869/0.376 L6:0.869/0.376 L8:0.866/0.376 L12:0.857/0.376 L16:0.857/0.376 L20:0.851/0.336 L28:0.849/0.336
+==== TTS-0.6B ====
+  padding check: relative error 0.00003
+  A TTS-0.6B     L0  initial 0.774 [0.744,0.804] (maj 0.137)  final 0.559 [0.526,0.592] (maj 0.121)  tone 0.863 [0.840,0.885] (maj 0.348)
+  A TTS-0.6B     L1  initial 0.766 [0.737,0.796] (maj 0.137)  final 0.638 [0.605,0.670] (maj 0.121)  tone 0.840 [0.816,0.864] (maj 0.348)
+  A TTS-0.6B     L2  initial 0.769 [0.742,0.797] (maj 0.137)  final 0.612 [0.581,0.644] (maj 0.121)  tone 0.877 [0.855,0.898] (maj 0.348)
+  A TTS-0.6B     L3  initial 0.764 [0.736,0.792] (maj 0.137)  final 0.583 [0.551,0.613] (maj 0.121)  tone 0.874 [0.853,0.896] (maj 0.348)
+  A TTS-0.6B     L4  initial 0.846 [0.821,0.870] (maj 0.137)  final 0.745 [0.717,0.773] (maj 0.121)  tone 0.894 [0.874,0.915] (maj 0.348)
+  A TTS-0.6B     L5  initial 0.858 [0.835,0.882] (maj 0.137)  final 0.766 [0.740,0.793] (maj 0.121)  tone 0.918 [0.900,0.936] (maj 0.348)
+  A TTS-0.6B     L6  initial 0.863 [0.842,0.885] (maj 0.137)  final 0.770 [0.742,0.796] (maj 0.121)  tone 0.911 [0.892,0.930] (maj 0.348)
+  A TTS-0.6B     L8  initial 0.597 [0.569,0.625] (maj 0.137)  final 0.460 [0.431,0.489] (maj 0.121)  tone 0.758 [0.734,0.782] (maj 0.348)
+  A TTS-0.6B     L12 initial 0.314 [0.291,0.337] (maj 0.137)  final 0.234 [0.211,0.257] (maj 0.121)  tone 0.556 [0.531,0.580] (maj 0.348)
+  A TTS-0.6B     L16 initial 0.220 [0.200,0.240] (maj 0.137)  final 0.178 [0.157,0.199] (maj 0.121)  tone 0.474 [0.452,0.498] (maj 0.348)
+  A TTS-0.6B     L20 initial 0.206 [0.187,0.227] (maj 0.137)  final 0.172 [0.152,0.195] (maj 0.121)  tone 0.469 [0.444,0.491] (maj 0.348)
+  A TTS-0.6B     L28 initial 0.191 [0.172,0.210] (maj 0.137)  final 0.162 [0.142,0.183] (maj 0.121)  tone 0.439 [0.416,0.462] (maj 0.348)
+ polyphones, single-character tokens:
+  B TTS-0.6B     t    dev-selected L5 acc 0.9019 minority recall 0.7106
+     test accuracy/minority recall by layer: L0:0.765/0.002 L1:0.870/0.573 L2:0.903/0.725 L3:0.904/0.712 L4:0.905/0.749 L5:0.902/0.711 L6:0.897/0.703 L8:0.886/0.674 L12:0.861/0.639 L16:0.851/0.604 L20:0.840/0.597 L28:0.835/0.570
+  B TTS-0.6B     t+2  dev-selected L6 acc 0.9118 minority recall 0.7491
+     test accuracy/minority recall by layer: L0:0.818/0.451 L1:0.823/0.557 L2:0.887/0.687 L3:0.896/0.701 L4:0.892/0.679 L5:0.908/0.729 L6:0.912/0.749 L8:0.892/0.714 L12:0.869/0.645 L16:0.849/0.529 L20:0.848/0.537 L28:0.825/0.548
+ polyphones, multi-character tokens:
+  B TTS-0.6B     t    dev-selected L0 acc 0.9896 minority recall 0.9520
+     test accuracy/minority recall by layer: L0:0.990/0.952 L1:0.990/0.952 L2:0.988/0.944 L3:0.990/0.952 L4:0.987/0.952 L5:0.990/0.952 L6:0.987/0.944 L8:0.975/0.880 L12:0.943/0.760 L16:0.923/0.712 L20:0.924/0.712 L28:0.896/0.648
+  B TTS-0.6B     t+2  dev-selected L1 acc 0.9881 minority recall 0.9440
+     test accuracy/minority recall by layer: L0:0.984/0.944 L1:0.988/0.944 L2:0.982/0.912 L3:0.987/0.936 L4:0.990/0.952 L5:0.984/0.920 L6:0.982/0.912 L8:0.961/0.824 L12:0.937/0.752 L16:0.905/0.616 L20:0.897/0.600 L28:0.876/0.576
+==== LLM-1.7B ====
+  padding check: relative error 0.00000
+  A LLM-1.7B     L0  initial 0.685 [0.654,0.717] (maj 0.137)  final 0.465 [0.431,0.499] (maj 0.121)  tone 0.677 [0.645,0.709] (maj 0.348)
+  A LLM-1.7B     L1  initial 0.707 [0.678,0.736] (maj 0.137)  final 0.462 [0.428,0.493] (maj 0.121)  tone 0.692 [0.661,0.722] (maj 0.348)
+  A LLM-1.7B     L2  initial 0.725 [0.696,0.753] (maj 0.137)  final 0.484 [0.451,0.515] (maj 0.121)  tone 0.711 [0.681,0.739] (maj 0.348)
+  A LLM-1.7B     L3  initial 0.707 [0.679,0.735] (maj 0.137)  final 0.471 [0.439,0.502] (maj 0.121)  tone 0.682 [0.651,0.713] (maj 0.348)
+  A LLM-1.7B     L4  initial 0.694 [0.666,0.722] (maj 0.137)  final 0.454 [0.422,0.485] (maj 0.121)  tone 0.698 [0.668,0.726] (maj 0.348)
+  A LLM-1.7B     L5  initial 0.668 [0.641,0.697] (maj 0.137)  final 0.447 [0.415,0.477] (maj 0.121)  tone 0.697 [0.666,0.725] (maj 0.348)
+  A LLM-1.7B     L6  initial 0.656 [0.629,0.686] (maj 0.137)  final 0.439 [0.407,0.470] (maj 0.121)  tone 0.696 [0.666,0.724] (maj 0.348)
+  A LLM-1.7B     L8  initial 0.630 [0.603,0.660] (maj 0.137)  final 0.422 [0.390,0.452] (maj 0.121)  tone 0.688 [0.658,0.717] (maj 0.348)
+  A LLM-1.7B     L12 initial 0.620 [0.592,0.650] (maj 0.137)  final 0.421 [0.389,0.452] (maj 0.121)  tone 0.689 [0.660,0.718] (maj 0.348)
+  A LLM-1.7B     L16 initial 0.602 [0.572,0.631] (maj 0.137)  final 0.407 [0.374,0.437] (maj 0.121)  tone 0.682 [0.654,0.710] (maj 0.348)
+  A LLM-1.7B     L20 initial 0.664 [0.637,0.693] (maj 0.137)  final 0.454 [0.423,0.484] (maj 0.121)  tone 0.681 [0.652,0.709] (maj 0.348)
+  A LLM-1.7B     L28 initial 0.449 [0.422,0.475] (maj 0.137)  final 0.302 [0.276,0.329] (maj 0.121)  tone 0.531 [0.505,0.557] (maj 0.348)
+ polyphones, single-character tokens:
+  B LLM-1.7B     t    dev-selected L12 acc 0.9435 minority recall 0.8333
+     test accuracy/minority recall by layer: L0:0.766/0.000 L1:0.911/0.751 L2:0.915/0.771 L3:0.916/0.758 L4:0.927/0.802 L5:0.934/0.828 L6:0.938/0.833 L8:0.939/0.837 L12:0.943/0.833 L16:0.943/0.826 L20:0.937/0.828 L28:0.941/0.833
+  B LLM-1.7B     t+2  dev-selected L16 acc 0.9435 minority recall 0.8352
+     test accuracy/minority recall by layer: L0:0.811/0.286 L1:0.914/0.747 L2:0.915/0.751 L3:0.925/0.777 L4:0.931/0.789 L5:0.934/0.804 L6:0.939/0.817 L8:0.943/0.837 L12:0.943/0.824 L16:0.943/0.835 L20:0.941/0.830 L28:0.940/0.839
+ polyphones, multi-character tokens:
+  B LLM-1.7B     t    dev-selected L4 acc 0.9911 minority recall 0.9600
+     test accuracy/minority recall by layer: L0:0.988/0.944 L1:0.990/0.952 L2:0.991/0.960 L3:0.991/0.960 L4:0.991/0.960 L5:0.990/0.952 L6:0.990/0.952 L8:0.988/0.944 L12:0.990/0.952 L16:0.987/0.944 L20:0.990/0.952 L28:0.970/0.872
+  B LLM-1.7B     t+2  dev-selected L4 acc 0.9881 minority recall 0.9440
+     test accuracy/minority recall by layer: L0:0.987/0.936 L1:0.991/0.960 L2:0.991/0.960 L3:0.987/0.936 L4:0.988/0.944 L5:0.990/0.952 L6:0.988/0.944 L8:0.982/0.920 L12:0.982/0.920 L16:0.976/0.888 L20:0.978/0.896 L28:0.957/0.800
+==== TTS-1.7B ====
+  padding check: relative error 0.00000
+  A TTS-1.7B     L0  initial 0.784 [0.755,0.811] (maj 0.137)  final 0.593 [0.559,0.626] (maj 0.121)  tone 0.847 [0.823,0.870] (maj 0.348)
+  A TTS-1.7B     L1  initial 0.855 [0.830,0.879] (maj 0.137)  final 0.694 [0.663,0.726] (maj 0.121)  tone 0.873 [0.850,0.895] (maj 0.348)
+  A TTS-1.7B     L2  initial 0.876 [0.854,0.898] (maj 0.137)  final 0.771 [0.743,0.799] (maj 0.121)  tone 0.902 [0.883,0.921] (maj 0.348)
+  A TTS-1.7B     L3  initial 0.909 [0.890,0.928] (maj 0.137)  final 0.793 [0.766,0.819] (maj 0.121)  tone 0.917 [0.898,0.935] (maj 0.348)
+  A TTS-1.7B     L4  initial 0.904 [0.885,0.923] (maj 0.137)  final 0.812 [0.787,0.838] (maj 0.121)  tone 0.917 [0.900,0.935] (maj 0.348)
+  A TTS-1.7B     L5  initial 0.911 [0.893,0.929] (maj 0.137)  final 0.818 [0.792,0.843] (maj 0.121)  tone 0.918 [0.901,0.936] (maj 0.348)
+  A TTS-1.7B     L6  initial 0.919 [0.901,0.936] (maj 0.137)  final 0.828 [0.803,0.852] (maj 0.121)  tone 0.911 [0.892,0.929] (maj 0.348)
+  A TTS-1.7B     L8  initial 0.898 [0.879,0.917] (maj 0.137)  final 0.834 [0.811,0.857] (maj 0.121)  tone 0.911 [0.893,0.929] (maj 0.348)
+  A TTS-1.7B     L12 initial 0.890 [0.871,0.911] (maj 0.137)  final 0.839 [0.816,0.862] (maj 0.121)  tone 0.901 [0.882,0.920] (maj 0.348)
+  A TTS-1.7B     L16 initial 0.900 [0.882,0.919] (maj 0.137)  final 0.820 [0.796,0.842] (maj 0.121)  tone 0.903 [0.884,0.922] (maj 0.348)
+  A TTS-1.7B     L20 initial 0.917 [0.898,0.934] (maj 0.137)  final 0.848 [0.826,0.870] (maj 0.121)  tone 0.898 [0.878,0.916] (maj 0.348)
+  A TTS-1.7B     L28 initial 0.903 [0.884,0.922] (maj 0.137)  final 0.792 [0.768,0.817] (maj 0.121)  tone 0.879 [0.858,0.899] (maj 0.348)
+ polyphones, single-character tokens:
+  B TTS-1.7B     t    dev-selected L4 acc 0.9062 minority recall 0.7326
+     test accuracy/minority recall by layer: L0:0.766/0.004 L1:0.893/0.705 L2:0.905/0.722 L3:0.899/0.711 L4:0.906/0.733 L5:0.902/0.723 L6:0.911/0.740 L8:0.910/0.747 L12:0.902/0.722 L16:0.904/0.723 L20:0.894/0.683 L28:0.880/0.636
+  B TTS-1.7B     t+2  dev-selected L16 acc 0.9156 minority recall 0.7399
+     test accuracy/minority recall by layer: L0:0.820/0.445 L1:0.862/0.632 L2:0.904/0.720 L3:0.913/0.738 L4:0.916/0.756 L5:0.914/0.753 L6:0.917/0.762 L8:0.912/0.745 L12:0.905/0.731 L16:0.916/0.740 L20:0.902/0.722 L28:0.874/0.637
+ polyphones, multi-character tokens:
+  B TTS-1.7B     t    dev-selected L1 acc 0.9896 minority recall 0.9520
+     test accuracy/minority recall by layer: L0:0.988/0.944 L1:0.990/0.952 L2:0.988/0.944 L3:0.988/0.944 L4:0.988/0.944 L5:0.988/0.944 L6:0.988/0.944 L8:0.988/0.944 L12:0.988/0.944 L16:0.984/0.928 L20:0.984/0.928 L28:0.952/0.768
+  B TTS-1.7B     t+2  dev-selected L1 acc 0.9881 minority recall 0.9440
+     test accuracy/minority recall by layer: L0:0.985/0.928 L1:0.988/0.944 L2:0.987/0.936 L3:0.988/0.944 L4:0.990/0.952 L5:0.991/0.960 L6:0.988/0.944 L8:0.984/0.936 L12:0.982/0.912 L16:0.970/0.872 L20:0.961/0.808 L28:0.902/0.576
+Traceback (most recent call last):
+  File "C:\Users\anwea\qwen-all\e4_tts_structure\pron_probe.py", line 404, in <module>
+    main(ap.parse_args().smoke)
+  File "C:\Users\anwea\qwen-all\e4_tts_structure\pron_probe.py", line 367, in main
+    emb = m.get_input_embeddings().weight.float().cpu().numpy()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[runner] exit code 1 at 2026-11-06T12:29:36

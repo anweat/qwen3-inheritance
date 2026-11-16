@@ -1,0 +1,326 @@
+[
+{
+"n": 0,
+"id": 78,
+"stratum": "wrong_seg",
+"gold": "qiu2",
+"alt": "chou2",
+"char": "仇",
+"score": -4.26
+},
+{
+"n": 1,
+"id": 52,
+"stratum": "right_seg",
+"gold": "dong4",
+"alt": "tong2",
+"char": "峒",
+"score": 4.36
+},
+{
+"n": 2,
+"id": 208,
+"stratum": "wrong_seg",
+"gold": "bi4",
+"alt": "pi4",
+"char": "辟",
+"score": -4.0
+},
+{
+"n": 3,
+"id": 263,
+"stratum": "right_tone",
+"gold": "jiang1",
+"alt": "jiang4",
+"char": "将",
+"score": 1.41
+},
+{
+"n": 4,
+"id": 231,
+"stratum": "wrong_tone",
+"gold": "qiao2",
+"alt": "qiao4",
+"char": "翘",
+"score": -3.87
+},
+{
+"n": 5,
+"id": 259,
+"stratum": "right_seg",
+"gold": "bang4",
+"alt": "beng4",
+"char": "蚌",
+"score": 3.53
+},
+{
+"n": 6,
+"id": 158,
+"stratum": "right_seg",
+"gold": "bi4",
+"alt": "mi4",
+"char": "秘",
+"score": 5.64
+},
+{
+"n": 7,
+"id": 275,
+"stratum": "right_seg",
+"gold": "yong3",
+"alt": "chong1",
+"char": "涌",
+"score": 11.89
+},
+{
+"n": 8,
+"id": 119,
+"stratum": "wrong_tone",
+"gold": "mo4",
+"alt": "mo2",
+"char": "磨",
+"score": -2.98
+},
+{
+"n": 9,
+"id": 112,
+"stratum": "right_seg",
+"gold": "ba1",
+"alt": "pa2",
+"char": "扒",
+"score": 0.85
+},
+{
+"n": 10,
+"id": 308,
+"stratum": "right_seg",
+"gold": "li4",
+"alt": "ge2",
+"char": "鬲",
+"score": 12.15
+},
+{
+"n": 11,
+"id": 102,
+"stratum": "right_seg",
+"gold": "mou2",
+"alt": "mu4",
+"char": "牟",
+"score": 8.73
+},
+{
+"n": 12,
+"id": 95,
+"stratum": "wrong_seg",
+"gold": "fei4",
+"alt": "fu2",
+"char": "芾",
+"score": -9.61
+},
+{
+"n": 13,
+"id": 160,
+"stratum": "wrong_seg",
+"gold": "dong4",
+"alt": "tong2",
+"char": "峒",
+"score": -5.67
+},
+{
+"n": 14,
+"id": 148,
+"stratum": "wrong_tone",
+"gold": "zheng1",
+"alt": "zheng4",
+"char": "挣",
+"score": -1.46
+},
+{
+"n": 15,
+"id": 73,
+"stratum": "wrong_seg",
+"gold": "tong2",
+"alt": "dong4",
+"char": "侗",
+"score": -10.51
+},
+{
+"n": 16,
+"id": 177,
+"stratum": "wrong_seg",
+"gold": "guo1",
+"alt": "wo1",
+"char": "涡",
+"score": -4.27
+},
+{
+"n": 17,
+"id": 32,
+"stratum": "wrong_seg",
+"gold": "yuan2",
+"alt": "huan2",
+"char": "圜",
+"score": -7.43
+},
+{
+"n": 18,
+"id": 297,
+"stratum": "wrong_tone",
+"gold": "yi3",
+"alt": "yi2",
+"char": "迤",
+"score": -2.74
+},
+{
+"n": 19,
+"id": 290,
+"stratum": "right_tone",
+"gold": "ding1",
+"alt": "ding4",
+"char": "钉",
+"score": 2.61
+},
+{
+"n": 20,
+"id": 182,
+"stratum": "wrong_seg",
+"gold": "ya4",
+"alt": "zha2",
+"char": "轧",
+"score": -2.66
+},
+{
+"n": 21,
+"id": 70,
+"stratum": "wrong_tone",
+"gold": "xiao4",
+"alt": "xiao1",
+"char": "肖",
+"score": -2.87
+},
+{
+"n": 22,
+"id": 79,
+"stratum": "wrong_seg",
+"gold": "qin2",
+"alt": "tan2",
+"char": "覃",
+"score": -14.89
+},
+{
+"n": 23,
+"id": 80,
+"stratum": "wrong_tone",
+"gold": "xiao4",
+"alt": "xiao1",
+"char": "肖",
+"score": -4.82
+},
+{
+"n": 24,
+"id": 60,
+"stratum": "wrong_seg",
+"gold": "fei4",
+"alt": "fu2",
+"char": "芾",
+"score": -6.8
+},
+{
+"n": 25,
+"id": 232,
+"stratum": "right_seg",
+"gold": "gou1",
+"alt": "ju4",
+"char": "句",
+"score": 6.75
+},
+{
+"n": 26,
+"id": 34,
+"stratum": "right_tone",
+"gold": "mi2",
+"alt": "mi3",
+"char": "靡",
+"score": 2.58
+},
+{
+"n": 27,
+"id": 68,
+"stratum": "wrong_seg",
+"gold": "chong1",
+"alt": "yong3",
+"char": "涌",
+"score": -9.75
+},
+{
+"n": 28,
+"id": 69,
+"stratum": "right_tone",
+"gold": "jia2",
+"alt": "jia1",
+"char": "夹",
+"score": 3.97
+},
+{
+"n": 29,
+"id": 252,
+"stratum": "right_tone",
+"gold": "shan4",
+"alt": "shan1",
+"char": "扇",
+"score": 5.09
+},
+{
+"n": 30,
+"id": 212,
+"stratum": "right_seg",
+"gold": "ge1",
+"alt": "luo4",
+"char": "咯",
+"score": 11.95
+},
+{
+"n": 31,
+"id": 136,
+"stratum": "wrong_seg",
+"gold": "qin2",
+"alt": "tan2",
+"char": "覃",
+"score": -17.23
+},
+{
+"n": 32,
+"id": 39,
+"stratum": "right_seg",
+"gold": "jie2",
+"alt": "ju2",
+"char": "桔",
+"score": 2.62
+},
+{
+"n": 33,
+"id": 162,
+"stratum": "wrong_seg",
+"gold": "zhuang4",
+"alt": "tong2",
+"char": "僮",
+"score": -12.02
+},
+{
+"n": 34,
+"id": 307,
+"stratum": "right_tone",
+"gold": "he2",
+"alt": "he4",
+"char": "荷",
+"score": 4.75
+},
+{
+"n": 35,
+"id": 334,
+"stratum": "wrong_seg",
+"gold": "hao4",
+"alt": "gao3",
+"char": "镐",
+"score": -0.05
+}
+]

@@ -1,0 +1,16 @@
+TTS-0.6B: 111 items, 44 groups
+  all        vector port V  n 111 says-g 0.982 says-a 0.973 balanced 0.977 [0.953, 0.996]
+  all        token swap C   n 111 says-g 0.991 says-a 0.973 balanced 0.982 [0.958, 1.000]
+  segmental  vector port V  n  71 says-g 1.000 says-a 0.986 balanced 0.993 [0.979, 1.000]
+  segmental  token swap C   n  71 says-g 1.000 says-a 0.986 balanced 0.993 [0.979, 1.000]
+  tone only  vector port V  n  40 says-g 0.950 says-a 0.950 balanced 0.950 [0.887, 1.000]
+  tone only  token swap C   n  40 says-g 0.975 says-a 0.950 balanced 0.962 [0.900, 1.000]
+criterion (balanced >= .90, both >= .85): port works
+TTS-1.7B: 111 items, 44 groups
+  all        vector port V  n 111 says-g 0.982 says-a 0.982 balanced 0.982 [0.955, 1.000]
+  all        token swap C   n 111 says-g 0.982 says-a 0.955 balanced 0.968 [0.932, 0.996]
+  segmental  vector port V  n  71 says-g 1.000 says-a 0.986 balanced 0.993 [0.974, 1.000]
+  segmental  token swap C   n  71 says-g 1.000 says-a 0.972 balanced 0.986 [0.959, 1.000]
+  tone only  vector port V  n  40 says-g 0.950 says-a 0.975 balanced 0.962 [0.897, 1.000]
+  tone only  token swap C   n  40 says-g 0.950 says-a 0.925 balanced 0.938 [0.848, 1.000]
+criterion (balanced >= .90, both >= .85): port works
